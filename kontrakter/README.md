@@ -15,6 +15,7 @@ Forslag til kontraktstruktur for Agaas AS: programvareleverandør og bedriftsrå
 | [`vedlegg-f-fullmakter-og-signering.md`](vedlegg-f-fullmakter-og-signering.md) | Altinn-roller og signeringsmodeller – signatur under kundens identitet |
 | [`vedlegg-g-tilleggsavtaler.md`](vedlegg-g-tilleggsavtaler.md) | Regnskapsføring, inkasso, revisor, bank, aksesspunkt, nye tredjeparter |
 | [`notat-regulatorisk-vurdering.md`](notat-regulatorisk-vurdering.md) | Regulatoriske forutsetninger og sjekkliste |
+| [`mal-rolleavklaring-fagansvarlig.md`](mal-rolleavklaring-fagansvarlig.md) | Intern mal: arbeidsdeling for autorisert regnskapsfører ansatt i Agaas AS |
 
 ## Bærende grep
 
@@ -23,6 +24,8 @@ Forslag til kontraktstruktur for Agaas AS: programvareleverandør og bedriftsrå
 **Signatur under kundens identitet.** Signeringen kan skje i Plattformen – kunden slipper å gå veien om Altinn – men signaturen avgis alltid med kundens egen elektroniske ID etter kundens aktive handling. Agaas formidler teknisk, men signerer aldri selv og tildeles ikke Altinn-roller med signeringsrett, jf. Vedlegg F.
 
 **Modulær påkobling.** Nye tredjepartstjenester kan legges til uten å endre hovedavtalen: de føres opp i Vedlegg C og aktiveres av kunden selv, jf. Vedlegg G.6.
+
+**Roller er dokumentert.** Autorisert regnskapsfører ansatt i Agaas AS har produktfaglig ansvar, ikke oppdragsansvar for kunder. Skillet dokumenteres i rolleavklaringen.
 
 **Ansvar følger leveransen.** Agaas svarer for plattform, drift og egen rådgivning. Konsernselskaper og tredjeparter svarer for sitt, på egne avtaler.
 

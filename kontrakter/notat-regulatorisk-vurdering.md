@@ -59,6 +59,28 @@ Fører regnskapsføreren kun Agaas' egne regnskaper, er ingenting av dette i vei
 
 **Å avklare:** hvilket selskap den autoriserte regnskapsføreren er ansatt i, om regnskapsbyrået i gruppen har egen **foretaksautorisasjon** (ikke bare en autorisert person på laget), og om byrået er registrert i Finanstilsynets register.
 
+### 2.2 Fagansvarlig i Agaas AS
+
+«Fagansvarlig» er ikke en lovbestemt rolle etter regnskapsførerloven. Det loven regulerer er **foretaksautorisasjon** og **oppdragsansvarlig regnskapsfører** per oppdrag. Tittelen er derfor i seg selv verken et problem eller en løsning — det avgjørende er hva personen faktisk gjør, og for hvem.
+
+Rollen kan ha to helt ulike innhold:
+
+| Innhold | Hva det er | Riktig plassering | Vurdering |
+|---|---|---|---|
+| **Produktfaglig ansvar** | At Plattformen er regnskapsfaglig korrekt: kontoplan, mva-koder, valideringsregler, maler, regelverksoppdateringer, faglig kvalitet i opplæring og rådgivning | **Agaas AS** | Uproblematisk. Dette er produktutvikling, ikke regnskapsføring for andre |
+| **Oppdragsfaglig ansvar** | Faglig ansvar og kvalitetsstyring for kundeoppdrag, oppdragsansvar, godkjenning av leveranser til kunde | **Det autoriserte regnskapsforetaket** | Må ligge i foretaket med foretaksautorisasjon |
+
+**Risikoen** oppstår når samme person har begge hattene uten dokumentert skille. Utad — og for et tilsyn — fremstår da Agaas AS som en regnskapsfaglig ledet virksomhet som leverer regnskapstjenester, uavhengig av hva avtaleverket sier. Næringskoden hjelper ikke mot dette.
+
+**Anbefalinger:**
+
+1. **Presiser rolletittelen.** Internt og utad bør den lyde «fagansvarlig regnskapsfag, produkt» eller tilsvarende, ikke «fagansvarlig regnskap» uten kvalifisering. Stillingsbeskrivelse, nettsider, LinkedIn og e-postsignatur bør si det samme.
+2. **Skal personen også ha oppdragsansvar for kunder**, må den delen utøves for regnskapsforetaket: delt ansettelse eller skriftlig utleieavtale, atskilt timeregistrering, og oppdragsavtalen med kunden skal navngi vedkommende som oppdragsansvarlig **for regnskapsforetaket**, ikke for Agaas AS.
+3. **Dokumenter skillet skriftlig** i en signert rolleavklaring, jf. `mal-rolleavklaring-fagansvarlig.md`. Uten dokumentasjon er skillet vanskelig å påvise i ettertid.
+4. **Kontroller at ingen kundeoppdrag faktureres fra Agaas AS.** Fakturalinjer med regnskapsføring i Agaas AS' navn er det enkleste beviset på at virksomheten drives der.
+
+**Merk:** Er intensjonen at kundeoppdragene faktisk skal ligge i Agaas AS med denne personen som fagansvarlig, må Agaas AS selv søke foretaksautorisasjon — og da er selskapet under Finanstilsynets tilsyn. Målsettingen om å holde Agaas AS utenfor forutsetter at oppdragene ligger i byrået.
+
 **Anbefaling:**
 1. All regnskapsføring legges i det autoriserte regnskapsforetaket, med egen oppdragsavtale direkte med kunden (Vedlegg G.1).
 2. Ansatte som utfører regnskapsføringsoppgaver må være ansatt eller formelt innleid av regnskapsforetaket, under dets kvalitetsstyring og en navngitt oppdragsansvarlig regnskapsfører, jf. punkt 2.1. **Dette er punktet strukturen oftest ryker på i praksis:** samme person som «hjelper til litt med bokføringen» fra Agaas AS river ned skillet.
@@ -110,6 +132,8 @@ Systemet må understøtte kundens plikter: sporbarhet, ingen sletting av bokfør
 | 1 | Advokatgjennomgang av hele strukturen | Ledelsen | ☐ |
 | 2 | Bekrefte at regnskapsforetaket har gyldig **foretaksautorisasjon** i Finanstilsynets register, ikke bare autorisert person ansatt | Ledelsen | ☐ |
 | 2b | Fastsette hvilket selskap den autoriserte regnskapsføreren er ansatt i, og navngi oppdragsansvarlig per oppdrag | HR/regnskapsforetaket | ☐ |
+| 2c | Signere rolleavklaring for fagansvarlig, jf. punkt 2.2 og malen | Ledelsen | ☐ |
+| 2d | Kontrollere at ingen kundeoppdrag faktureres fra Agaas AS | Økonomi | ☐ |
 | 3 | Bekrefte inkassobevilling og faglig leder | Inkassoforetaket | ☐ |
 | 4 | Rydde i ansettelsesforhold og eventuelle inn-/utleieavtaler: hvem utfører hva, i hvilket selskap, jf. punkt 2.1 | HR/ledelsen | ☐ |
 | 5 | Gjennomgå markedsføring så Agaas AS ikke fremstår som regnskapsfører | Marked | ☐ |

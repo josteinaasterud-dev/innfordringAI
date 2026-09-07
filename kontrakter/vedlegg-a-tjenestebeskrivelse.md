@@ -48,6 +48,8 @@ Agaas leverer bedriftsrådgivning innenfor følgende, alle uten å overta Kunden
 - struktur- og styringsrådgivning, herunder rapporteringsmodeller og nøkkeltall
 - prosjektbistand ved migrering fra tidligere system
 
+Agaas har regnskapsfaglig kompetanse knyttet til **Plattformens faglige kvalitet**, herunder kontoplan, avgiftskoder, valideringsregler og oppdatering ved regelverksendringer. Denne kompetansen benyttes til produkt, opplæring og generell rådgivning, og innebærer ikke at Agaas påtar seg oppdragsansvar for Kundens regnskapsføring.
+
 **Ikke omfattet:** utarbeidelse eller innsending av Kundens pliktige regnskapsrapportering, regnskapsfaglige konklusjoner Kunden kan legge til grunn uten egen kontroll, skatterettslig eller juridisk rådgivning, og enhver form for attestasjon.
 
 ## A.4 Grensesnittet mellom Plattform og regnskapsføringstjeneste
