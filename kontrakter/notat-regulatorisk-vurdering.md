@@ -34,11 +34,11 @@ Kravene må verifiseres mot Finanstilsynets gjeldende rundskriv og søknadsskjem
 |---|---|
 | Oppdragsansvarlig regnskapsfører med personlig autorisasjon | **På plass** – fagansvarlig i selskapet |
 | Egnethetskrav til ledelse og eiere | Må dokumenteres |
-| Kvalitetsstyringssystem og rutiner for oppdragsutførelse | Må etableres |
+| Kvalitetsstyringssystem og rutiner for oppdragsutførelse | Under etablering, jf. eget notat |
 | Skriftlig oppdragsavtale med hver kunde | Dekket av avtaleverket, jf. Vedlegg H |
 | Rutiner etter hvitvaskingsloven, med kundetiltak | Må etableres, jf. Vedlegg I |
 | Sikkerhetsstillelse og ansvarsforsikring | Må etableres |
-| Dokumentasjon av oppdragsutførelsen | Må bygges inn i Plattformen |
+| Dokumentasjon av oppdragsutførelsen | Logging på plass; må kunne fremlegges som rapport, jf. eget notat |
 | Tilsynsavgift og rapportering | Løpende |
 
 Mye av dette er formalisering av rutiner virksomheten trenger uansett. Det tyngste nybygget er kvalitetsstyringssystemet.
@@ -59,7 +59,9 @@ Agaas er faglig ansvarlig for alt arbeid, uavhengig av om det er utført maskine
 
 Signeringsmodellen består fordi den plasserer ansvaret for innholdet overfor myndighetene hos kunden, der det hører hjemme, og holder Agaas unna å opptre overfor Skatteetaten på kundens vegne. Den begrenser ikke Agaas' ansvar overfor kunden for utførelsen.
 
-**Merk:** sporbarhet og dokumentasjon er ikke bare et tilsynskrav. Det er også Agaas' eget bevis for forsvarlig utførelse dersom en kunde reklamerer. Dette bør bygges inn tidlig, ikke ettermonteres.
+**Merk:** sporbarhet og dokumentasjon er ikke bare et tilsynskrav. Det er også Agaas' eget bevis for forsvarlig utførelse dersom en kunde reklamerer.
+
+Sporbarhet, mandatdokumenter og løpende tilsyn er på plass i Plattformen. Gjenstående arbeid — versjonering av mandatet, binding mellom postering og versjon, endringskontroll ved trening, og fremleggbar oppdragsdokumentasjon — er behandlet i [`notat-kvalitetsstyring-regnskapsagent.md`](notat-kvalitetsstyring-regnskapsagent.md).
 
 ## 5. Øvrige regelverk
 
@@ -87,7 +89,7 @@ Plattformen må understøtte sporbarhet, ingen sletting av bokførte data, oppbe
 | 4 | Etablere kvalitetsstyringssystem, inkludert kontroll av Regnskapsagenten | Fagansvarlig | ☐ |
 | 5 | Etablere sikkerhetsstillelse og ansvarsforsikring | Økonomi | ☐ |
 | 6 | Etablere hvitvaskingsrutiner og kundetiltak i onboarding | Fagansvarlig | ☐ |
-| 7 | Bygge sporbarhet og oppdragsdokumentasjon i Plattformen | Teknologi | ☐ |
+| 7 | Versjonere agentens mandat og binde posteringer til versjon, jf. [`notat-kvalitetsstyring-regnskapsagent.md`](notat-kvalitetsstyring-regnskapsagent.md) | Teknologi | ☐ |
 | 8 | Verifisere at Altinn-roller følger Vedlegg F, uten signeringsrett | Teknologi | ☐ |
 | 9 | Avklare vederlagsmodell mot inkassoforetaket | Økonomi | ☐ |
 | 10 | Avklare med bankintegrasjonstilbyder om Agaas blir agent | Teknologi | ☐ |

@@ -17,13 +17,14 @@ Avtaleverk for Agaas AS: regnskapssystem og regnskapsføring solgt som én pakke
 | [`vedlegg-h-oppdragsspesifikasjon.md`](vedlegg-h-oppdragsspesifikasjon.md) | **Oppdragsspesifikasjon og arbeidsdeling** – lovpålagt |
 | [`vedlegg-i-kundetiltak-hvitvasking.md`](vedlegg-i-kundetiltak-hvitvasking.md) | Kundetiltak etter hvitvaskingsloven |
 | [`notat-regulatorisk-vurdering.md`](notat-regulatorisk-vurdering.md) | Regulatoriske krav og sjekkliste |
+| [`notat-kvalitetsstyring-regnskapsagent.md`](notat-kvalitetsstyring-regnskapsagent.md) | Kvalitetsstyring for Regnskapsagenten – versjonering, endringskontroll, dokumentasjon |
 | [`notat-modellvalg-automatisert-regnskap.md`](notat-modellvalg-automatisert-regnskap.md) | Dokumentasjon av modellvalget |
 
 ## Bærende grep
 
 **Én avtale, én leverandør.** Agaas leverer system og regnskapsføring samlet. Avtalen er både bruksrettsavtale og oppdragsavtale etter regnskapsførerloven.
 
-**Agaas svarer for agenten.** Regnskapsagenten er en produksjonsmetode, ikke en ansvarsfraskrivelse. Agaas er faglig ansvarlig uavhengig av om arbeidet er maskinelt eller manuelt, med eskalering, stikkprøvekontroll og full sporbarhet.
+**Agaas svarer for agenten.** Regnskapsagenten er en produksjonsmetode, ikke en ansvarsfraskrivelse. Agaas er faglig ansvarlig uavhengig av om arbeidet er maskinelt eller manuelt, med versjonert mandat, eskalering, stikkprøvekontroll og sporbarhet som kan rekonstrueres i ettertid.
 
 **Kunden signerer selv.** Agaas utarbeider rapporteringen, kunden godkjenner og signerer under egen elektronisk identitet — gjerne i plattformen. Ansvaret for innholdet overfor myndighetene ligger hos kunden; ansvaret for utførelsen ligger hos Agaas.
 

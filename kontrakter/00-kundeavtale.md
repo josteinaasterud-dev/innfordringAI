@@ -95,9 +95,13 @@ Slike tjenester leveres av tredjepart eller konsernselskap med nødvendig bevill
 
 **5.3** Saker Regnskapsagenten ikke kan avgjøre forsvarlig, håndteres av Agaas' medarbeidere som del av Regnskapsoppdraget. Slik avvikshåndtering inngår i avtalt vederlag med mindre annet fremgår av Vedlegg D.
 
-**5.4** Alt arbeid utført av Regnskapsagenten skal være sporbart: hvilket grunnlag som er benyttet, hvilken regel eller vurdering som er anvendt, tidspunkt, og hvem som eventuelt har godkjent. Kunden, Kundens revisor og myndigheter skal kunne følge sporet.
+**5.4** Regnskapsagentens beslutningsområde er fastsatt i versjonerte mandatdokumenter som inngår i Agaas' kvalitetsstyringssystem. Utvidelse av beslutningsområdet krever faglig godkjenning.
 
-**5.5** Kunden kan når som helst be om at nærmere angitte områder behandles manuelt i stedet for av Regnskapsagenten.
+**5.5** Alt arbeid utført av Regnskapsagenten skal være sporbart: hvilket grunnlag som er benyttet, hvilken regel eller vurdering som er anvendt, hvilken mandatversjon som var i kraft, tidspunkt, og hvem som eventuelt har godkjent. Kunden, Kundens revisor og myndigheter skal kunne følge sporet, også i ettertid for tidligere perioder.
+
+**5.6** Agaas skal ha rutine for godkjenning og testing før endringer i Regnskapsagenten settes i produksjon. Vesentlige endringer i hvordan Kundens regnskap behandles, varsles Kunden.
+
+**5.7** Kunden kan når som helst be om at nærmere angitte områder behandles manuelt i stedet for av Regnskapsagenten.
 
 ## 6. Kundens plikter
 
