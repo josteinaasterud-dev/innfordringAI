@@ -10,7 +10,8 @@ Agaas har allerede på plass:
 
 - **Sporbarhet** – alt logges i Agaas' database, med kvalifisert tidsstempling (QTSA) via Signicat
 - **Mandatdokumenter** – egne dokumenter som definerer området Oskar tar avgjørelser innenfor
-- **Løpende trening** av Oskar
+- **Løpende trening** av Oskar, utført av autoriserte regnskapsførere
+- **Menneskelig godkjenning** – saker Oskar er usikker på, flagges og avgjøres av autorisert regnskapsfører
 - **Løpende tilsyn** med Oskar
 
 Dette dekker substansen i det som kreves. Punktene under er oversettelsen til regulatoriske krav, og de stedene der teknisk god logging likevel pleier å komme til kort.
@@ -115,17 +116,61 @@ Løpende trening er en styrke faglig, men det er også en løpende endring i hvo
 
 **Skillet som er lett å overse:** tilsyn med *utfall* (stikkprøver på posteringer) og kontroll med *endringer* (godkjenning før ny versjon settes i drift) er to forskjellige kontroller. Begge kreves. Stikkprøver fanger opp feil i etterkant; endringskontroll hindrer at en hel måned føres feil før noen oppdager det.
 
-## 6. Løpende tilsyn – gjør det målbart
+## 6. Menneskelig kontroll og kalibrering
+
+Modellen er at Oskar flagger det han er usikker på, og at en autorisert regnskapsfører avgjør de flaggede sakene. Det er riktig konstruksjon: det profesjonelle skjønnet utøves av en autorisert person, og avgjørelsen kan tilbakeføres til hvem og hvorfor.
+
+To forhold avgjør om kontrollen holder over tid.
+
+### 6.1 Det farlige er ikke usikkerhet – det er feil selvtillit
+
+Kontrollen fanger opp det Oskar **vet** at han er usikker på. Den fanger ikke opp det Oskar tar feil om uten å være usikker. Er kalibreringen skjev, passerer nettopp de sakene stille.
+
+Konsekvensen er at kontrollen ikke kan måles ved å se på de flaggede sakene alene:
+
+| Populasjon | Hva gjennomgang av den viser |
+|---|---|
+| Flaggede saker | At eskaleringen virker når den utløses |
+| **Ikke-flaggede saker** | **Om eskaleringen utløses når den burde** |
+
+**Anbefaling:** trekk et tilfeldig utvalg av saker Oskar har behandlet med høy sikkerhet, og la en autorisert regnskapsfører vurdere dem uten å vite at de er automatisk godkjent. Andelen feil i dette utvalget er den egentlige feilraten. Den er samtidig det beste beviset overfor Finanstilsynet på at kontrollen fungerer — «vi kontrollerer alt som flagges» er en beskrivelse av rutinen, mens en målt feilrate i den ukontrollerte populasjonen er dokumentasjon av at den virker.
+
+Utvalget må ha en nedre grense som ikke faller bort etter hvert som Oskar blir bedre. Blir kontrollvolumet en andel av det flaggede, svekkes tilsynet nøyaktig når systemet håndterer mest.
+
+### 6.2 Godkjenninger som treningsdata
+
+Brukes regnskapsførerens godkjenninger til å trene Oskar, oppstår en tilbakekobling som må håndteres:
+
+| Risiko | Tiltak |
+|---|---|
+| En feil godkjenning læres og gjentas i skala | Ikke tren på godkjenninger som ikke er reelt vurdert |
+| Godkjenningstretthet ved høyt volum | Logg behandlingstid; svært raske godkjenninger merkes og holdes utenfor treningsgrunnlaget |
+| Flaggraten synker, og mennesket ser stadig færre saker | Fast minstevolum til gjennomgang, uavhengig av flaggrate |
+| Skjevhet fra én regnskapsfører forplanter seg | Periodisk validering av et utvalg godkjenninger ved en annen autorisert regnskapsfører |
+| Oskar er trygg på gammel fordeling, men møter ny | Flaggraten heves ved ny kunde, ny bransje, ny bilagstype og ved regelverksendringer |
+
+Skillet mellom «godkjent» og «godkjent etter reell vurdering» bør være eksplisitt i datamodellen. Det er den distinksjonen som avgjør om treningsgrunnlaget er godt.
+
+### 6.3 Oppdragsansvar er per oppdrag
+
+En generell godkjenning gitt under trening er ikke det samme som oppdragsansvar. Ansvaret etter regnskapsførerloven ligger hos Oppdragsansvarlig for det enkelte oppdraget.
+
+Godkjenner regnskapsfører A en sakstype under trening, og atferden anvendes senere på kunde B der regnskapsfører C er oppdragsansvarlig, er ikke C sitt ansvar oppfylt ved A sin godkjenning. Oppdragsansvarlig må ha innsyn i hva Oskar gjør på **sine** oppdrag, og mulighet til å sette strengere rammer for dem.
+
+**Anbefaling:** skill i loggen mellom generell godkjenning under trening og godkjenning i et konkret oppdrag, og gi Oppdragsansvarlig en oversikt per oppdrag over hva som er behandlet automatisk, hva som er flagget, og hva som er avgjort av hvem.
+
+### 6.4 Kontrollparametere
 
 «Under oppsikt» må kunne tallfestes for å kunne dokumenteres:
 
 | Parameter | Fastsettes til |
 |---|---|
-| Andel maskinelt behandlede bilag som stikkprøvekontrolleres | [__] % |
+| Andel ikke-flaggede saker som stikkprøvekontrolleres | [__] %, minimum [__] saker per periode |
+| Målt feilrate i ikke-flagget populasjon | [__] %, med terskel for tiltak ved [__] % |
 | Beløpsgrense for obligatorisk manuell kontroll | [_____] kroner |
-| Kategorier som alltid kontrolleres manuelt | [f.eks. nye leverandører, avvikende mva-behandling, transaksjoner med nærstående] |
+| Kategorier som alltid flagges | [nye leverandører, avvikende mva-behandling, transaksjoner med nærstående, ny kunde de første [__] periodene] |
 | Kontrollfrekvens | [løpende / ukentlig / ved periodeavslutning] |
-| Hvem utfører kontrollen | [rolle] |
+| Hvem godkjenner flaggede saker | Autorisert regnskapsfører |
 | Terskel for eskalering til Oppdragsansvarlig | [kriterium] |
 | Oppfølging ved funn | [rutine] |
 
@@ -164,6 +209,11 @@ Logges alt samlet, blir sletting vanskelig — tre regelverk med ulike eiere, fo
 | 8 | Rapportuttrekk «oppdragsdokumentasjon per kunde per periode» finnes | ☐ |
 | 9 | Data er merket med oppbevaringsregime | ☐ |
 | 10 | Oppdragsansvarliges befatning logges særskilt | ☐ |
+| 11 | Stikkprøvekontroll av ikke-flaggede saker er etablert, med minstevolum | ☐ |
+| 12 | Feilrate i ikke-flagget populasjon måles og rapporteres | ☐ |
+| 13 | Behandlingstid per godkjenning logges; rask godkjenning holdes utenfor treningsgrunnlaget | ☐ |
+| 14 | Flaggraten heves ved ny kunde, ny bransje og regelverksendringer | ☐ |
+| 15 | Oppdragsansvarlig har oversikt per oppdrag over automatisk behandlede og flaggede saker | ☐ |
 
 ---
 

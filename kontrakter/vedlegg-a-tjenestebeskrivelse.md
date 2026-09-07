@@ -20,8 +20,8 @@ Regnskapsagenten er den automatiserte delen av produksjonen. Den utfører løpen
 | Egenskap | Beskrivelse |
 |---|---|
 | **Faglig ansvar** | Agaas, uavhengig av om arbeidet er utført maskinelt eller av medarbeider |
-| **Eskalering** | Saker agenten ikke kan avgjøre forsvarlig, går til Agaas' medarbeidere og eventuelt Oppdragsansvarlig |
-| **Kvalitetskontroll** | Stikkprøver og terskelbaserte kontroller, jf. Vedlegg H.5 |
+| **Eskalering** | Saker agenten ikke kan avgjøre forsvarlig, flagges og avgjøres av autorisert regnskapsfører |
+| **Kvalitetskontroll** | Stikkprøver av ikke-flaggede saker og terskelbaserte kontroller, jf. Vedlegg H.5 |
 | **Sporbarhet** | Grunnlag, anvendt regel, tidspunkt og godkjenner logges per postering |
 | **Kundens innsyn** | Kunden kan se hvordan enhver postering er fremkommet |
 | **Overstyring** | Kunden kan kreve manuell behandling av angitte områder |

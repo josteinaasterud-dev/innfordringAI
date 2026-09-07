@@ -103,7 +103,9 @@ Regnskapsagenten utfører oppgaver markert **A** for Agaas i punkt H.2. Følgend
 |---|---|
 | Faglig ansvar | Agaas, uavhengig av om arbeidet er maskinelt eller manuelt |
 | Eskalering | Saker Regnskapsagenten ikke kan avgjøre forsvarlig, går til Agaas' medarbeider |
-| Stikkprøvekontroll | Agaas kontrollerer minst [X] % av maskinelt behandlede bilag, alle poster over [beløp], og alltid [nye leverandører / avvikende mva-behandling / transaksjoner med nærstående] |
+| Stikkprøvekontroll | Agaas kontrollerer minst [X] % av ikke-flaggede saker, minimum [Y] saker per periode, alle poster over [beløp], og alltid [nye leverandører / avvikende mva-behandling / transaksjoner med nærstående] |
+| Måling | Feilraten i den ikke-flaggede populasjonen måles løpende, med terskel for tiltak |
+| Ny kunde | Flaggraten heves de første [Z] periodene av kundeforholdet |
 | Sporbarhet | Grunnlag, anvendt regel, gjeldende mandatversjon, tidspunkt og eventuell godkjenner logges per postering |
 | Tidsstempling | Posteringer, mandatversjoner, kontrollresultater og periodeavslutninger sikres med kvalifisert tidsstempel etter eIDAS |
 | Mandat | Regnskapsagentens beslutningsområde er fastsatt i versjonerte mandatdokumenter. Utvidelse krever faglig godkjenning av Oppdragsansvarlig |

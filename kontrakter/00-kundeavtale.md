@@ -58,7 +58,7 @@
 
 **3.3** Agaas utfører Regnskapsoppdraget dels ved Regnskapsagenten og dels ved medarbeidere. **Agaas er ansvarlig for arbeidet uavhengig av om det er utført maskinelt eller av en medarbeider.** Bruk av automatisering endrer ikke Agaas' faglige ansvar etter Avtalen eller etter regnskapsførerloven.
 
-**3.4** Agaas skal ha et kvalitetsstyringssystem som sikrer at Regnskapsoppdraget utføres forsvarlig, herunder kontroll av Regnskapsagentens arbeid, håndtering av avvik og dokumentasjon av oppdragsutførelsen.
+**3.4** Agaas skal ha et kvalitetsstyringssystem som sikrer at Regnskapsoppdraget utføres forsvarlig, herunder kontroll av Regnskapsagentens arbeid, håndtering av avvik og dokumentasjon av oppdragsutførelsen. Faglige avgjørelser i Regnskapsoppdraget treffes av autorisert regnskapsfører.
 
 **3.5 Agaas utfører ikke:**
 - a) inkassovirksomhet, herunder inndrivelse av forfalte krav for andre eller oppkjøp av slike krav,
@@ -93,17 +93,19 @@ Slike tjenester leveres av tredjepart eller konsernselskap med nødvendig bevill
 
 **5.2** Regnskapsagentens arbeid er underlagt Agaas' kvalitetsstyring. Agaas skal ha rutiner for stikkprøvekontroll, håndtering av saker Regnskapsagenten ikke kan avgjøre, og eskalering til Oppdragsansvarlig.
 
-**5.3** Saker Regnskapsagenten ikke kan avgjøre forsvarlig, håndteres av Agaas' medarbeidere som del av Regnskapsoppdraget. Slik avvikshåndtering inngår i avtalt vederlag med mindre annet fremgår av Vedlegg D.
+**5.3** Saker Regnskapsagenten ikke kan avgjøre forsvarlig, flagges og avgjøres av **autorisert regnskapsfører** hos Agaas. Slik avvikshåndtering inngår i avtalt vederlag med mindre annet fremgår av Vedlegg D.
 
-**5.4** Regnskapsagentens beslutningsområde er fastsatt i versjonerte mandatdokumenter som inngår i Agaas' kvalitetsstyringssystem. Utvidelse av beslutningsområdet krever faglig godkjenning.
+**5.4** Agaas skal i tillegg kontrollere et utvalg av saker Regnskapsagenten har behandlet uten flagging, slik at kvaliteten på den automatiske behandlingen måles og ikke bare forutsettes. Omfanget fremgår av Vedlegg H.5.
 
-**5.5** Alt arbeid utført av Regnskapsagenten skal være sporbart: hvilket grunnlag som er benyttet, hvilken regel eller vurdering som er anvendt, hvilken mandatversjon som var i kraft, tidspunkt, og hvem som eventuelt har godkjent. Kunden, Kundens revisor og myndigheter skal kunne følge sporet, også i ettertid for tidligere perioder.
+**5.5** Regnskapsagentens beslutningsområde er fastsatt i versjonerte mandatdokumenter som inngår i Agaas' kvalitetsstyringssystem. Utvidelse av beslutningsområdet krever faglig godkjenning.
 
-**5.6** Sporet sikres med **kvalifisert tidsstempling** etter eIDAS, levert av kvalifisert tillitstjenesteyter, jf. Vedlegg C. Tidsstemplingen omfatter posteringer, mandatversjoner, kontrollresultater og periodeavslutninger, og gir presumsjon for tidspunktets riktighet og materialets integritet. Kunden og Kundens revisor kan verifisere stemplene uavhengig av Agaas.
+**5.6** Alt arbeid utført av Regnskapsagenten skal være sporbart: hvilket grunnlag som er benyttet, hvilken regel eller vurdering som er anvendt, hvilken mandatversjon som var i kraft, tidspunkt, og hvem som eventuelt har godkjent. Kunden, Kundens revisor og myndigheter skal kunne følge sporet, også i ettertid for tidligere perioder.
 
-**5.7** Agaas skal ha rutine for godkjenning og testing før endringer i Regnskapsagenten settes i produksjon. Vesentlige endringer i hvordan Kundens regnskap behandles, varsles Kunden.
+**5.7** Sporet sikres med **kvalifisert tidsstempling** etter eIDAS, levert av kvalifisert tillitstjenesteyter, jf. Vedlegg C. Tidsstemplingen omfatter posteringer, mandatversjoner, kontrollresultater og periodeavslutninger, og gir presumsjon for tidspunktets riktighet og materialets integritet. Kunden og Kundens revisor kan verifisere stemplene uavhengig av Agaas.
 
-**5.8** Kunden kan når som helst be om at nærmere angitte områder behandles manuelt i stedet for av Regnskapsagenten.
+**5.8** Agaas skal ha rutine for godkjenning og testing før endringer i Regnskapsagenten settes i produksjon. Vesentlige endringer i hvordan Kundens regnskap behandles, varsles Kunden.
+
+**5.9** Kunden kan når som helst be om at nærmere angitte områder behandles manuelt i stedet for av Regnskapsagenten.
 
 ## 6. Kundens plikter
 
