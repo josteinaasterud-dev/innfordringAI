@@ -10,7 +10,7 @@ Avtaleverk for Agaas AS: regnskapssystem og regnskapsføring solgt som én pakke
 | [`vedlegg-a-tjenestebeskrivelse.md`](vedlegg-a-tjenestebeskrivelse.md) | Hva som leveres, og hvordan Regnskapsagenten inngår |
 | [`vedlegg-b-databehandleravtale.md`](vedlegg-b-databehandleravtale.md) | Databehandleravtale etter GDPR artikkel 28 |
 | [`vedlegg-c-underdatabehandlere.md`](vedlegg-c-underdatabehandlere.md) | Underdatabehandlere og selvstendige mottakere |
-| [`vedlegg-d-priser.md`](vedlegg-d-priser.md) | Pakkepriser, forbruk og timearbeid |
+| [`vedlegg-d-pakker-og-betaling.md`](vedlegg-d-pakker-og-betaling.md) | Pakkemekanikk, bestilling og betalingsbetingelser |
 | [`vedlegg-e-sla.md`](vedlegg-e-sla.md) | Servicenivå for plattformen |
 | [`vedlegg-f-fullmakter-og-signering.md`](vedlegg-f-fullmakter-og-signering.md) | Signeringsmodeller og Altinn-roller |
 | [`vedlegg-g-tilleggsavtaler.md`](vedlegg-g-tilleggsavtaler.md) | Inkasso, revisor, bank, aksesspunkt, nye tredjeparter |
@@ -28,7 +28,7 @@ Avtaleverk for Agaas AS: regnskapssystem og regnskapsføring solgt som én pakke
 
 **Kunden signerer selv.** Agaas utarbeider rapporteringen, kunden godkjenner og signerer under egen elektronisk identitet — gjerne i plattformen. Ansvaret for innholdet overfor myndighetene ligger hos kunden; ansvaret for utførelsen ligger hos Agaas.
 
-**Arbeidsdelingen er skrevet ned.** Vedlegg H fordeler hver oppgave mellom kunde og Agaas. Det som ikke er lagt til Agaas, påhviler kunden.
+**Pakken definerer omfanget, vedlegg H definerer arbeidsdelingen.** Kunden velger pakke ved onboarding; valget dokumenteres i en tidsstemplet Pakkebekreftelse som er del av avtalen. Priser står ikke i kontrakten. Det som ikke er lagt til Agaas, påhviler kunden.
 
 **All drift i EØS.** Plattformen driftes hos Hetzner Online GmbH i Tyskland. Datasenterregion er låst til EØS, og oppbevaringssted må avklares mot bokføringsloven.
 

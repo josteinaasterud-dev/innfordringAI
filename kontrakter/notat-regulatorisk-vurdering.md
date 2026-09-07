@@ -36,7 +36,7 @@ Kravene må verifiseres mot Finanstilsynets gjeldende rundskriv og søknadsskjem
 | Tilstrekkelige ressurser og kontinuitet | Bør styrkes med stedfortreder, jf. eget notat punkt 6.3 |
 | Egnethetskrav til ledelse og eiere | Må dokumenteres |
 | Kvalitetsstyringssystem og rutiner for oppdragsutførelse | Under etablering, jf. eget notat |
-| Skriftlig oppdragsavtale med hver kunde | Dekket av avtaleverket, jf. Vedlegg H |
+| Skriftlig oppdragsavtale med hver kunde, med angitt omfang | Dekket av avtaleverket sammen med Pakkebekreftelsen, jf. Vedlegg D og H |
 | Rutiner etter hvitvaskingsloven, med kundetiltak | Må etableres, jf. Vedlegg I |
 | Sikkerhetsstillelse og ansvarsforsikring | Må etableres |
 | Dokumentasjon av oppdragsutførelsen | Logging på plass; må kunne fremlegges som rapport, jf. eget notat |
@@ -112,6 +112,7 @@ Dette er et konkret og etterprøvbart punkt som en kontroll vil se på, og det b
 | 12 | Teknisk verifikasjon mot bokføringsforskriften | Teknologi | ☐ |
 | 13 | Avklare oppbevaringssted i utlandet mot bokføringsloven, jf. punkt 5.4 | Ledelsen/advokat | ☐ |
 | 14 | Signere databehandleravtale med Hetzner og låse datasenterregion til Tyskland | Teknologi | ☐ |
+| 15 | Sikre at onboardingflyten genererer Pakkebekreftelse som fastsetter leveranseomfanget | Produkt | ☐ |
 
 **Merk rekkefølgen:** punkt 2 tar tid. Søknadsprosessen bør startes tidlig, og punktene 3 til 6 er i praksis forutsetninger for at søknaden skal kunne innvilges.
 

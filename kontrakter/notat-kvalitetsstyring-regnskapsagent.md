@@ -47,6 +47,7 @@ Tidsstemplet beviser det som er stemplet, og ingenting annet. Stemples postering
 | Kontrollresultater og stikkprøver | Beviser at kontrollen faktisk ble utført da den sier |
 | Eskaleringer og faglige avgjørelser | Beviser Oppdragsansvarliges befatning |
 | Periodeavslutning og kundens godkjenning | Knytter ansvar til tidspunkt |
+| **Pakkebekreftelser ved bestilling og endring** | Fastslår oppdragets omfang på et gitt tidspunkt, jf. Vedlegg D.3 |
 
 ### 2.2 Fullstendighet – kan man bevise at ingenting mangler?
 
@@ -256,6 +257,9 @@ Logges alt samlet, blir sletting vanskelig — tre regelverk med ulike eiere, fo
 | 17 | Kontinuitetsplan dersom oppdragsansvarlig faller bort | ☐ |
 | 18 | Kapasitetsberegning gjort, og terskel for ansettelse nummer to fastsatt | ☐ |
 | 19 | Ordning for ekstern kvalitetskontroll etablert | ☐ |
+| 20 | Onboarding genererer Pakkebekreftelse med fullt leveranseomfang, ikke bare pris | ☐ |
+| 21 | Pakkebekreftelser tidsstemples og historikk bevares ved pakkeendring | ☐ |
+| 22 | Omfanget for en gitt periode kan gjenfinnes i ettertid | ☐ |
 
 ---
 

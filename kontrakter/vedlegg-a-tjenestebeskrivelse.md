@@ -7,7 +7,7 @@ Agaas leverer regnskapssystem og regnskapsføring som **én samlet tjeneste**. K
 | Lag | Innhold | Leverandør | Avtalegrunnlag |
 |---|---|---|---|
 | 1. Plattform | Regnskapssystem, moduler, integrasjoner | Agaas AS | Denne Avtalen |
-| 2. Regnskapsføring | Løpende bokføring, avstemming, rapportering, årsoppgjør | Agaas AS, som autorisert regnskapsforetak | Denne Avtalen, jf. Vedlegg H |
+| 2. Regnskapsføring | Løpende bokføring, avstemming, rapportering, årsoppgjør – omfang etter valgt pakke | Agaas AS, som autorisert regnskapsforetak | Pakkebekreftelsen og Vedlegg H |
 | 3. Rådgivning | Bedriftsrådgivning, prosess, rapportering, opplæring | Agaas AS | Denne Avtalen |
 | 4. Inkasso | Inndrivelse av forfalte krav | Inkassoforetak med bevilling | Egen oppdragsavtale, Vedlegg G |
 | 5. Revisjon | Revisjon og attestasjon | Kundens uavhengige revisor | Kundens egen avtale |
@@ -39,7 +39,7 @@ Salgsordre, fakturautstedelse, distribusjon på EHF, e-post eller print, purreru
 ### A.3.3 Bank og betaling
 Kontoinformasjon og transaksjoner via konsesjonspliktig tilbyder, automatisk bankavstemming, betalingsforslag. Betaling godkjennes og frigis av Kunden i banken.
 
-### A.3.4 Lønn og personal *(dersom valgt)*
+### A.3.4 Lønn og personal *(dersom pakken omfatter lønn)*
 Lønnskjøring, feriepenger, reiseregning, fraværsoppfølging og klargjøring av a-melding.
 
 ### A.3.5 Rapportering og innsending

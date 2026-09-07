@@ -5,8 +5,8 @@
 | | |
 |---|---|
 | **Leverandør** | Agaas AS, org.nr. [_______], [adresse] ("**Agaas**") |
-| **Autorisasjon** | Autorisert regnskapsforetak, registrert i Finanstilsynets register [nr./dato] |
-| **Oppdragsansvarlig regnskapsfører** | [navn], personlig autorisasjon [nr.] |
+| **Autorisasjon** | Autorisert regnskapsforetak under tilsyn av Finanstilsynet. Autorisasjonsnummer meddeles Kunden skriftlig og kan kontrolleres i Finanstilsynets register |
+| **Oppdragsansvarlig regnskapsfører** | Meddeles Kunden skriftlig ved oppstart |
 | **Kunde** | [Foretaksnavn], org.nr. [_______], [adresse] ("**Kunden**") |
 | **Avtalens ikrafttredelse** | [dato] |
 | **Dokumentversjon** | Utkast 2.0 – [dato] |
@@ -26,16 +26,19 @@
 | A | Tjeneste- og modulbeskrivelse |
 | B | Databehandleravtale |
 | C | Underdatabehandlere og tredjepartstjenester |
-| D | Priser og betalingsbetingelser |
+| D | Pakker, bestilling og betalingsbetingelser |
 | E | Servicenivå (SLA) |
 | F | Signeringsrutine og fullmakter |
 | G | Tilknyttede tjenester fra tredjepart og konsern |
 | H | **Oppdragsspesifikasjon og arbeidsdeling** |
 | I | Kundetiltak etter hvitvaskingsloven |
+| **Pakkebekreftelsen** | Kundens valgte pakke, generert ved onboarding, jf. Vedlegg D.3 |
 
-**1.4** Ved motstrid gjelder følgende rangordning: (i) ufravikelige krav i regnskapsførerloven med forskrift og god regnskapsføringsskikk, (ii) Vedlegg B, (iii) Vedlegg H, (iv) hoveddokumentet, (v) øvrige vedlegg alfabetisk.
+**1.4** Kunden velger pakke ved onboarding. Pakken fastsetter både leveranseomfanget i Regnskapsoppdraget og vederlaget, og dokumenteres i **Pakkebekreftelsen**, jf. Vedlegg D. Pakkebekreftelsen er en del av Avtalen.
 
-**1.5** Avtalen erstatter tidligere avtaler mellom partene om samme leveranse.
+**1.5** Ved motstrid gjelder følgende rangordning: (i) ufravikelige krav i regnskapsførerloven med forskrift og god regnskapsføringsskikk, (ii) Vedlegg B, (iii) Pakkebekreftelsen og Vedlegg H, (iv) hoveddokumentet, (v) øvrige vedlegg alfabetisk.
+
+**1.6** Avtalen erstatter tidligere avtaler mellom partene om samme leveranse.
 
 ## 2. Definisjoner
 
@@ -43,7 +46,8 @@
 |---|---|
 | **Plattformen** | Agaas' skybaserte regnskapssystem med moduler, API-er og integrasjoner, jf. Vedlegg A. |
 | **Regnskapsagenten** | Den automatiserte funksjonaliteten i Plattformen som utfører løpende bokføringsoppgaver under Agaas' faglige ansvar. |
-| **Regnskapsoppdraget** | De deler av Kundens pliktige regnskapsrapportering som Agaas påtar seg å utføre, slik det er spesifisert i Vedlegg H. |
+| **Regnskapsoppdraget** | De deler av Kundens pliktige regnskapsrapportering som Agaas påtar seg å utføre, slik det følger av Pakkebekreftelsen sammenholdt med Vedlegg H. |
+| **Pakkebekreftelsen** | Dokumentet som genereres når Kunden velger pakke, og som fastsetter leveranseomfang, frister og vederlag, jf. Vedlegg D.3. |
 | **Pliktig regnskapsrapportering** | Bokføring, årsregnskap, skattemelding, merverdiavgiftsmelding, a-melding og annen lovpålagt rapportering Kunden er pliktig til å avgi. |
 | **Oppdragsansvarlig** | Den navngitte regnskapsføreren med personlig autorisasjon som er ansvarlig for Regnskapsoppdraget. |
 | **Kundedata** | Alle data Kunden legger inn i, genererer i eller laster opp til Plattformen. |
@@ -54,7 +58,7 @@
 
 **3.1** Agaas er **autorisert regnskapsforetak** og står under tilsyn av Finanstilsynet. Regnskapsoppdraget utføres i samsvar med regnskapsførerloven med forskrift og god regnskapsføringsskikk.
 
-**3.2** Agaas har utpekt Oppdragsansvarlig for Regnskapsoppdraget. Oppdragsansvarlig kan skiftes ut; Kunden varsles skriftlig. Agaas skal ha ordning som sikrer at Regnskapsoppdraget har oppdragsansvarlig også ved fravær eller bortfall.
+**3.2** Agaas utpeker Oppdragsansvarlig for Regnskapsoppdraget og meddeler Kunden skriftlig hvem dette er. Oppdragsansvarlig kan skiftes ut; Kunden varsles skriftlig. Agaas skal ha ordning som sikrer at Regnskapsoppdraget har oppdragsansvarlig også ved fravær eller bortfall.
 
 **3.3** Agaas utfører Regnskapsoppdraget dels ved Regnskapsagenten og dels ved medarbeidere. **Agaas er ansvarlig for arbeidet uavhengig av om det er utført maskinelt eller av en medarbeider.** Bruk av automatisering endrer ikke Agaas' faglige ansvar etter Avtalen eller etter regnskapsførerloven.
 
@@ -72,9 +76,11 @@ Slike tjenester leveres av tredjepart eller konsernselskap med nødvendig bevill
 
 ## 4. Regnskapsoppdraget
 
-**4.1** Regnskapsoppdragets omfang, leveranser, frister og arbeidsdelingen mellom partene fremgår av **Vedlegg H**. Oppgaver som ikke uttrykkelig er lagt til Agaas i Vedlegg H, påhviler Kunden.
+**4.1** Regnskapsoppdragets **omfang** følger av Kundens valgte pakke, slik den er dokumentert i Pakkebekreftelsen. **Arbeidsdelingen** for de oppgavene som inngår, følger av Vedlegg H. Oppgaver som ikke uttrykkelig er lagt til Agaas i Pakkebekreftelsen sammenholdt med Vedlegg H, påhviler Kunden.
 
-**4.2** Agaas skal utføre Regnskapsoppdraget med den faglige kvalitet, aktsomhet og fremdrift som følger av god regnskapsføringsskikk, og innenfor de frister som følger av Vedlegg H.
+**4.1.1** Agaas skal ved onboarding gjøre klart for Kunden hvilke oppgaver Agaas påtar seg og hvilke Kunden beholder, før pakken bestilles.
+
+**4.2** Agaas skal utføre Regnskapsoppdraget med den faglige kvalitet, aktsomhet og fremdrift som følger av god regnskapsføringsskikk, og innenfor de frister som følger av Pakkebekreftelsen og Vedlegg H.
 
 **4.3** Agaas skal underrette Kunden skriftlig dersom Agaas oppdager:
 - vesentlige feil eller mangler i Kundens Regnskapsmateriale,
@@ -85,7 +91,7 @@ Slike tjenester leveres av tredjepart eller konsernselskap med nødvendig bevill
 
 **4.5** Kunden kan ikke instruere Agaas til å utføre Regnskapsoppdraget i strid med lov eller god regnskapsføringsskikk. Fastholder Kunden en slik instruks, kan Agaas frasi seg Regnskapsoppdraget, jf. punkt 21.4.
 
-**4.6** Endringer i Regnskapsoppdragets omfang avtales skriftlig ved oppdatering av Vedlegg H.
+**4.6** Endringer i Regnskapsoppdragets omfang skjer ved endring av pakke, jf. Vedlegg D.4. Ny Pakkebekreftelse genereres, og tidligere bekreftelser bevares slik at omfanget for en gitt periode kan fastslås i ettertid.
 
 ## 5. Regnskapsagenten
 
@@ -163,15 +169,15 @@ Slike tjenester leveres av tredjepart eller konsernselskap med nødvendig bevill
 
 ## 11. Priser og betaling
 
-**11.1** Priser fremgår av Vedlegg D. Alle priser er eksklusive merverdiavgift.
+**11.1** Vederlaget følger av Kundens valgte pakke, jf. Pakkebekreftelsen og Vedlegg D. Alle priser er eksklusive merverdiavgift.
 
-**11.2** Fast vederlag faktureres forskuddsvis. Variable elementer og arbeid ut over Regnskapsoppdraget faktureres etterskuddsvis. Betalingsfrist er 14 dager.
+**11.2** Fast vederlag faktureres forskuddsvis. Variable elementer og arbeid ut over Regnskapsoppdraget faktureres etterskuddsvis. Betalingsbetingelser følger av Vedlegg D.8.
 
 **11.3** Ved forsinket betaling påløper forsinkelsesrente etter forsinkelsesrenteloven.
 
 **11.4** Ved vesentlig betalingsmislighold kan Agaas etter skriftlig varsel med 14 dagers frist stanse videre arbeid under Regnskapsoppdraget. Agaas skal likevel varsle Kunden om nært forestående lovpålagte frister, og skal ikke holde tilbake Regnskapsmateriale, jf. punkt 15.5.
 
-**11.5** Agaas kan justere prisene én gang per kalenderår med minst 60 dagers skriftlig varsel. Justering ut over konsumprisindeksen gir Kunden rett til å si opp Avtalen med virkning fra ikrafttredelsen.
+**11.5** Agaas kan justere prisene én gang per kalenderår med minst 60 dagers skriftlig varsel. Justering ut over konsumprisindeksen, og endring som reduserer innholdet i valgt pakke, gir Kunden rett til å si opp Avtalen med virkning fra ikrafttredelsen, jf. Vedlegg D.5.
 
 ## 12. Immaterielle rettigheter
 
@@ -280,7 +286,7 @@ Agaas skal begrunne skriftlig og bistå med overføring til ny regnskapsfører, 
 
 ## 22. Endringer i Avtalen
 
-**22.1** Agaas kan endre Avtalen med minst 60 dagers skriftlig varsel. Endringer til Kundens vesentlige ugunst gir Kunden oppsigelsesrett med virkning fra ikrafttredelsen. Endringer i Vedlegg H krever skriftlig enighet.
+**22.1** Agaas kan endre Avtalen med minst 60 dagers skriftlig varsel. Endringer til Kundens vesentlige ugunst gir Kunden oppsigelsesrett med virkning fra ikrafttredelsen. Endring i Regnskapsoppdragets omfang skjer ved endring av pakke, jf. Vedlegg D.4; endringer i arbeidsdelingen i Vedlegg H krever skriftlig enighet.
 
 ## 23. Overdragelse, lovvalg og tvister
 

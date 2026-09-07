@@ -1,20 +1,24 @@
 # Vedlegg H – Oppdragsspesifikasjon og arbeidsdeling
 
-Vedlegget spesifiserer Regnskapsoppdraget og fordeler oppgavene mellom Kunden og Agaas. **Oppgaver som ikke uttrykkelig er lagt til Agaas her, påhviler Kunden.**
+Vedlegget fastsetter **arbeidsdelingen** mellom Kunden og Agaas for de oppgavene som inngår i Regnskapsoppdraget.
 
-Endringer i vedlegget krever skriftlig enighet, jf. hovedavtalen punkt 22.1.
+**Hvilke oppgaver som inngår**, følger av pakken Kunden har valgt, slik den er dokumentert i Pakkebekreftelsen, jf. Vedlegg D. Vedlegg H sier hvem som gjør hva; pakken sier hva som er bestilt.
+
+**Oppgaver som ikke uttrykkelig er lagt til Agaas i Pakkebekreftelsen sammenholdt med dette vedlegget, påhviler Kunden.**
+
+Endringer i arbeidsdelingen krever skriftlig enighet. Endringer i omfanget skjer ved endring av pakke, jf. Vedlegg D.4.
 
 ## H.1 Oppdragets rammer
 
 | | |
 |---|---|
-| **Oppdragsansvarlig regnskapsfører** | [navn], autorisasjon [nr.] |
 | **Kundens kontaktperson** | [navn], [rolle] |
 | **Kundens signeringsansvarlige** | [navn] – stedfortreder [navn] |
 | **Regnskapsår** | [dato–dato] |
 | **Mva-termin** | ☐ Tomånedlig ☐ Årlig ☐ Ikke mva-pliktig |
 | **Revisjonsplikt** | ☐ Ja, revisor: [_______] ☐ Nei |
-| **Valgt pakke** | ☐ Løpende regnskap ☐ Løpende + årsoppgjør ☐ Full pakke inkl. lønn |
+| **Valgt pakke** | Følger av Pakkebekreftelsen |
+| **Oppdragsansvarlig** | Meddelt Kunden skriftlig ved oppstart |
 
 ## H.2 Oppgavefordeling
 
@@ -50,7 +54,7 @@ Endringer i vedlegget krever skriftlig enighet, jf. hovedavtalen punkt 22.1.
 | Aksjonærregisteroppgave | K | **A** | |
 | Innsending til Regnskapsregisteret | **A** | K | Agaas klargjør |
 
-### Lønn *(dersom valgt)*
+### Lønn *(dersom pakken omfatter lønn)*
 
 | Oppgave | Kunden | Agaas | Merknad |
 |---|---|---|---|
@@ -72,6 +76,8 @@ Endringer i vedlegget krever skriftlig enighet, jf. hovedavtalen punkt 22.1.
 
 ## H.3 Kundens leveranser og frister
 
+Frister følger av valgt pakke. Der pakken ikke angir annet, gjelder:
+
 | Leveranse | Frist |
 |---|---|
 | Bilag og dokumentasjon for perioden | Løpende, senest [X] dager etter periodeslutt |
@@ -84,6 +90,8 @@ Endringer i vedlegget krever skriftlig enighet, jf. hovedavtalen punkt 22.1.
 Leveres materiale for sent, forskyves Agaas' frister tilsvarende, og Agaas er ikke ansvarlig for konsekvenser av forsinket rapportering, jf. hovedavtalen punkt 6.5.
 
 ## H.4 Agaas' leveranser
+
+Omfang og frekvens følger av valgt pakke. Der pakken ikke angir annet, gjelder:
 
 | Leveranse | Frekvens |
 |---|---|
@@ -116,7 +124,7 @@ Regnskapsagenten utfører oppgaver markert **A** for Agaas i punkt H.2. Følgend
 
 ## H.6 Arbeid utenfor oppdraget
 
-Følgende inngår ikke i fast vederlag og faktureres etter medgått tid, jf. Vedlegg D:
+Følgende inngår ikke i noen pakke og faktureres etter medgått tid, jf. Vedlegg D.6, med mindre valgt pakke uttrykkelig angir annet:
 
 - opprydding i historiske regnskapsår eller inngående balanse
 - bistand ved bokettersyn og kontroll fra myndighetene
@@ -125,7 +133,7 @@ Følgende inngår ikke i fast vederlag og faktureres etter medgått tid, jf. Ved
 - bistand ved fusjon, fisjon, omdanning eller virksomhetsoverdragelse
 - gjenoppretting etter feil i Kundens grunnlagsdata
 
-Agaas skal varsle Kunden før slikt arbeid påbegynnes.
+Agaas skal opplyse om timepris og varsle Kunden før slikt arbeid påbegynnes.
 
 ## H.7 Endringslogg
 
