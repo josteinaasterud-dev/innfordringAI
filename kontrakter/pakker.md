@@ -219,3 +219,4 @@ Konsolidering og konsernregnskap, budsjettprosess, bistand ved bokettersyn, tran
 | Lagring | Faktureres i trinn ved overskridelse. Opplasting blokkeres aldri av lagringsgrense |
 | Arkiv etter opphør | Valgfri tjeneste. Kostnadsfritt uttrekk av alt materiale er uansett en rettighet |
 | Oppstart midt i året | Opprydding i inngående balanse og tidligere perioder inngår ikke; prises særskilt etter gjennomgang |
+| Overtakelse fra tidligere system | Standard overtakelse omfatter balanse, åpne poster, kontoplan og registre — ikke historiske bilag. Kunden må sikre historisk materiale **før** tidligere abonnement sies opp, jf. Vedlegg H.1b |

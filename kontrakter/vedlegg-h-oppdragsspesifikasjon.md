@@ -20,6 +20,44 @@ Endringer i arbeidsdelingen krever skriftlig enighet. Endringer i omfanget skjer
 | **Valgt pakke** | Følger av Pakkebekreftelsen |
 | **Oppdragsansvarlig** | Meddelt Kunden skriftlig ved oppstart |
 
+## H.1b Overtakelse fra tidligere system
+
+Gjennomføres før Regnskapsoppdraget starter, og dokumenteres i onboardingen.
+
+### Hva standard overtakelse omfatter
+
+| Overføres | Overføres ikke |
+|---|---|
+| Inngående balanse | Historisk bilagsdokumentasjon |
+| Åpne poster kunder og leverandører | Tidligere års hovedbok i detaljert form |
+| Kontoplan | Vedlegg og dokumenter i gammelt system |
+| Kunde- og leverandørregister | Historiske lønnsdata ut over det som kreves |
+| Anleggsregister med saldoverdier | Historiske rapporter og analyser |
+
+Import av historisk bilagsdokumentasjon kan bestilles som særskilt arbeid, jf. H.6.
+
+### Advarsel før oppsigelse av tidligere system
+
+**Kunden har oppbevaringsplikt for bilag fra perioder før overtakelsen.** Ligger disse bare i det gamle systemet, går tilgangen normalt tapt når abonnementet sies opp — også når materialet formelt tilhører Kunden.
+
+Agaas skal, før overtakelsen gjennomføres, skriftlig opplyse Kunden om:
+
+1. hva som overføres og hva som ikke overføres,
+2. at bilag i det gamle systemet må sikres før abonnementet sies opp,
+3. hvor lang oppbevaringsplikten er for det aktuelle materialet,
+4. at Agaas kan utføre uttrekk og import som særskilt arbeid.
+
+### Kundens bekreftelse ved oppstart
+
+| Punkt | Bekreftes |
+|---|---|
+| Historisk bilagsdokumentasjon er tatt ut av tidligere system og sikret | ☐ |
+| Alternativt: uttrekk og import er bestilt fra Agaas | ☐ |
+| Alternativt: Kunden beholder abonnementet på tidligere system inntil materialet er sikret | ☐ |
+| Kunden er kjent med at oppsigelse av tidligere system kan gi tap av oppbevaringspliktig materiale | ☐ |
+
+Bekreftelsen skal foreligge før Regnskapsoppdraget settes i drift. Uten bekreftelse skal Agaas ikke anbefale eller bistå med oppsigelse av Kundens tidligere systemavtale.
+
 ## H.2 Oppgavefordeling
 
 **A** = utfører · **K** = kontrollerer og godkjenner · **–** = ikke involvert
@@ -127,6 +165,7 @@ Regnskapsagenten utfører oppgaver markert **A** for Agaas i punkt H.2. Følgend
 Følgende inngår ikke i noen pakke og faktureres etter medgått tid, jf. Vedlegg D.6, med mindre valgt pakke uttrykkelig angir annet:
 
 - opprydding i historiske regnskapsår eller inngående balanse
+- uttrekk og import av historisk bilagsdokumentasjon fra tidligere system, jf. H.1b
 - bistand ved bokettersyn og kontroll fra myndighetene
 - utarbeidelse av dokumentasjon Kunden selv skulle levert
 - skatterettslige eller selskapsrettslige utredninger

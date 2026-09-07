@@ -173,6 +173,9 @@ Marginen over er regnet ved **taket** i hvert trinn, altså i verste fall. Typis
 | Import av standarddata | engang | 0 |
 | Omfattende migrering | time | 1 290 |
 | Opprydding før overtakelse | time | 1 290 |
+| Uttrekk og import av historiske bilag fra tidligere system | time | 1 290 |
+
+**Standard flytting omfatter ikke historiske bilag.** Kunden må sikre disse før tidligere systemabonnement sies opp, jf. Vedlegg H.1b. Uttrekk og import kan bestilles som særskilt arbeid.
 
 ## 11. Oskar
 

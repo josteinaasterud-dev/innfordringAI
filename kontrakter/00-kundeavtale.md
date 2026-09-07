@@ -223,6 +223,20 @@ Slike tjenester leveres av tredjepart eller konsernselskap med nødvendig bevill
 
 **15.6** Kundedata slettes eller anonymiseres senest seks måneder etter opphør, med mindre lovpålagt oppbevaringsplikt tilsier annet. Agaas varsler skriftlig før sletting.
 
+### Regnskapsmateriale fra tidligere system
+
+**15.7** Kunden har oppbevaringsplikt etter bokføringsloven også for perioder før Regnskapsoppdraget startet. Ansvaret for dette materialet ligger hos Kunden.
+
+**15.8** Standard overtakelse omfatter inngående balanse, åpne poster, kontoplan samt kunde- og leverandørregister. **Den omfatter ikke fullstendig historisk bilagsdokumentasjon**, med mindre dette er uttrykkelig avtalt og prises særskilt, jf. Vedlegg H.6.
+
+**15.9** Agaas skal før overtakelsen gjennomføres opplyse Kunden skriftlig om hva som overføres og hva som ikke overføres.
+
+**15.10 Kunden skal sikre historisk regnskapsmateriale før avtalen med tidligere systemleverandør sies opp.** Sies den opp før materialet er sikret, kan Kunden miste tilgang til materiale Kunden har oppbevaringsplikt for, og komme i brudd med bokføringsloven.
+
+**15.11** Kunden bekrefter skriftlig ved oppstart at historisk regnskapsmateriale er sikret, eller bestiller uttrekk og import fra Agaas som særskilt arbeid. Bekreftelsen inngår i onboardingdokumentasjonen.
+
+**15.12** Agaas er ikke ansvarlig for regnskapsmateriale som er gått tapt eller blitt utilgjengelig fordi Kunden har avsluttet avtalen med tidligere leverandør. Dette begrenser ikke Agaas' plikt etter punkt 15.9 og 15.10 til å opplyse og advare før overtakelsen.
+
 ## 16. Servicenivå
 
 **16.1** Tilgjengelighet, responstider og vedlikehold for Plattformen fremgår av Vedlegg E. Frister og leveranser i Regnskapsoppdraget følger av Vedlegg H.

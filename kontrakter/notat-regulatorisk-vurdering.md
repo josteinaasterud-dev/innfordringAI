@@ -104,6 +104,7 @@ Plattformen må understøtte sporbarhet, ingen sletting av bokførte data, oppbe
 | Kreves melding eller dokumentasjon til Skatteetaten? | Bør avklares før første kunde |
 | Er tilgjengelighetskravet oppfylt? | Materialet må kunne fremvises i lesbar form fra Norge, også etter avtalens opphør |
 | Gjelder noe særskilt for sikkerhetskopier? | Kopiers lagringssted omfattes normalt av samme regler |
+| Hva med perioder før overtakelsen? | Kundens ansvar, men Agaas har opplysningsplikt ved migrering, jf. Vedlegg H.1b |
 
 Dette er et konkret og etterprøvbart punkt som en kontroll vil se på, og det bør avklares av advokat eller direkte med Skatteetaten. Valget av tysk leverandør er i seg selv uproblematisk personvernrettslig — spørsmålet er bokføringsrettslig.
 
@@ -128,6 +129,7 @@ Dette er et konkret og etterprøvbart punkt som en kontroll vil se på, og det b
 | 13 | Avklare oppbevaringssted i utlandet mot bokføringsloven, jf. punkt 5.4 | Ledelsen/advokat | ☐ |
 | 14 | Signere databehandleravtale med Hetzner og låse datasenterregion til Tyskland | Teknologi | ☐ |
 | 15 | Sikre at onboardingflyten genererer Pakkebekreftelse som fastsetter leveranseomfanget | Produkt | ☐ |
+| 15b | Bygge inn advarsel og bekreftelse om historiske bilag ved overtakelse, jf. Vedlegg H.1b | Produkt | ☐ |
 | 16 | Ta ut forutsetningen om at renter og gebyrer fra skyldner tilfaller Agaas i fasen før inkasso | Økonomi | ☐ |
 | 18 | Etablere Agaas Inkasso AS med bevilling før inkassofasen tilbys | Ledelsen | ☐ |
 | 19 | Definere «fair use» for Oskar som en målbar grense | Produkt | ☐ |
