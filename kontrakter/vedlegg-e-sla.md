@@ -8,7 +8,7 @@
 | Måleperiode | Kalendermåned, døgnkontinuerlig |
 | Måling | Agaas' overvåkning, tilgjengelig for Kunden på forespørsel |
 
-Fra tilgjengelighetsberegningen holdes utenfor: planlagt vedlikehold varslet etter punkt E.4, nedetid hos tredjepart eller offentlig grensesnitt, force majeure, og nedetid forårsaket av Kundens egne forhold.
+Fra tilgjengelighetsberegningen holdes utenfor: planlagt vedlikehold varslet etter punkt E.4, nedetid hos integrerte tredjeparter eller offentlige grensesnitt, force majeure, og nedetid forårsaket av Kundens egne forhold. Nedetid hos driftsleverandøren er **ikke** unntatt, jf. punkt E.4b.
 
 ## E.2 Support
 
@@ -32,6 +32,10 @@ Fra tilgjengelighetsberegningen holdes utenfor: planlagt vedlikehold varslet ett
 Planlagt vedlikehold legges fortrinnsvis til hverdager mellom 22:00 og 06:00 eller i helg, og varsles minst fem virkedager i forveien. Hastevedlikehold av sikkerhetshensyn kan gjennomføres uten forhåndsvarsel, med varsel så snart som mulig.
 
 I periodene 1.–15. i månedene med mva-frist, samt siste og første to virkedager i hver måned, unngås planlagt vedlikehold i åpningstiden.
+
+## E.4b Driftsinfrastruktur
+
+Plattformen driftes på skyinfrastruktur fra Hetzner Online GmbH i datasenter i Tyskland. Nedetid som skyldes forhold hos driftsleverandøren, inngår i Agaas' tilgjengelighetsforpliktelse etter punkt E.1 og er ikke unntatt som tredjepartsforhold.
 
 ## E.5 Sikkerhetskopiering og gjenoppretting
 

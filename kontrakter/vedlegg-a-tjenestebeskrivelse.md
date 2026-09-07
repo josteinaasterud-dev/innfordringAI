@@ -59,4 +59,4 @@ Ut over Regnskapsoppdraget leverer Agaas alminnelig bedriftsrådgivning: rapport
 
 ## A.5 Systemkrav
 
-Plattformen leveres som skytjeneste og krever oppdatert nettleser og internettforbindelse. Data lagres innenfor EØS, jf. Vedlegg C. Kunden er ansvarlig for eget utstyr og lokal sikkerhet.
+Plattformen leveres som skytjeneste og krever oppdatert nettleser og internettforbindelse. Drift og lagring skjer hos Hetzner Online GmbH i datasenter i Tyskland, jf. Vedlegg C. Kunden er ansvarlig for eget utstyr og lokal sikkerhet.

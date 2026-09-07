@@ -6,7 +6,7 @@ Oppdatert: [dato]. Gjeldende versjon publiseres på [nettadresse]. Endringer var
 
 | Leverandør | Tjeneste | Datakategorier | Behandlingssted |
 |---|---|---|---|
-| [Skyleverandør] | Drift, lagring, sikkerhetskopi | Alle Kundedata | [Norge/EØS] |
+| Hetzner Online GmbH | Skyinfrastruktur: drift, lagring, sikkerhetskopi | Alle Kundedata | Tyskland |
 | [Aksesspunkt] | Utveksling av EHF-dokument | Faktura- og partsopplysninger | EØS |
 | [Bankintegrasjonstilbyder] | Kontoinformasjon og transaksjoner | Kontonummer, transaksjoner, betalingsreferanser | EØS |
 | [E-post/varsling] | Utsending av varsler og fakturaer | Navn, e-post, dokumentinnhold | EØS |
@@ -27,6 +27,22 @@ Agaas er i tillegg selvstendig behandlingsansvarlig for egne lovpålagte plikter
 | Kundens bank | Kundens kundeforhold og samtykke | Kundens samtykke |
 | Kundens revisor | Revisorloven | Kundens tilgangstildeling |
 
+## C.1b Skyinfrastruktur
+
+All drift og lagring skjer hos **Hetzner Online GmbH**, org.nr. [HRB _____], Gunzenhausen, Tyskland.
+
+| Forhold | Beskrivelse |
+|---|---|
+| Rolle | Underdatabehandler for Agaas |
+| Tjeneste | Skyinfrastruktur (IaaS): servere, lagring, nettverk, sikkerhetskopi |
+| Behandlingssted | **Datasenter i Tyskland** – [Nürnberg / Falkenstein] |
+| Jurisdiksjon | Tysk rett, EU-medlemsstat |
+| Avtalegrunnlag | Databehandleravtale (Auftragsverarbeitungsvertrag) med Hetzner |
+| Tredjeland | Hetzner tilbyr også datasentre utenfor EØS. Agaas skal låse ressursbruken til datasentre i Tyskland, og kontrollere dette ved oppsett av ny infrastruktur |
+| Tilgang | Hetzner har ikke tilgang til innholdet i Kundedata utover det som følger av drift av infrastrukturen |
+
+**Kontrollpunkt:** valg av datasenterregion er en teknisk innstilling som kan endres ved utrulling av ny infrastruktur. Agaas skal ha rutine som hindrer at ressurser opprettes utenfor EØS.
+
 ## C.2b Tillitstjenester
 
 Agaas benytter kvalifisert tidsstemplingstjeneste fra Signicat for å sikre integriteten og tidfestingen av regnskapsmateriale og oppdragsdokumentasjon. Tjenesten leveres som kvalifisert tillitstjeneste etter eIDAS.
@@ -41,7 +57,9 @@ Agaas benytter kvalifisert tidsstemplingstjeneste fra Signicat for å sikre inte
 
 ## C.3 Overføring ut av EØS
 
-Overføring ut av EØS skjer ikke uten at Kunden er varslet på forhånd og gyldig overføringsgrunnlag foreligger, som hovedregel EUs standard personvernbestemmelser med supplerende tiltak og dokumentert vurdering av mottakerlandet.
+All behandling skjer innenfor EØS. Overføring ut av EØS skjer ikke uten at Kunden er varslet på forhånd og gyldig overføringsgrunnlag foreligger, som hovedregel EUs standard personvernbestemmelser med supplerende tiltak og dokumentert vurdering av mottakerlandet.
+
+Se særskilt kontrollpunktet om datasenterregion i punkt C.1b.
 
 ## C.4 Endringslogg
 

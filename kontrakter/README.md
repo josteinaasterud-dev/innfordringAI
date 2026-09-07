@@ -30,6 +30,8 @@ Avtaleverk for Agaas AS: regnskapssystem og regnskapsføring solgt som én pakke
 
 **Arbeidsdelingen er skrevet ned.** Vedlegg H fordeler hver oppgave mellom kunde og Agaas. Det som ikke er lagt til Agaas, påhviler kunden.
 
+**All drift i EØS.** Plattformen driftes hos Hetzner Online GmbH i Tyskland. Datasenterregion er låst til EØS, og oppbevaringssted må avklares mot bokføringsloven.
+
 **Regulert virksomhet holdes ute.** Inkasso, revisjon og betalingstjenester leveres av andre med egne bevillinger og egne avtaler.
 
 ## Forutsetning

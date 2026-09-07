@@ -199,9 +199,13 @@ Slike tjenester leveres av tredjepart eller konsernselskap med nødvendig bevill
 
 **14.3** Agaas skal gjennomføre egnede tekniske og organisatoriske sikkerhetstiltak, herunder tilgangsstyring, kryptering, logging, sikkerhetskopiering og rutiner for hendelseshåndtering, og varsle Kunden uten ugrunnet opphold ved sikkerhetsbrudd som berører Kundedata.
 
+**14.4** Plattformen driftes på skyinfrastruktur fra Hetzner Online GmbH med behandling i datasenter i Tyskland. All behandling av Kundedata skjer innenfor EØS. Endring av driftsleverandør eller behandlingssted varsles etter Vedlegg B punkt 6.
+
 ## 15. Regnskapsmateriale, oppbevaring og utlevering
 
 **15.1** Regnskapsmateriale tilhører Kunden. Agaas oppbevarer materialet i Plattformen i avtaleperioden på en måte som understøtter Kundens oppbevaringsplikt etter bokføringsloven.
+
+**15.1.1** Regnskapsmateriale oppbevares elektronisk i datasenter i Tyskland, jf. punkt 14.4. Agaas skal sikre at materialet til enhver tid er tilgjengelig i lesbar form fra Norge for Kunden, Kundens revisor og norske kontrollmyndigheter, i hele oppbevaringsperioden.
 
 **15.2** Kunden kan når som helst ta ut Regnskapsmateriale i maskinlesbart format, herunder standardisert regnskapsuttrekk (SAF-T) og bilagsdokumentasjon.
 

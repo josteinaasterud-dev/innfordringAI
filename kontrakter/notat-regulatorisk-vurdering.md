@@ -78,7 +78,19 @@ Kontoinformasjons- og betalingsinitieringstjenester er konsesjonspliktige, og de
 Agaas fører kundens regnskap. Revisor kan derfor ikke være tilknyttet Agaas eller Agaas-gruppen. Skulle gruppen vurdere å eie revisjonsvirksomhet, må dette avklares grundig først.
 
 ### 5.4 Bokføringsloven
+
 Plattformen må understøtte sporbarhet, ingen sletting av bokførte data, oppbevaring i lovpålagt periode og tilgjengelighet for kontroll. Bør verifiseres teknisk mot bokføringsforskriftens krav til elektronisk oppbevaring.
+
+**Oppbevaringssted må avklares særskilt.** Regnskapsmaterialet lagres hos Hetzner i Tyskland. Bokføringsloven har egne regler om hvor oppbevaringspliktig regnskapsmateriale kan oppbevares, med særskilte vilkår for oppbevaring i utlandet — typisk knyttet til at materialet er elektronisk tilgjengelig i lesbar form fra Norge for kontrollmyndighetene i hele oppbevaringsperioden, og i enkelte tilfeller til melde- eller dokumentasjonsplikt.
+
+| Å avklare | Merknad |
+|---|---|
+| Er elektronisk oppbevaring i Tyskland tillatt uten dispensasjon? | Reglene har vært endret over tid; gjeldende ordlyd må sjekkes |
+| Kreves melding eller dokumentasjon til Skatteetaten? | Bør avklares før første kunde |
+| Er tilgjengelighetskravet oppfylt? | Materialet må kunne fremvises i lesbar form fra Norge, også etter avtalens opphør |
+| Gjelder noe særskilt for sikkerhetskopier? | Kopiers lagringssted omfattes normalt av samme regler |
+
+Dette er et konkret og etterprøvbart punkt som en kontroll vil se på, og det bør avklares av advokat eller direkte med Skatteetaten. Valget av tysk leverandør er i seg selv uproblematisk personvernrettslig — spørsmålet er bokføringsrettslig.
 
 ## 6. Sjekkliste
 
@@ -98,6 +110,8 @@ Plattformen må understøtte sporbarhet, ingen sletting av bokførte data, oppbe
 | 10 | Avklare med bankintegrasjonstilbyder om Agaas blir agent | Teknologi | ☐ |
 | 11 | Etablere databehandleravtaler med alle underdatabehandlere | Personvernansvarlig | ☐ |
 | 12 | Teknisk verifikasjon mot bokføringsforskriften | Teknologi | ☐ |
+| 13 | Avklare oppbevaringssted i utlandet mot bokføringsloven, jf. punkt 5.4 | Ledelsen/advokat | ☐ |
+| 14 | Signere databehandleravtale med Hetzner og låse datasenterregion til Tyskland | Teknologi | ☐ |
 
 **Merk rekkefølgen:** punkt 2 tar tid. Søknadsprosessen bør startes tidlig, og punktene 3 til 6 er i praksis forutsetninger for at søknaden skal kunne innvilges.
 
