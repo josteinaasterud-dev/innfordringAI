@@ -90,52 +90,52 @@ Holding inkluderer regnskapsføring, økonomisystem med alle standardfunksjoner,
 
 ## 8b. Lagring
 
-Regnskapsmateriale har oppbevaringsplikt etter bokføringsloven. Lagringen faktureres i trinn, ikke per gigabyte, slik at kunden får en forutsigbar pris og Agaas slipper å fakturere brøkdeler.
+Lagringen gjelder dokumenter — bilag, fakturaer og vedlegg som PDF. Et bilag er typisk 100–300 KB, og volumene er derfor små. Inkludert lagring er satt slik at praktisk talt alle kunder holder seg innenfor, og trinnene fungerer som beskyttelse mot ekstremtilfeller.
 
 ### Inkludert i pakkene
 
-| Pakke | Inkludert lagring |
-|---|---|
-| Holding | 5 GB |
-| Standard | 25 GB |
-| Premium | 100 GB |
+| Pakke | Inkludert | Tilsvarer omtrent |
+|---|---|---|
+| Holding | **10 GB** | 50 000 dokumenter |
+| Standard | **50 GB** | 250 000 dokumenter |
+| Premium | **200 GB** | 1 000 000 dokumenter |
 
-De fleste kunder holder seg godt innenfor. Et selskap med 600 bilag i året bruker typisk under 200 MB årlig, og under 1 GB over hele oppbevaringsperioden.
+Et selskap med 600 bilag i året bruker rundt 120 MB årlig, altså under 1 GB gjennom hele oppbevaringsperioden på fem år. Holding-pakkens 10 GB rekker i praksis uansett hvor lenge kunden blir.
 
 ### Trappetrinn ved overskridelse
 
-| Trinn | Samlet lagring | Pris per måned | Pris per år |
+| Trinn | Samlet lagring | Per måned | Per år |
 |---|---|---|---|
-| 1 | Til og med 25 GB | 99 | 1 090 |
-| 2 | 25–100 GB | 249 | 2 740 |
-| 3 | 100–500 GB | 749 | 8 240 |
-| 4 | 500 GB – 2 TB | 2 490 | 27 390 |
-| 5 | Over 2 TB | Etter avtale | |
+| 1 | Til og med 100 GB | 49 | 540 |
+| 2 | 100–500 GB | 179 | 1 970 |
+| 3 | 500 GB – 1 TB | 349 | 3 840 |
+| 4 | Over 1 TB | Etter avtale | |
 
 Årspris tilsvarer elleve måneder — én måned rabatt ved årlig betaling.
 
 ### Arkivtilgang etter avtaleslutt
 
-Kunden har oppbevaringsplikt også etter at kundeforholdet er avsluttet. Agaas tilbyr fortsatt tilgang som en **valgfri** tjeneste:
+Kunden har oppbevaringsplikt også etter at kundeforholdet er avsluttet. Agaas tilbyr fortsatt tilgang som **valgfri** tjeneste:
 
 | Tjeneste | Pris |
 |---|---|
-| Arkivtilgang etter opphør, per selskap | 249 kr/mnd eller 2 490 kr/år |
+| Arkivtilgang etter opphør, per selskap | 99 kr/mnd eller 990 kr/år |
 
 Tjenesten er frivillig. Kunden har uansett rett til fullt uttrekk av alt materiale kostnadsfritt, jf. kundeavtalen punkt 15.2 og 15.4. Agaas har ikke tilbakeholdsrett i regnskapsmateriale.
 
 ### Kalkyle
 
-Antatt kostnad på objektlagring med sikkerhetskopi og redundans er i størrelsesorden **0,20 kroner per GB per måned**. Tallet er et estimat og **må verifiseres mot faktisk Hetzner-forbruk** før prisene publiseres.
+Antatt kostnad for objektlagring med sikkerhetskopi er i størrelsesorden **0,15 kroner per GB per måned**. Tallet er et estimat og **må verifiseres mot faktisk Hetzner-forbruk** før prisene publiseres.
 
-| Trinn | Volum ved trinnets tak | Antatt kostnad/mnd | Pris/mnd | Margin |
+| Trinn | Volum ved trinnets tak | Antatt kostnad/mnd | Pris/mnd | Margin ved taket |
 |---|---|---|---|---|
-| 1 | 25 GB | 5 | 99 | 95 % |
-| 2 | 100 GB | 20 | 249 | 92 % |
-| 3 | 500 GB | 100 | 749 | 87 % |
-| 4 | 2 TB | 410 | 2 490 | 84 % |
+| 1 | 100 GB | 15 | 49 | 69 % |
+| 2 | 500 GB | 75 | 179 | 58 % |
+| 3 | 1 TB | 154 | 349 | 56 % |
 
-Marginen er beregnet ved **taket** i hvert trinn, altså i verste fall. En kunde midt i trinnet gir høyere margin.
+Marginen over er regnet ved **taket** i hvert trinn, altså i verste fall. Typiske kunder ligger langt under: en kunde på 120 GB betaler 179 kroner mot en kostnad på rundt 18, altså omtrent 90 % margin. Den inkluderte lagringen koster på sin side lite — 10 GB tilsvarer omtrent 1,50 kroner i måneden.
+
+**Merk at dette neppe blir en vesentlig inntektslinje.** Med dokumentvolumer av denne størrelsen vil de aller fleste kunder ligge innenfor det inkluderte. Verdien ligger i at kunden som laster opp skannede dokumenter i full oppløsning, eller drar inn ti år med historikk, dekker sine egne kostnader.
 
 ### Regler for lagringstrinn
 

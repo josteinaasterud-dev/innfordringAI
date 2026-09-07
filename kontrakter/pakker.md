@@ -28,7 +28,7 @@ Pakken kunden velger ved onboarding, dokumenteres i **Pakkebekreftelsen** og er 
 | Pris | **3 950 kr/år** | [ikke fastsatt] | [ikke fastsatt] |
 | Brukere inkludert | **1** | [ikke fastsatt] | [ikke fastsatt] |
 | Bankkontoer inkludert | **1** | [ikke fastsatt] | [ikke fastsatt] |
-| Lagring inkludert | **5 GB** | 25 GB | 100 GB |
+| Lagring inkludert | **10 GB** | 50 GB | 200 GB |
 | Bindingstid | [12] mnd | [12] mnd | [12] mnd |
 
 ---
@@ -65,7 +65,7 @@ Leverer bilag og kontoutskrifter, fatter nødvendige styre- og generalforsamling
 
 ### Pris
 
-**3 950 kroner per år** eksklusive merverdiavgift. Inkluderer 15 bilag, 1 bruker, 1 bankkonto, standard onboarding og standard support.
+**3 950 kroner per år** eksklusive merverdiavgift. Inkluderer 15 bilag, 1 bruker, 1 bankkonto, 10 GB dokumentlagring, standard onboarding og standard support.
 
 | Ut over pakken | Pris |
 |---|---|
@@ -73,7 +73,7 @@ Leverer bilag og kontoutskrifter, fatter nødvendige styre- og generalforsamling
 | Bilag 501+ | 75 kr/stk |
 | Ekstra bruker | 49 kr/mnd |
 | Ekstra bankkonto | 49 kr/mnd |
-| Lagring ut over 5 GB | Fra 99 kr/mnd, trappetrinn |
+| Lagring ut over 10 GB | Fra 49 kr/mnd, trappetrinn |
 | Ekstraordinært arbeid | 1 290 kr/time |
 
 Full oversikt i [`prisliste.md`](prisliste.md).
