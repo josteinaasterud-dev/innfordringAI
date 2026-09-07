@@ -6,19 +6,23 @@ Vedlegget beskriver tjenester som **ikke** leveres av Agaas AS, men som Kunden k
 
 | | |
 |---|---|
-| **Leverandør** | [Regnskapsforetak AS], org.nr. [_____], autorisert regnskapsforetak |
+| **Leverandør** | [Regnskapsforetak AS], org.nr. [_____] |
+| **Foretaksautorisasjon** | Autorisert regnskapsforetak, registrert i Finanstilsynets register [autorisasjonsnr./dato] |
+| **Oppdragsansvarlig regnskapsfører** | [navn], personlig autorisasjon [nr.] |
 | **Avtaleform** | Oppdragsavtale etter regnskapsførerloven |
 | **Regelverk** | Regnskapsførerloven, regnskapsførerforskriften, god regnskapsføringsskikk, hvitvaskingsloven |
 
 **Krav til oppdragsavtalen:**
 - angi konkret hvilke deler av Kundens pliktige regnskapsrapportering oppdraget omfatter,
-- angi oppdragsansvarlig regnskapsfører,
+- angi navngitt oppdragsansvarlig regnskapsfører med personlig autorisasjon,
 - fastsette arbeidsdeling mellom Kunden og regnskapsforetaket,
 - regulere at Kunden signerer og sender inn selv, jf. Vedlegg F, med mindre annet uttrykkelig avtales i oppdragsavtalen,
 - inneholde egen databehandleravtale mellom Kunden og regnskapsforetaket,
 - fastsette rutine for kundetiltak etter hvitvaskingsloven.
 
-**Avgrensning mot Agaas:** Agaas leverer systemet og bedriftsrådgivningen. Agaas utfører ikke regnskapsføring, og ingen ansatt i Agaas AS skal utføre oppdragspliktige oppgaver under regnskapsforetakets oppdrag uten å være ansatt eller innleid av regnskapsforetaket under dets ansvar og kvalitetsstyring.
+**Avgrensning mot Agaas:** Agaas leverer systemet og bedriftsrådgivningen. Agaas utfører ikke regnskapsføring, og er ikke part i oppdragsavtalen.
+
+At Agaas-gruppen har autoriserte regnskapsførere ansatt, gir ikke Agaas AS adgang til å påta seg regnskapsoppdrag. Oppdraget må inngås med det selskapet som har **foretaksautorisasjon**. Utfører en person ansatt i Agaas AS oppgaver under et regnskapsoppdrag, skal dette skje etter skriftlig inn-/utleieavtale, under regnskapsforetakets ansvar, kvalitetsstyring og oppdragsansvarlige, og på armlengdes konserninterne vilkår.
 
 ## G.2 Inkasso – inkassoforetak med bevilling
 

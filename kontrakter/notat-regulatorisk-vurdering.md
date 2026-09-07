@@ -33,9 +33,35 @@ At kunden signerer selv er riktig og nyttig, men det er **ikke i seg selv** avgj
 
 **Signering i systemet:** at signeringen utføres i Plattformen i stedet for i Altinn, endrer ikke vurderingen så lenge signaturen avgis under kundens egen elektroniske identitet. Det er identiteten, ikke grensesnittet, som avgjør. Går løsningen derimot over til maskinell innsending på Agaas' virksomhetssertifikat, flyttes den faktiske rapporteringshandlingen til Agaas, og argumentasjonen svekkes vesentlig. Se Vedlegg F.2 og F.3.
 
+### 2.1 Personlig autorisasjon er ikke det samme som foretaksautorisasjon
+
+Dette er et skille som ofte forveksles, og det har direkte betydning for om Agaas AS havner under tilsyn.
+
+| | Personlig autorisasjon | Foretaksautorisasjon |
+|---|---|---|
+| Hvem har den | Den enkelte regnskapsføreren | Selskapet som påtar seg oppdraget |
+| Hva den gir | Rett til å være **oppdragsansvarlig** for et regnskapsoppdrag | Rett til å **påta seg** regnskapsoppdrag for andre |
+| Tilsyn | Ja, personlig | Ja, foretaket |
+
+**At Agaas AS har en autorisert regnskapsfører ansatt, gir ikke Agaas AS rett til å påta seg regnskapsoppdrag for kunder.** Selskapet som er avtalepart i oppdraget må selv ha autorisasjon som regnskapsforetak, og hvert oppdrag må ha en navngitt oppdragsansvarlig regnskapsfører med personlig autorisasjon.
+
+Motsatt gjelder også: det selskapet som *har* foretaksautorisasjon, står under Finanstilsynets tilsyn — med krav til kvalitetsstyring, risikostyring, dokumentasjon, oppdragsavtaler, hvitvaskingsrutiner og tilsynsavgift. Det er ikke noe å komme utenom dersom gruppen skal levere regnskapsføring; poenget med strukturen er å begrense det til **ett** selskap i stedet for å trekke Agaas AS med.
+
+**Tre mulige plasseringer av den autoriserte regnskapsføreren:**
+
+| Plassering | Konsekvens |
+|---|---|
+| Ansatt i det autoriserte regnskapsforetaket i gruppen | **Anbefalt.** Agaas AS forblir ren system- og rådgivningsleverandør |
+| Ansatt i Agaas AS, men utfører oppdrag under regnskapsforetakets ansvar | Mulig, men krever formell inn-/utleieavtale, at oppdragsansvaret og kvalitetsstyringen ligger i regnskapsforetaket, og at timene faktureres konsernintern på armlengdes vilkår. Gir økt risiko for at Agaas AS anses å drive virksomheten |
+| Ansatt i Agaas AS og utfører oppdrag i Agaas AS' navn | **Utløser autorisasjonsplikt for Agaas AS** og dermed tilsyn. Bør unngås |
+
+Fører regnskapsføreren kun Agaas' egne regnskaper, er ingenting av dette i veien — egen bokføring er ikke autorisasjonspliktig.
+
+**Å avklare:** hvilket selskap den autoriserte regnskapsføreren er ansatt i, om regnskapsbyrået i gruppen har egen **foretaksautorisasjon** (ikke bare en autorisert person på laget), og om byrået er registrert i Finanstilsynets register.
+
 **Anbefaling:**
 1. All regnskapsføring legges i det autoriserte regnskapsforetaket, med egen oppdragsavtale direkte med kunden (Vedlegg G.1).
-2. Ansatte som utfører regnskapsføringsoppgaver må være ansatt eller innleid av regnskapsforetaket, under dets kvalitetsstyring og oppdragsansvarlig regnskapsfører. **Dette er punktet strukturen oftest ryker på i praksis:** samme person som «hjelper til litt med bokføringen» fra Agaas AS river ned skillet.
+2. Ansatte som utfører regnskapsføringsoppgaver må være ansatt eller formelt innleid av regnskapsforetaket, under dets kvalitetsstyring og en navngitt oppdragsansvarlig regnskapsfører, jf. punkt 2.1. **Dette er punktet strukturen oftest ryker på i praksis:** samme person som «hjelper til litt med bokføringen» fra Agaas AS river ned skillet.
 3. Agaas' rådgivning må holdes på systemnivå og prosessnivå, og ikke gli over i å produsere kundens tallgrunnlag.
 4. Markedsføring, nettsider og tilbud fra Agaas AS må ikke gi inntrykk av at Agaas AS leverer regnskapsføring.
 
@@ -82,9 +108,10 @@ Systemet må understøtte kundens plikter: sporbarhet, ingen sletting av bokfør
 | # | Tiltak | Ansvar | Status |
 |---|---|---|---|
 | 1 | Advokatgjennomgang av hele strukturen | Ledelsen | ☐ |
-| 2 | Bekrefte at regnskapsforetaket har gyldig autorisasjon og oppdragsansvarlig | Regnskapsforetaket | ☐ |
+| 2 | Bekrefte at regnskapsforetaket har gyldig **foretaksautorisasjon** i Finanstilsynets register, ikke bare autorisert person ansatt | Ledelsen | ☐ |
+| 2b | Fastsette hvilket selskap den autoriserte regnskapsføreren er ansatt i, og navngi oppdragsansvarlig per oppdrag | HR/regnskapsforetaket | ☐ |
 | 3 | Bekrefte inkassobevilling og faglig leder | Inkassoforetaket | ☐ |
-| 4 | Rydde i ansettelsesforhold: hvem utfører hva, i hvilket selskap | HR/ledelsen | ☐ |
+| 4 | Rydde i ansettelsesforhold og eventuelle inn-/utleieavtaler: hvem utfører hva, i hvilket selskap, jf. punkt 2.1 | HR/ledelsen | ☐ |
 | 5 | Gjennomgå markedsføring så Agaas AS ikke fremstår som regnskapsfører | Marked | ☐ |
 | 6 | Avklare vederlagsmodell mot inkassoforetaket | Økonomi | ☐ |
 | 7 | Avklare med bankintegrasjonstilbyder om Agaas blir agent | Teknologi | ☐ |
