@@ -1,197 +1,101 @@
-# Notat – regulatoriske forutsetninger for avtalestrukturen
+# Notat – regulatoriske forutsetninger
 
 **Til:** Agaas AS  
-**Fra:** Utkast til gjennomgang  
 **Dato:** [dato]  
-**Status:** Beslutningsgrunnlag. Må kvalitetssikres av advokat med konsesjonsrettslig kompetanse før strukturen tas i bruk.
+**Status:** Beslutningsgrunnlag. Må kvalitetssikres av advokat med konsesjonsrettslig kompetanse.
 
 ---
 
-## 1. Hovedpunkt: næringskode gir ikke vern mot tilsyn
+## 1. Valgt modell
 
-Premisset om at registrering med næringskode **70.220 Bedriftsrådgivning** holder Agaas AS utenfor Finanstilsynets område, holder ikke alene.
+Agaas AS selger regnskapssystem og regnskapsføring som én pakke. Regnskapsføringen utføres av Regnskapsagenten og av Agaas' medarbeidere, i Agaas AS.
 
-Næringskoden i Enhetsregisteret er en **statistisk klassifisering**. Den fastsettes etter foretakets egen oppgave og har ingen selvstendig rettsvirkning for konsesjons- eller autorisasjonsplikt. Tilsynsmyndigheter vurderer den **faktiske virksomheten**: hva som konkret utføres, for hvem, mot vederlag, og med hvilken grad av selvstendighet.
+**Agaas AS må derfor ha autorisasjon som regnskapsforetak og vil stå under Finanstilsynets tilsyn.** Dette er ikke en konsekvens av hvordan avtalen er formulert, men av hva virksomheten er.
 
-**Konsekvens for avtaleutkastet:** Strukturen er derfor bygget slik at Agaas AS *reelt* holdes utenfor regulert virksomhet, ikke bare formelt. Det er den reelle arbeidsdelingen som må etterleves i praksis for at strukturen skal ha verdi.
+Avtaleverket er skrevet ut fra denne forutsetningen.
 
-## 2. Regnskapsføring
+## 2. Hvorfor det ikke finnes en vei utenom
 
-**Regelen:** Ekstern regnskapsføring for andre er autorisasjonspliktig virksomhet under Finanstilsynets tilsyn. Autorisasjonsplikten utløses av at foretaket **utfører** oppdragsgiverens pliktige regnskapsrapportering, ikke av hvem som signerer den ferdige innsendingen.
+Tre grep som ofte foreslås, virker ikke her:
 
-**Dette betyr:**
-
-| Aktivitet | Utløser autorisasjonsplikt? |
+| Grep | Hvorfor det ikke hjelper |
 |---|---|
-| Selge og drifte regnskapssystem kunden selv bruker | Nei |
-| Rådgi om systemoppsett, kontoplan, arbeidsflyt, opplæring | Nei |
-| Maskinelle konteringsforslag kunden godkjenner | Nei, forutsatt reell kundekontroll |
-| Føre kundens bilag, avstemme, utarbeide mva-melding og årsoppgjør | **Ja** |
-| Gjøre alt det ovennevnte, men la kunden trykke «signer» | **Ja** |
+| **Næringskode bedriftsrådgivning** | Næringskoden er statistikk uten rettsvirkning for autorisasjonsplikt. Tilsynet vurderer den faktiske virksomheten |
+| **Kunden signerer selv** | Autorisasjonsplikten knytter seg til å *utføre* kundens pliktige regnskapsrapportering, ikke til hvem som signerer. Styret signerer alltid årsregnskapet selv, og revisor trenger likevel godkjenning |
+| **Arbeidet gjøres av en agent** | En programvareagent er ikke et rettssubjekt. Utfører agenten kundens bokføring, er det selskapet bak agenten som utfører den |
 
-At kunden signerer selv er riktig og nyttig, men det er **ikke i seg selv** avgjørende for autorisasjonsplikten.
+Signeringsmodellen beholdes likevel, jf. punkt 4. Den løser et annet og reelt problem.
 
-**Signering i systemet:** at signeringen utføres i Plattformen i stedet for i Altinn, endrer ikke vurderingen så lenge signaturen avgis under kundens egen elektroniske identitet. Det er identiteten, ikke grensesnittet, som avgjør. Går løsningen derimot over til maskinell innsending på Agaas' virksomhetssertifikat, flyttes den faktiske rapporteringshandlingen til Agaas, og argumentasjonen svekkes vesentlig. Se Vedlegg F.2 og F.3.
+## 3. Hva autorisasjonen krever
 
-### 2.1 Personlig autorisasjon er ikke det samme som foretaksautorisasjon
+Kravene må verifiseres mot Finanstilsynets gjeldende rundskriv og søknadsskjema. I hovedtrekk:
 
-Dette er et skille som ofte forveksles, og det har direkte betydning for om Agaas AS havner under tilsyn.
-
-| | Personlig autorisasjon | Foretaksautorisasjon |
-|---|---|---|
-| Hvem har den | Den enkelte regnskapsføreren | Selskapet som påtar seg oppdraget |
-| Hva den gir | Rett til å være **oppdragsansvarlig** for et regnskapsoppdrag | Rett til å **påta seg** regnskapsoppdrag for andre |
-| Tilsyn | Ja, personlig | Ja, foretaket |
-
-**At Agaas AS har en autorisert regnskapsfører ansatt, gir ikke Agaas AS rett til å påta seg regnskapsoppdrag for kunder.** Selskapet som er avtalepart i oppdraget må selv ha autorisasjon som regnskapsforetak, og hvert oppdrag må ha en navngitt oppdragsansvarlig regnskapsfører med personlig autorisasjon.
-
-Motsatt gjelder også: det selskapet som *har* foretaksautorisasjon, står under Finanstilsynets tilsyn — med krav til kvalitetsstyring, risikostyring, dokumentasjon, oppdragsavtaler, hvitvaskingsrutiner og tilsynsavgift. Det er ikke noe å komme utenom dersom gruppen skal levere regnskapsføring; poenget med strukturen er å begrense det til **ett** selskap i stedet for å trekke Agaas AS med.
-
-**Tre mulige plasseringer av den autoriserte regnskapsføreren:**
-
-| Plassering | Konsekvens |
+| Krav | Status hos Agaas |
 |---|---|
-| Ansatt i det autoriserte regnskapsforetaket i gruppen | **Anbefalt.** Agaas AS forblir ren system- og rådgivningsleverandør |
-| Ansatt i Agaas AS, men utfører oppdrag under regnskapsforetakets ansvar | Mulig, men krever formell inn-/utleieavtale, at oppdragsansvaret og kvalitetsstyringen ligger i regnskapsforetaket, og at timene faktureres konsernintern på armlengdes vilkår. Gir økt risiko for at Agaas AS anses å drive virksomheten |
-| Ansatt i Agaas AS og utfører oppdrag i Agaas AS' navn | **Utløser autorisasjonsplikt for Agaas AS** og dermed tilsyn. Bør unngås |
+| Oppdragsansvarlig regnskapsfører med personlig autorisasjon | **På plass** – fagansvarlig i selskapet |
+| Egnethetskrav til ledelse og eiere | Må dokumenteres |
+| Kvalitetsstyringssystem og rutiner for oppdragsutførelse | Må etableres |
+| Skriftlig oppdragsavtale med hver kunde | Dekket av avtaleverket, jf. Vedlegg H |
+| Rutiner etter hvitvaskingsloven, med kundetiltak | Må etableres, jf. Vedlegg I |
+| Sikkerhetsstillelse og ansvarsforsikring | Må etableres |
+| Dokumentasjon av oppdragsutførelsen | Må bygges inn i Plattformen |
+| Tilsynsavgift og rapportering | Løpende |
 
-Fører regnskapsføreren kun Agaas' egne regnskaper, er ingenting av dette i veien — egen bokføring er ikke autorisasjonspliktig.
+Mye av dette er formalisering av rutiner virksomheten trenger uansett. Det tyngste nybygget er kvalitetsstyringssystemet.
 
-**Å avklare:** hvilket selskap den autoriserte regnskapsføreren er ansatt i, om regnskapsbyrået i gruppen har egen **foretaksautorisasjon** (ikke bare en autorisert person på laget), og om byrået er registrert i Finanstilsynets register.
+## 4. Automatisering under autorisasjon
 
-### 2.2 Fagansvarlig i Agaas AS
+Autorisasjonen fjerner spørsmålet om Agaas *kan* føre regnskap. Den skjerper spørsmålet om *hvordan*.
 
-«Fagansvarlig» er ikke en lovbestemt rolle etter regnskapsførerloven. Det loven regulerer er **foretaksautorisasjon** og **oppdragsansvarlig regnskapsfører** per oppdrag. Tittelen er derfor i seg selv verken et problem eller en løsning — det avgjørende er hva personen faktisk gjør, og for hvem.
+Agaas er faglig ansvarlig for alt arbeid, uavhengig av om det er utført maskinelt eller av en medarbeider. God regnskapsføringsskikk gjelder fullt ut for maskinelt utført arbeid. Det innebærer i praksis:
 
-Rollen kan ha to helt ulike innhold:
+| Krav | Hvordan det løses |
+|---|---|
+| Kontroll med agentens arbeid | Stikkprøver og terskelbaserte kontroller, jf. Vedlegg H.5 |
+| Håndtering av det agenten ikke kan avgjøre | Eskalering til medarbeider og Oppdragsansvarlig |
+| Sporbarhet per postering | Grunnlag, anvendt regel, tidspunkt, godkjenner |
+| Dokumentasjon av oppdragsutførelsen | Loggene utgjør oppdragsdokumentasjonen |
+| Kundens innsyn | Kunden kan se hvordan enhver postering er fremkommet |
 
-| Innhold | Hva det er | Riktig plassering | Vurdering |
-|---|---|---|---|
-| **Produktfaglig ansvar** | At Plattformen er regnskapsfaglig korrekt: kontoplan, mva-koder, valideringsregler, maler, regelverksoppdateringer, faglig kvalitet i opplæring og rådgivning | **Agaas AS** | Uproblematisk. Dette er produktutvikling, ikke regnskapsføring for andre |
-| **Oppdragsfaglig ansvar** | Faglig ansvar og kvalitetsstyring for kundeoppdrag, oppdragsansvar, godkjenning av leveranser til kunde | **Det autoriserte regnskapsforetaket** | Må ligge i foretaket med foretaksautorisasjon |
+Signeringsmodellen består fordi den plasserer ansvaret for innholdet overfor myndighetene hos kunden, der det hører hjemme, og holder Agaas unna å opptre overfor Skatteetaten på kundens vegne. Den begrenser ikke Agaas' ansvar overfor kunden for utførelsen.
 
-**Risikoen** oppstår når samme person har begge hattene uten dokumentert skille. Utad — og for et tilsyn — fremstår da Agaas AS som en regnskapsfaglig ledet virksomhet som leverer regnskapstjenester, uavhengig av hva avtaleverket sier. Næringskoden hjelper ikke mot dette.
+**Merk:** sporbarhet og dokumentasjon er ikke bare et tilsynskrav. Det er også Agaas' eget bevis for forsvarlig utførelse dersom en kunde reklamerer. Dette bør bygges inn tidlig, ikke ettermonteres.
 
-**Anbefalinger:**
+## 5. Øvrige regelverk
 
-1. **Presiser rolletittelen.** Internt og utad bør den lyde «fagansvarlig regnskapsfag, produkt» eller tilsvarende, ikke «fagansvarlig regnskap» uten kvalifisering. Stillingsbeskrivelse, nettsider, LinkedIn og e-postsignatur bør si det samme.
-2. **Skal personen også ha oppdragsansvar for kunder**, må den delen utøves for regnskapsforetaket: delt ansettelse eller skriftlig utleieavtale, atskilt timeregistrering, og oppdragsavtalen med kunden skal navngi vedkommende som oppdragsansvarlig **for regnskapsforetaket**, ikke for Agaas AS.
-3. **Dokumenter skillet skriftlig** i en signert rolleavklaring, jf. `mal-rolleavklaring-fagansvarlig.md`. Uten dokumentasjon er skillet vanskelig å påvise i ettertid.
-4. **Kontroller at ingen kundeoppdrag faktureres fra Agaas AS.** Fakturalinjer med regnskapsføring i Agaas AS' navn er det enkleste beviset på at virksomheten drives der.
+### 5.1 Inkasso
+Inndrivelse av forfalte krav for andre krever bevilling. Agaas driver ikke inndrivelse, men overfører saksdata teknisk til inkassoforetak på kundens initiativ.
 
-**Merk:** Er intensjonen at kundeoppdragene faktisk skal ligge i Agaas AS med denne personen som fagansvarlig, må Agaas AS selv søke foretaksautorisasjon — og da er selskapet under Finanstilsynets tilsyn. Målsettingen om å holde Agaas AS utenfor forutsetter at oppdragene ligger i byrået.
+Grenser Agaas må holde: ingen kommunikasjon med skyldner i eget navn, ingen vurdering av kravets berettigelse, ingen mottak av innbetaling på kravene, og regelstyrt overføring må være kundens egen konfigurasjon som kunden kan se og slå av. Vederlag fra inkassoforetaket bør være systemvederlag, ikke andel av inkassosalær. **Bør avklares særskilt.**
 
-### 2.3 Hvorfor hjelper det ikke at kunden signerer selv?
+### 5.2 Bank og betaling
+Kontoinformasjons- og betalingsinitieringstjenester er konsesjonspliktige, og det å opptre som agent for et betalingsforetak krever registrering. Bruk konsesjonspliktig tilbyder der kunden er samtykkegiver og betaling frigis hos banken. **Avklar med tilbyderen om deres modell gjør Agaas til agent.**
 
-Spørsmålet er nærliggende, men bygger på at signeringen er det som utløser autorisasjonsplikten. Det er den ikke. Det er **to forskjellige spørsmål**, og de har to forskjellige svar:
+### 5.3 Revisors uavhengighet
+Agaas fører kundens regnskap. Revisor kan derfor ikke være tilknyttet Agaas eller Agaas-gruppen. Skulle gruppen vurdere å eie revisjonsvirksomhet, må dette avklares grundig først.
 
-| Spørsmål | Hva det avgjør | Svar i vår modell |
-|---|---|---|
-| **Hvem utfører arbeidet?** | Om det foreligger et regnskapsoppdrag, og dermed autorisasjonsplikt | Kunden selv, eller byrået |
-| **Hvem signerer og sender inn?** | Hvem som er ansvarlig for innholdet overfor myndighetene | Alltid kunden |
+### 5.4 Bokføringsloven
+Plattformen må understøtte sporbarhet, ingen sletting av bokførte data, oppbevaring i lovpålagt periode og tilgjengelighet for kontroll. Bør verifiseres teknisk mot bokføringsforskriftens krav til elektronisk oppbevaring.
 
-Autorisasjonsplikten knytter seg til **å utføre en annens pliktige regnskapsrapportering** — å føre bilagene, avstemme, periodisere og utarbeide meldingene. Selve signeringen er sluttpunktet, ikke selve arbeidet. Signerer kunden noe andre har utarbeidet, er arbeidet like fullt utført av andre.
-
-**Parallellene gjør det tydelig:**
-
-- Styret signerer alltid årsregnskapet selv. Revisor trenger likevel godkjenning for revisjonen.
-- Kjøper og selger signerer kjøpekontrakten selv. Eiendomsmegleren trenger likevel bevilling for meglingen.
-- Kreditor eier kravet selv. Inkassoforetaket trenger likevel bevilling for inndrivelsen.
-
-I alle tre tilfellene er det **arbeidet**, ikke signaturen, som er regulert.
-
-Det er også en enkel kontrollsjekk: hvis autorisasjonsplikten kunne omgås ved å la kunden trykke «signer», ville ingen regnskapsbyråer trengt autorisasjon. Alle ville lagt inn det trykket. En tolkning som gjør regelverket virkningsløst, vil ikke stå seg.
-
-**Hva autorisasjonen faktisk skal beskytte:** brukerne av regnskapsinformasjonen — kreditorer, myndigheter, ansatte, kjøpere — som ikke selv kan vurdere om regnskapet er faglig forsvarlig ført. Derfor stilles krav til utdanning, praksis, etterutdanning, kvalitetsstyring og ansvarsforsikring hos den som utfører arbeidet. Kundens signatur sier ingenting om den faglige kvaliteten.
-
-### 2.4 Når trengs det da *ikke* autorisasjon?
-
-Dette er den viktige nyansen, og den favoriserer Agaas: **selvbetjeningsmodellen er ikke autorisasjonspliktig i det hele tatt.**
-
-| Scenario | Hvem utfører arbeidet | Autorisasjon |
-|---|---|---|
-| Kunden fører selv i Plattformen, Agaas leverer verktøy og brukerstøtte | Kunden | **Nei** |
-| Kunden fører selv, Agaas gir opplæring og rådgivning om oppsett og rutiner | Kunden | **Nei** |
-| Kunden fører selv, Plattformen foreslår kontering maskinelt, kunden kontrollerer og godkjenner | Kunden, med verktøystøtte | **Nei** |
-| Kunden fører selv, men får løpende faglig bistand på egne bilag fra Agaas | Gråsone – avhenger av omfang og selvstendighet | Vurderes konkret |
-| Byrået fører for kunden, kunden signerer | Byrået | **Ja – byrået har den** |
-| Agaas fører for kunden, kunden signerer | Agaas | **Ja – Agaas ville trengt den** |
-
-Konklusjonen er altså ikke at Agaas må ha autorisasjon. Den er at **autorisasjonen må følge arbeidet**. Så lenge kundene enten fører selv eller kjøper føringen fra byrået, er Agaas AS utenfor — uavhengig av hvem som signerer.
-
-Signeringsmodellen er dermed ikke bortkastet. Den løser sitt eget problem: den plasserer ansvaret for innholdet hos kunden, og holder Agaas unna å opptre overfor myndighetene på kundens vegne. Den løser bare ikke autorisasjonsspørsmålet, fordi det spørsmålet handler om noe annet.
-
-### 2.5 Automatisert regnskapsføring
-
-Utfører en programvareagent kundens bokføring, er det **selskapet bak agenten** som utfører den. Automatisering endrer hvordan arbeidet gjøres, ikke hvilket rettssubjekt som svarer for det.
-
-Skillet går ikke ved hvor avansert verktøyet er, men ved hvem som utøver den faglige vurderingen: eier kunden reglene, godkjenner kunden resultatet, og løser kunden avvikene — eller gjør Agaas det? Særlig avviksbehandling og menneskelig fagarbeid på kundens konkrete tall trekker mot autorisasjonspliktig tjeneste.
-
-Dette er behandlet i eget beslutningsnotat: [`notat-modellvalg-automatisert-regnskap.md`](notat-modellvalg-automatisert-regnskap.md).
-
-**Anbefaling:**
-1. All regnskapsføring legges i det autoriserte regnskapsforetaket, med egen oppdragsavtale direkte med kunden (Vedlegg G.1).
-2. Ansatte som utfører regnskapsføringsoppgaver må være ansatt eller formelt innleid av regnskapsforetaket, under dets kvalitetsstyring og en navngitt oppdragsansvarlig regnskapsfører, jf. punkt 2.1. **Dette er punktet strukturen oftest ryker på i praksis:** samme person som «hjelper til litt med bokføringen» fra Agaas AS river ned skillet.
-3. Agaas' rådgivning må holdes på systemnivå og prosessnivå, og ikke gli over i å produsere kundens tallgrunnlag.
-4. Markedsføring, nettsider og tilbud fra Agaas AS må ikke gi inntrykk av at Agaas AS leverer regnskapsføring.
-
-## 3. Inkasso
-
-**Regelen:** Inndrivelse av forfalte pengekrav for andre som næring krever inkassobevilling. Oppkjøp av forfalte krav for egen inndrivelse er også bevillingspliktig.
-
-**Vurdering:** Å overføre saksdata teknisk til et bevillingspliktig foretak, på kundens initiativ, er ikke i seg selv inkassovirksomhet. Risikoen ligger i grensetilfellene.
-
-**Grenser Agaas AS må holde:**
-- ingen kommunikasjon med skyldner i eget navn,
-- ingen vurdering av kravets berettigelse eller beslutning om rettslige skritt,
-- ingen mottak av innbetalinger på kravene,
-- purring og betalingsoppfølging før forfall og før inkassovarsel er kundens egen-inkasso i kundens navn, utført i systemet av kunden,
-- eventuell godtgjørelse fra inkassoforetaket til Agaas må være systemvederlag, ikke andel av inkassosalær som gjør Agaas til reell aktør i inndrivelsen. **Dette punktet bør avklares særskilt.**
-
-Merk at regelstyrt, automatisk overføring til inkasso må være kundens egen, dokumenterte konfigurasjon som kunden kan se og slå av. Ellers kan Agaas fremstå som den som beslutter inndrivelse.
-
-## 4. Bank og betaling
-
-**Regelen:** Kontoinformasjonstjenester og betalingsinitieringstjenester er konsesjonspliktige. Også det å opptre som agent for et betalingsforetak krever registrering.
-
-**Anbefaling:** Bruk konsesjonspliktig tilbyder der **kunden** er avtalepart eller samtykkegiver, og der betaling godkjennes og frigis hos banken eller tilbyderen. Plattformen lager forslag, aldri mer. Avklar med tilbyderen om deres modell gjør Agaas til agent — i så fall utløses registreringsplikt uansett hvordan avtalen er formulert.
-
-## 5. Revisors uavhengighet
-
-Har gruppen både regnskapsforetak og eventuell revisjonsvirksomhet, kan ikke samme gruppe både føre og revidere samme kunde. Utkastet forutsetter derfor at revisjon utføres av **kundens egen, uavhengige revisor**, og at Agaas kun leverer tilgang og uttrekk (Vedlegg G.3).
-
-Dersom gruppen skulle eie et revisjonsselskap, må dette avklares grundig før noen kunde tilbys begge deler.
-
-## 6. Hvitvasking
-
-Regnskapsforetak og inkassoforetak er rapporteringspliktige og må gjennomføre kundetiltak. Agaas AS som ren systemleverandør er som utgangspunkt ikke rapporteringspliktig, men:
-
-- kundetiltakene må faktisk utføres av det rapporteringspliktige foretaket, ikke «gjenbrukes» fra Agaas' onboarding,
-- onboardingflyten i Plattformen bør holde de to prosessene tydelig atskilt slik at det er sporbart hvem som har gjennomført tiltakene.
-
-## 7. Bokføringsloven
-
-Systemet må understøtte kundens plikter: sporbarhet, ingen sletting av bokførte data, oppbevaring i lovpålagt periode og tilgjengelighet for kontroll. Dette er ivaretatt i hovedavtalens punkt 12 og bør verifiseres teknisk mot bokføringsforskriftens krav til elektronisk oppbevaring.
-
-## 8. Sjekkliste før strukturen tas i bruk
+## 6. Sjekkliste
 
 | # | Tiltak | Ansvar | Status |
 |---|---|---|---|
-| 1 | Advokatgjennomgang av hele strukturen | Ledelsen | ☐ |
-| 2 | Bekrefte at regnskapsforetaket har gyldig **foretaksautorisasjon** i Finanstilsynets register, ikke bare autorisert person ansatt | Ledelsen | ☐ |
-| 2b | Fastsette hvilket selskap den autoriserte regnskapsføreren er ansatt i, og navngi oppdragsansvarlig per oppdrag | HR/regnskapsforetaket | ☐ |
-| 2c | Signere rolleavklaring for fagansvarlig, jf. punkt 2.2 og malen | Ledelsen | ☐ |
-| 2d | Kontrollere at ingen kundeoppdrag eller regnskapstimer faktureres fra Agaas AS | Økonomi | ☐ |
-| 2e | Velge modell for automatisert regnskapsføring, jf. eget beslutningsnotat | Ledelsen | ☐ |
-| 3 | Bekrefte inkassobevilling og faglig leder | Inkassoforetaket | ☐ |
-| 4 | Rydde i ansettelsesforhold og eventuelle inn-/utleieavtaler: hvem utfører hva, i hvilket selskap, jf. punkt 2.1 | HR/ledelsen | ☐ |
-| 5 | Gjennomgå markedsføring så Agaas AS ikke fremstår som regnskapsfører | Marked | ☐ |
-| 6 | Avklare vederlagsmodell mot inkassoforetaket | Økonomi | ☐ |
-| 7 | Avklare med bankintegrasjonstilbyder om Agaas blir agent | Teknologi | ☐ |
-| 8 | Verifisere at Altinn-roller følger Vedlegg F.4, og at signering faktisk skjer under kundens identitet (ikke virksomhetssertifikat) | Teknologi | ☐ |
-| 9 | Etablere databehandleravtaler med alle underdatabehandlere | Personvernansvarlig | ☐ |
-| 10 | Teknisk verifikasjon mot bokføringsforskriften | Teknologi | ☐ |
+| 1 | Advokatgjennomgang av avtaleverk og struktur | Ledelsen | ☐ |
+| 2 | Søke autorisasjon som regnskapsforetak | Ledelsen | ☐ |
+| 3 | Utpeke oppdragsansvarlig og dokumentere egnethet | Ledelsen | ☐ |
+| 4 | Etablere kvalitetsstyringssystem, inkludert kontroll av Regnskapsagenten | Fagansvarlig | ☐ |
+| 5 | Etablere sikkerhetsstillelse og ansvarsforsikring | Økonomi | ☐ |
+| 6 | Etablere hvitvaskingsrutiner og kundetiltak i onboarding | Fagansvarlig | ☐ |
+| 7 | Bygge sporbarhet og oppdragsdokumentasjon i Plattformen | Teknologi | ☐ |
+| 8 | Verifisere at Altinn-roller følger Vedlegg F, uten signeringsrett | Teknologi | ☐ |
+| 9 | Avklare vederlagsmodell mot inkassoforetaket | Økonomi | ☐ |
+| 10 | Avklare med bankintegrasjonstilbyder om Agaas blir agent | Teknologi | ☐ |
+| 11 | Etablere databehandleravtaler med alle underdatabehandlere | Personvernansvarlig | ☐ |
+| 12 | Teknisk verifikasjon mot bokføringsforskriften | Teknologi | ☐ |
+
+**Merk rekkefølgen:** punkt 2 tar tid. Søknadsprosessen bør startes tidlig, og punktene 3 til 6 er i praksis forutsetninger for at søknaden skal kunne innvilges.
 
 ---
 
-**Forbehold:** Notatet er utarbeidet som strukturert beslutningsgrunnlag, ikke som juridisk rådgivning, og bygger på regelverket slik det er gjengitt her. Konkrete lovhenvisninger, terskler og Finanstilsynets gjeldende praksis må verifiseres av advokat før strukturen legges til grunn.
+> Notatet er strukturert beslutningsgrunnlag, ikke juridisk rådgivning. Konkrete lovhenvisninger, terskler og Finanstilsynets gjeldende praksis må verifiseres av advokat.

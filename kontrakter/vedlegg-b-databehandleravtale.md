@@ -4,7 +4,7 @@ Inngått mellom **Kunden** (behandlingsansvarlig) og **Agaas AS** (databehandler
 
 ## 1. Formål og omfang
 
-Agaas behandler personopplysninger utelukkende for å levere Plattformen og avtalte tjenester, og bare etter dokumenterte instrukser fra Kunden. Kundeavtalen med vedlegg utgjør Kundens fullstendige instruks. Ytterligere instrukser gis skriftlig.
+Agaas behandler personopplysninger utelukkende for å levere Plattformen og utføre Regnskapsoppdraget, og bare etter dokumenterte instrukser fra Kunden. For behandling Agaas foretar for å oppfylle egne lovpålagte plikter, herunder kundetiltak etter hvitvaskingsloven og oppdragsdokumentasjon etter regnskapsførerloven, er Agaas selvstendig behandlingsansvarlig, og denne avtalen gjelder ikke. Kundeavtalen med vedlegg utgjør Kundens fullstendige instruks. Ytterligere instrukser gis skriftlig.
 
 Mener Agaas at en instruks er i strid med personvernregelverket, skal Agaas umiddelbart varsle Kunden.
 
@@ -12,8 +12,8 @@ Mener Agaas at en instruks er i strid med personvernregelverket, skal Agaas umid
 
 | Forhold | Beskrivelse |
 |---|---|
-| **Varighet** | Avtaleperioden, med etterfølgende sletting etter punkt 10 |
-| **Formål** | Levering, drift, support, sikkerhet og videreutvikling av Plattformen |
+| **Varighet** | Avtaleperioden, med etterfølgende sletting etter punkt 10, likevel slik at lovpålagt oppbevaring går foran |
+| **Formål** | Levering og drift av Plattformen, utførelse av Regnskapsoppdraget, support, sikkerhet og videreutvikling |
 | **Behandlingsaktiviteter** | Innsamling, registrering, lagring, strukturering, sammenstilling, overføring til mottakere Kunden angir, sikkerhetskopiering, sletting |
 | **Kategorier registrerte** | Kundens ansatte og brukere, Kundens kunder og leverandører og deres kontaktpersoner, skyldnere, øvrige personer som fremgår av bilag |
 | **Kategorier opplysninger** | Navn, kontaktopplysninger, organisasjons- og fødselsnummer der lovpålagt, stillings- og lønnsopplysninger, bank- og betalingsopplysninger, transaksjons- og kravsopplysninger, brukeraktivitet og logger |

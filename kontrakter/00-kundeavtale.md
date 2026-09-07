@@ -1,21 +1,25 @@
 # Kundeavtale – Agaas AS
 
-**Rammeavtale om programvare, koordinering og tilknyttede tjenester**
+**Avtale om regnskapssystem og regnskapsføring**
 
 | | |
 |---|---|
 | **Leverandør** | Agaas AS, org.nr. [_______], [adresse] ("**Agaas**") |
+| **Autorisasjon** | Autorisert regnskapsforetak, registrert i Finanstilsynets register [nr./dato] |
+| **Oppdragsansvarlig regnskapsfører** | [navn], personlig autorisasjon [nr.] |
 | **Kunde** | [Foretaksnavn], org.nr. [_______], [adresse] ("**Kunden**") |
 | **Avtalens ikrafttredelse** | [dato] |
-| **Dokumentversjon** | Utkast 1.0 – [dato] |
+| **Dokumentversjon** | Utkast 2.0 – [dato] |
 
 ---
 
 ## 1. Avtalens oppbygning og formål
 
-**1.1** Denne kundeavtalen ("**Avtalen**") regulerer Agaas' levering av skybasert regnskaps- og økonomiprogramvare ("**Plattformen**"), tilhørende brukerstøtte, samt Agaas' koordinering og tilrettelegging av tjenester som leveres av andre selskaper i Agaas-gruppen og av tredjeparter.
+**1.1** Denne avtalen ("**Avtalen**") regulerer Agaas' samlede leveranse til Kunden: tilgang til Agaas' skybaserte regnskapssystem ("**Plattformen**") og utførelse av regnskapsføring for Kunden ("**Regnskapsoppdraget**"), levert som én tjeneste.
 
-**1.2** Avtalen består av dette hoveddokumentet og følgende vedlegg:
+**1.2** Avtalen er både en avtale om bruk av programvare og en **oppdragsavtale etter regnskapsførerloven**. Vedlegg H utgjør oppdragsspesifikasjonen med arbeidsdelingen mellom partene.
+
+**1.3** Avtalen består av dette hoveddokumentet og følgende vedlegg:
 
 | Vedlegg | Innhold |
 |---|---|
@@ -24,234 +28,257 @@
 | C | Underdatabehandlere og tredjepartstjenester |
 | D | Priser og betalingsbetingelser |
 | E | Servicenivå (SLA) |
-| F | Fullmakter, roller og signeringsrutine |
-| G | Tilleggsavtaler for konsern- og tredjepartstjenester |
+| F | Signeringsrutine og fullmakter |
+| G | Tilknyttede tjenester fra tredjepart og konsern |
+| H | **Oppdragsspesifikasjon og arbeidsdeling** |
+| I | Kundetiltak etter hvitvaskingsloven |
 
-**1.3** Ved motstrid gjelder følgende rangordning: (i) Vedlegg B (databehandleravtalen), (ii) hoveddokumentet, (iii) øvrige vedlegg i alfabetisk rekkefølge, (iv) Agaas' øvrige dokumentasjon. Særskilt avtalte bestillingsskjemaer går foran der de uttrykkelig fraviker Avtalen og er signert av begge parter.
+**1.4** Ved motstrid gjelder følgende rangordning: (i) ufravikelige krav i regnskapsførerloven med forskrift og god regnskapsføringsskikk, (ii) Vedlegg B, (iii) Vedlegg H, (iv) hoveddokumentet, (v) øvrige vedlegg alfabetisk.
 
-**1.4** Avtalen erstatter tidligere avtaler og tilbud mellom partene om samme leveranse.
+**1.5** Avtalen erstatter tidligere avtaler mellom partene om samme leveranse.
 
 ## 2. Definisjoner
 
 | Begrep | Betydning |
 |---|---|
-| **Plattformen** | Agaas' skybaserte programvare, inkludert moduler, API-er, integrasjoner og brukergrensesnitt, slik beskrevet i Vedlegg A. |
-| **Modul** | Avgrenset funksjonalitet i Plattformen som aktiveres særskilt, jf. punkt 4. |
-| **Kundedata** | Alle data Kunden eller Kundens brukere legger inn i, genererer i eller laster opp til Plattformen, herunder regnskapsdata, bilag, kunde- og leverandørregistre og personopplysninger. |
-| **Konsernselskap** | Selskap i samme gruppe som Agaas, herunder autorisert regnskapsforetak og inkassoforetak, jf. Vedlegg G. |
-| **Tredjepartstjeneste** | Tjeneste levert av ekstern leverandør som Kunden kan koble til Plattformen, herunder bankintegrasjon, aksesspunkt for e-faktura, og fremtidige tjenester, jf. Vedlegg C. |
-| **Offentlig innrapportering** | Innsending, melding eller signering overfor Skatteetaten, Altinn, Brønnøysundregistrene, NAV, SSB eller annen offentlig myndighet. |
-| **Bruker** | Fysisk person som Kunden gir tilgang til Plattformen. |
+| **Plattformen** | Agaas' skybaserte regnskapssystem med moduler, API-er og integrasjoner, jf. Vedlegg A. |
+| **Regnskapsagenten** | Den automatiserte funksjonaliteten i Plattformen som utfører løpende bokføringsoppgaver under Agaas' faglige ansvar. |
+| **Regnskapsoppdraget** | De deler av Kundens pliktige regnskapsrapportering som Agaas påtar seg å utføre, slik det er spesifisert i Vedlegg H. |
+| **Pliktig regnskapsrapportering** | Bokføring, årsregnskap, skattemelding, merverdiavgiftsmelding, a-melding og annen lovpålagt rapportering Kunden er pliktig til å avgi. |
+| **Oppdragsansvarlig** | Den navngitte regnskapsføreren med personlig autorisasjon som er ansvarlig for Regnskapsoppdraget. |
+| **Kundedata** | Alle data Kunden legger inn i, genererer i eller laster opp til Plattformen. |
+| **Regnskapsmateriale** | Bokførte opplysninger, dokumentasjon og øvrig materiale Kunden har oppbevaringsplikt for. |
+| **Bruker** | Fysisk person Kunden gir tilgang til Plattformen. |
 
-## 3. Agaas' rolle og avgrensning av ansvar
+## 3. Agaas' rolle
 
-**3.1** Agaas leverer programvare, teknisk drift, brukerstøtte og forretningsmessig rådgivning knyttet til bruk av Plattformen. Agaas' registrerte næringsvirksomhet er bedriftsrådgivning og utvikling/drift av programvare.
+**3.1** Agaas er **autorisert regnskapsforetak** og står under tilsyn av Finanstilsynet. Regnskapsoppdraget utføres i samsvar med regnskapsførerloven med forskrift og god regnskapsføringsskikk.
 
-**3.2 Agaas utfører ikke, og påtar seg ikke, følgende:**
+**3.2** Agaas har utpekt Oppdragsansvarlig for Regnskapsoppdraget. Oppdragsansvarlig kan skiftes ut; Kunden varsles skriftlig.
 
-- a) ekstern regnskapsføring eller utarbeidelse av Kundens pliktige regnskapsrapportering på Kundens vegne,
-- b) inkassovirksomhet, herunder inndrivelse av forfalte pengekrav for andre eller oppkjøp av forfalte krav,
-- c) revisjon, attestasjon eller bekreftelse av Kundens regnskaper,
-- d) betalingstjenester, kontoinformasjonstjenester eller annen konsesjonspliktig finansiell virksomhet,
-- e) å avgi signatur overfor offentlig myndighet på Kundens vegne, jf. punkt 7.
+**3.3** Agaas utfører Regnskapsoppdraget dels ved Regnskapsagenten og dels ved medarbeidere. **Agaas er ansvarlig for arbeidet uavhengig av om det er utført maskinelt eller av en medarbeider.** Bruk av automatisering endrer ikke Agaas' faglige ansvar etter Avtalen eller etter regnskapsførerloven.
 
-**3.3** Tjenester som nevnt i punkt 3.2 bokstav a) til d) leveres, når Kunden ønsker dem, av Konsernselskap med nødvendig autorisasjon eller bevilling, eller av tredjepart med nødvendig konsesjon, på egne avtaler direkte med Kunden. Agaas er ikke part i disse avtalene og opptrer ikke som fullmektig for leverandøren eller for Kunden i slike forhold, med mindre annet er uttrykkelig skriftlig avtalt.
+**3.4** Agaas skal ha et kvalitetsstyringssystem som sikrer at Regnskapsoppdraget utføres forsvarlig, herunder kontroll av Regnskapsagentens arbeid, håndtering av avvik og dokumentasjon av oppdragsutførelsen.
 
-**3.4** Der Agaas presenterer, formidler kontakt til eller teknisk overfører data til slike leverandører, skjer dette som teknisk tilrettelegging initiert av Kunden. Agaas har ikke selvstendig beslutningsmyndighet over om, når eller på hvilke vilkår tjenesten benyttes.
+**3.5 Agaas utfører ikke:**
+- a) inkassovirksomhet, herunder inndrivelse av forfalte krav for andre eller oppkjøp av slike krav,
+- b) revisjon, attestasjon eller bekreftelse av Kundens regnskaper,
+- c) betalingstjenester eller kontoinformasjonstjenester som krever egen konsesjon,
+- d) juridisk rådgivning.
 
-**3.5** Agaas' rådgivning er generell forretningsmessig rådgivning knyttet til systembruk, prosess og organisering. Den utgjør ikke regnskapsfaglig, juridisk, skattemessig eller revisjonsmessig rådgivning som Kunden kan bygge en pliktig rapportering på uten egen kontroll.
+Slike tjenester leveres av tredjepart eller konsernselskap med nødvendig bevilling, på egne avtaler direkte med Kunden, jf. Vedlegg G.
 
-## 4. Moduler, bestilling og endringer
+**3.6** Agaas' rådgivning ut over Regnskapsoppdraget er alminnelig bedriftsrådgivning og omfatter ikke skatterettslig eller juridisk rådgivning.
 
-**4.1** Avtalen aktiveres med de moduler som fremgår av bestillingen. Ytterligere moduler kan bestilles løpende i Plattformen eller skriftlig. Bestilling av modul innebærer aksept av modulens vilkår og pris slik den fremgår ved bestillingstidspunktet.
+## 4. Regnskapsoppdraget
 
-**4.2** Aktivering av modul som forutsetter Konsernselskaps eller tredjeparts tjeneste, får først virkning når Kunden har inngått nødvendig underliggende avtale med vedkommende leverandør og gjennomført påkrevd legitimasjons-, kundetiltaks- eller onboardingprosess.
+**4.1** Regnskapsoppdragets omfang, leveranser, frister og arbeidsdelingen mellom partene fremgår av **Vedlegg H**. Oppgaver som ikke uttrykkelig er lagt til Agaas i Vedlegg H, påhviler Kunden.
 
-**4.3** Agaas kan videreutvikle, endre og erstatte funksjonalitet i Plattformen. Endringer som vesentlig reduserer avtalt funksjonalitet varsles skriftlig senest tre – 3 – måneder før iverksettelse. Kunden kan da si opp den berørte modulen med virkning fra iverksettelsestidspunktet.
+**4.2** Agaas skal utføre Regnskapsoppdraget med den faglige kvalitet, aktsomhet og fremdrift som følger av god regnskapsføringsskikk, og innenfor de frister som følger av Vedlegg H.
 
-**4.4** Agaas kan avvikle en modul med seks – 6 – måneders skriftlig varsel. Ved avvikling gis Kunden eksport av Kundedata fra modulen, jf. punkt 12.
+**4.3** Agaas skal underrette Kunden skriftlig dersom Agaas oppdager:
+- vesentlige feil eller mangler i Kundens Regnskapsmateriale,
+- forhold som kan innebære brudd på bokførings-, regnskaps-, skatte- eller avgiftslovgivningen,
+- at Kunden ikke leverer nødvendig dokumentasjon i tide slik at frister settes i fare.
 
-## 5. Kundens plikter
+**4.4** Agaas kan avvise å bokføre transaksjoner der tilstrekkelig dokumentasjon mangler, eller der bokføring ville stride mot lov eller god regnskapsføringsskikk. Agaas skal i så fall varsle Kunden med begrunnelse.
 
-**5.1** Kunden er ansvarlig for at opplysninger som registreres i Plattformen er fullstendige, korrekte og oppdaterte, og for at bruken skjer i samsvar med bokføringsloven, regnskapsloven, skatte- og avgiftslovgivningen og øvrig relevant regelverk.
+**4.5** Kunden kan ikke instruere Agaas til å utføre Regnskapsoppdraget i strid med lov eller god regnskapsføringsskikk. Fastholder Kunden en slik instruks, kan Agaas frasi seg Regnskapsoppdraget, jf. punkt 21.4.
 
-**5.2** Kunden er bokføringspliktig og regnskapsansvarlig og har det fulle ansvaret for innholdet i egne regnskaper og i enhver Offentlig innrapportering, uavhengig av hvilken funksjonalitet i Plattformen som er benyttet i utarbeidelsen.
+**4.6** Endringer i Regnskapsoppdragets omfang avtales skriftlig ved oppdatering av Vedlegg H.
 
-**5.3** Kunden administrerer egne Brukere, tilganger og roller, og skal umiddelbart deaktivere tilganger som ikke lenger skal bestå. Kunden er ansvarlig for handlinger utført med Kundens brukeridentiteter.
+## 5. Regnskapsagenten
 
-**5.4** Kunden skal benytte tofaktorautentisering der Plattformen tilbyr det, og skal ikke dele påloggingsinformasjon.
+**5.1** Regnskapsagenten utfører løpende bokføringsoppgaver, herunder bilagstolkning, kontering, avstemming og periodisering, innenfor rammene i Vedlegg H.
 
-**5.5** Kunden skal ikke bruke Plattformen på en måte som er ulovlig, som belaster infrastrukturen unormalt, eller som gir uautorisert tilgang til andres data. Kunden skal ikke gjøre Plattformen tilgjengelig for tredjepart utenfor egen virksomhet uten skriftlig samtykke, med unntak av egen revisor, regnskapsfører og rådgiver, jf. punkt 6.
+**5.2** Regnskapsagentens arbeid er underlagt Agaas' kvalitetsstyring. Agaas skal ha rutiner for stikkprøvekontroll, håndtering av saker Regnskapsagenten ikke kan avgjøre, og eskalering til Oppdragsansvarlig.
 
-**5.6** Kunden er ansvarlig for å kontrollere alt maskinelt eller automatisk generert innhold, herunder forslag til kontering, bilagstolkning og avstemminger, før det legges til grunn for bokføring eller Offentlig innrapportering.
+**5.3** Saker Regnskapsagenten ikke kan avgjøre forsvarlig, håndteres av Agaas' medarbeidere som del av Regnskapsoppdraget. Slik avvikshåndtering inngår i avtalt vederlag med mindre annet fremgår av Vedlegg D.
 
-## 6. Tilgang for Kundens rådgivere og revisor
+**5.4** Alt arbeid utført av Regnskapsagenten skal være sporbart: hvilket grunnlag som er benyttet, hvilken regel eller vurdering som er anvendt, tidspunkt, og hvem som eventuelt har godkjent. Kunden, Kundens revisor og myndigheter skal kunne følge sporet.
 
-**6.1** Kunden kan gi egen regnskapsfører, revisor og andre rådgivere tilgang til Plattformen med de roller Kunden selv fastsetter. Slik tilgang gis av Kunden, ikke av Agaas.
+**5.5** Kunden kan når som helst be om at nærmere angitte områder behandles manuelt i stedet for av Regnskapsagenten.
 
-**6.2** Der Kunden benytter revisor, kan Kunden gi revisor lese- og uttrekkstilgang til underlag som er nødvendig for revisjonen. Agaas deltar ikke i revisjonen, avgir ikke uttalelser til revisor på Kundens vegne og har ikke ansvar for revisjonens gjennomføring eller konklusjon.
+## 6. Kundens plikter
 
-**6.3** Kunden er ansvarlig for at revisors uavhengighet ivaretas ved valg av leverandører, herunder ved bruk av Konsernselskap til regnskapsføring. Agaas skal på forespørsel opplyse om eierforhold i gruppen.
+**6.1** Kunden skal levere fullstendig og korrekt Regnskapsmateriale til Agaas innen de frister som fremgår av Vedlegg H, og svare på henvendelser fra Agaas uten ugrunnet opphold.
 
-**6.4** Rådgiveres bruk av Plattformen skjer på Kundens ansvar. Kunden er ansvarlig for at rådgiveren er underlagt taushetsplikt.
+**6.2** Kunden er bokføringspliktig og regnskapsansvarlig, og har ansvaret for at opplysningene som ligger til grunn for regnskapet er riktige og fullstendige. Agaas svarer for sin utførelse av Regnskapsoppdraget, ikke for riktigheten av opplysninger Kunden har gitt.
 
-## 7. Offentlig innrapportering – Kunden signerer selv
+**6.3** Kunden skal opplyse Agaas om forhold av betydning for regnskapsføringen, herunder vesentlige transaksjoner, nærstående parter, endringer i virksomheten, pantsettelser, tvister og forhold som kan påvirke fortsatt drift.
 
-**7.1** Plattformen klargjør meldinger, oppgaver og skjemaer for Offentlig innrapportering, og understøtter signering og innsending direkte fra Plattformen. **Signeringen skjer under Kundens egen elektroniske identitet, ved en aktiv handling fra person med gyldig signeringsrett hos Kunden.** Plattformen formidler signaturen teknisk, men avgir den ikke.
+**6.4** Kunden administrerer egne Brukere og tilganger, benytter tofaktorautentisering der det tilbys, og deler ikke påloggingsinformasjon.
 
-**7.2** Agaas skal ikke tildeles, og skal ikke be om, Altinn-roller eller signeringsrettigheter som gir Agaas adgang til å signere på Kundens vegne. Teknisk systemautorisasjon benyttes kun til oppslag, henting og innlevering av grunnlagsdata, ikke til å avgi Kundens signatur. Nærmere regulering, herunder de tillatte signeringsmodellene, følger av Vedlegg F.
+**6.5** Leverer Kunden ikke Regnskapsmateriale i tide, er Agaas ikke ansvarlig for konsekvenser av forsinket rapportering. Agaas skal varsle Kunden, jf. punkt 4.3.
 
-**7.3** Kunden er ansvarlig for å kontrollere innholdet før signering, og for at innsending skjer innen lovbestemte frister. Agaas er ikke ansvarlig for forsinkelsesrenter, tilleggsskatt, tvangsmulkt, gebyr eller andre reaksjoner som følge av at Kunden ikke har signert eller sendt inn i tide.
+## 7. Godkjenning og signering
 
-**7.4** Varsler og påminnelser om frister i Plattformen er en serviceytelse. De er ikke uttømmende og fritar ikke Kunden for eget ansvar for fristoversikt.
+**7.1** Agaas utarbeider Kundens pliktige regnskapsrapportering innenfor Regnskapsoppdraget og klargjør den for godkjenning.
 
-**7.5** Dersom Kunden benytter Konsernselskaps regnskapsføringstjeneste, reguleres arbeidsdelingen, herunder eventuell fullmakt til innsending, i oppdragsavtalen mellom Kunden og vedkommende Konsernselskap, jf. Vedlegg G. Denne Avtalen gir ikke Agaas slik fullmakt.
+**7.2 Kunden godkjenner og signerer selv.** Signeringen skjer under **Kundens egen elektroniske identitet**, ved en aktiv handling fra person med signeringsrett hos Kunden. Signeringen kan utføres i Plattformen; Plattformen formidler da signaturen teknisk, men avgir den ikke. Nærmere regulering følger av Vedlegg F.
 
-## 8. Tredjepartstjenester og tilkoblinger
+**7.3** Kunden skal gjennomgå materialet før signering. Agaas skal gi Kunden det grunnlaget som er nødvendig for en forsvarlig gjennomgang, og svare på Kundens spørsmål før signering.
 
-**8.1** Plattformen tilbyr tilkobling til Tredjepartstjenester, herunder bankintegrasjon, aksesspunkt for elektronisk fakturering og oppslagstjenester. Oversikt fremgår av Vedlegg C, som oppdateres løpende.
+**7.4** Ansvaret for innholdet i rapporteringen overfor myndighetene ligger hos Kunden. Dette begrenser ikke Agaas' ansvar overfor Kunden for mangelfull utførelse av Regnskapsoppdraget, jf. punkt 19.
 
-**8.2** Bankintegrasjon leveres av foretak med nødvendig konsesjon. Tilkobling forutsetter at Kunden selv autentiserer seg overfor banken eller den konsesjonspliktige tilbyderen og selv gir de samtykker som kreves. Agaas initierer ikke betalinger på Kundens vegne; betalingsforslag godkjennes og frigis av Kunden i bankens eller tilbyderens egen løsning.
+**7.5** Agaas skal ikke tildeles Altinn-roller som gir selvstendig signeringsrett. Teknisk systemautorisasjon benyttes kun til oppslag, henting og innlevering av grunnlagsdata, jf. Vedlegg F.
 
-**8.3** Utveksling av elektroniske fakturaer skjer gjennom registrert aksesspunkt. Agaas svarer for korrekt teknisk overføring til og fra aksesspunktet, men ikke for mottakers systemer eller for forsinkelser i nettverket.
+**7.6** Kunden er ansvarlig for at signering skjer innen lovbestemte frister etter at materialet er gjort klart. Er materialet gjort klart i rimelig tid før fristen, er Agaas ikke ansvarlig for reaksjoner som følge av at Kunden ikke har signert.
 
-**8.4** Agaas kan gjøre nye Tredjepartstjenester tilgjengelige. Tilkobling skjer kun etter Kundens aktive valg. Kunden er ansvarlig for å vurdere om tjenesten er egnet for Kundens virksomhet.
+## 8. Kundetiltak og hvitvasking
 
-**8.5** Agaas er ikke ansvarlig for innhold, tilgjengelighet, kvalitet, priser eller regeletterlevelse i Tredjepartstjenester, og ikke for tap som følge av feil eller avbrudd hos tredjepart. Agaas skal likevel uten ugrunnet opphold varsle Kunden om kjente driftsavvik som påvirker Kunden vesentlig, og bistå med feilsøking i grensesnittet.
+**8.1** Agaas er rapporteringspliktig etter hvitvaskingsloven og skal gjennomføre kundetiltak før Regnskapsoppdraget påbegynnes, og løpende i avtaleperioden.
 
-**8.6** Dersom en tredjepart avvikler eller endrer sin tjeneste, kan Agaas fjerne integrasjonen med det varsel som er praktisk mulig. Slik fjerning gir ikke Kunden krav på erstatning, men gir forholdsmessig prisavslag for berørt modul.
+**8.2** Kunden skal medvirke, herunder gi opplysninger om reelle rettighetshavere, eierstruktur, virksomhetens art og formålet med kundeforholdet, samt legitimere seg. Vedlegg I angir hva som kreves.
 
-## 9. Inkasso og andre konserntjenester
+**8.3** Kan kundetiltak ikke gjennomføres, skal Agaas ikke etablere eller opprettholde kundeforholdet, og kan avslutte Avtalen med umiddelbar virkning.
 
-**9.1** Plattformen kan gi Kunden mulighet til å overføre forfalte krav til inkassoforetak i gruppen. Overføring forutsetter at Kunden har inngått egen oppdragsavtale med inkassoforetaket, jf. Vedlegg G.
+**8.4** Agaas har plikt til å undersøke og eventuelt rapportere mistenkelige forhold. Agaas kan ikke opplyse Kunden om at slik rapportering er foretatt eller vurdert.
 
-**9.2** Overføring av en sak skjer kun ved Kundens aktive handling for den enkelte sak eller ved regel Kunden selv har konfigurert og kan endre eller slå av. Agaas foretar ingen selvstendig vurdering av kravets berettigelse og driver ingen inndrivelse.
+## 9. Revisor
 
-**9.3** Kunden er ansvarlig for at krav som overføres er forfalte, ubestridte så langt Kunden kjenner til, og lovlig kan inndrives, herunder at nødvendig purring og varsel er sendt der dette kreves.
+**9.1** Har Kunden revisjonsplikt eller benytter revisor frivillig, gir Kunden revisor nødvendig tilgang i Plattformen.
 
-**9.4** Inkassoforetakets behandling av saken, herunder salærberegning, kommunikasjon med skyldner og eventuelle rettslige skritt, reguleres utelukkende av oppdragsavtalen mellom Kunden og inkassoforetaket. Agaas har ikke ansvar for inkassoforetakets utførelse.
+**9.2** Agaas skal bistå revisor med uttrekk, dokumentasjon og oppklarende opplysninger innenfor Regnskapsoppdraget, og svare på revisors henvendelser uten ugrunnet opphold.
 
-**9.5** Tilsvarende gjelder for regnskapsføringstjenester levert av autorisert regnskapsforetak i gruppen: tjenesten leveres på egen oppdragsavtale mellom Kunden og regnskapsforetaket, i samsvar med regnskapsførerloven og god regnskapsføringsskikk.
+**9.3** Revisor skal være uavhengig av Agaas. Agaas skal på forespørsel opplyse om eierforhold og tilknytning i konsernet slik at Kunden kan vurdere dette.
 
-## 10. Priser, fakturering og prisendring
+## 10. Tilknyttede tjenester
 
-**10.1** Priser fremgår av Vedlegg D. Alle priser er eksklusive merverdiavgift.
+**10.1** Kunden kan koble seg til tredjepartstjenester og konserntjenester gjennom Plattformen, herunder bankintegrasjon, aksesspunkt for e-faktura og inkasso. Oversikt og vilkår fremgår av Vedlegg C og G.
 
-**10.2** Abonnement faktureres forskuddsvis per avtalt periode. Forbruksbaserte elementer faktureres etterskuddsvis. Betalingsfrist er 14 dager fra fakturadato med mindre annet er avtalt.
+**10.2** Tilkobling skjer etter Kundens aktive valg. Der tjenesten leveres av annen enn Agaas, inngår Kunden egen avtale med leverandøren, og Agaas svarer ikke for leverandørens utførelse.
 
-**10.3** Ved forsinket betaling påløper forsinkelsesrente etter forsinkelsesrenteloven. Agaas kan etter skriftlig varsel med 14 dagers frist stenge tilgangen til Plattformen ved vesentlig betalingsmislighold. Kunden skal uansett gis mulighet til å ta ut Kundedata, jf. punkt 12.5.
+**10.3** Overføring av forfalte krav til inkassoforetak forutsetter at Kunden har inngått oppdragsavtale med inkassoforetaket, og skjer ved Kundens aktive handling eller etter regel Kunden selv har konfigurert. Agaas driver ikke inndrivelse, jf. punkt 3.5.
 
-**10.4** Agaas kan justere prisene én gang per kalenderår med virkning fra 1. januar, med minst 60 dagers skriftlig varsel. Justering ut over endringen i konsumprisindeksen gir Kunden rett til å si opp den berørte modulen med virkning fra ikrafttredelsen.
+**10.4** Agaas skal opplyse om eventuell provisjon eller inntektsdeling Agaas mottar fra formidlede leverandører.
 
-**10.5** Priser for Konsernselskaps og tredjeparts tjenester fastsettes av vedkommende leverandør i egen avtale, med mindre annet er uttrykkelig avtalt.
+## 11. Priser og betaling
 
-## 11. Immaterielle rettigheter og bruksrett
+**11.1** Priser fremgår av Vedlegg D. Alle priser er eksklusive merverdiavgift.
 
-**11.1** Agaas og Agaas' lisensgivere har alle rettigheter til Plattformen, herunder programvare, dokumentasjon, design og varemerker. Avtalen overfører ingen eiendomsrett.
+**11.2** Fast vederlag faktureres forskuddsvis. Variable elementer og arbeid ut over Regnskapsoppdraget faktureres etterskuddsvis. Betalingsfrist er 14 dager.
 
-**11.2** Kunden gis en ikke-eksklusiv, ikke-overdragbar bruksrett til Plattformen for eget forretningsmessig bruk i avtaleperioden, begrenset til de moduler og det antall Brukere som er avtalt.
+**11.3** Ved forsinket betaling påløper forsinkelsesrente etter forsinkelsesrenteloven.
 
-**11.3** Kunden skal ikke dekompilere, kopiere, videreselge, leie ut eller gjøre Plattformen tilgjengelig som tjeneste for tredjepart, ut over det som følger av ufravikelig lov.
+**11.4** Ved vesentlig betalingsmislighold kan Agaas etter skriftlig varsel med 14 dagers frist stanse videre arbeid under Regnskapsoppdraget. Agaas skal likevel varsle Kunden om nært forestående lovpålagte frister, og skal ikke holde tilbake Regnskapsmateriale, jf. punkt 15.5.
 
-**11.4** Agaas har rett til å bruke aggregerte og anonymiserte data om bruk av Plattformen til drift, feilsøking, statistikk og produktutvikling. Slike data skal ikke kunne knyttes til Kunden eller til enkeltpersoner.
+**11.5** Agaas kan justere prisene én gang per kalenderår med minst 60 dagers skriftlig varsel. Justering ut over konsumprisindeksen gir Kunden rett til å si opp Avtalen med virkning fra ikrafttredelsen.
 
-**11.5** Gir Kunden innspill eller forslag til forbedringer, kan Agaas fritt benytte disse uten vederlag eller begrensning.
+## 12. Immaterielle rettigheter
 
-## 12. Kundedata, tilgang og uttrekk
+**12.1** Agaas har alle rettigheter til Plattformen og Regnskapsagenten. Avtalen overfører ingen eiendomsrett.
 
-**12.1** Kundedata tilhører Kunden. Agaas behandler Kundedata på vegne av Kunden, jf. Vedlegg B.
+**12.2** Kunden gis en ikke-eksklusiv, ikke-overdragbar bruksrett til Plattformen i avtaleperioden, for eget forretningsmessig bruk.
 
-**12.2** Kunden kan når som helst i avtaleperioden ta ut Kundedata i alminnelig maskinlesbart format, herunder standardisert regnskapsuttrekk (SAF-T) og bilagsdokumentasjon.
+**12.3** Kunden skal ikke dekompilere, kopiere, videreselge eller gjøre Plattformen tilgjengelig for tredjepart ut over det som følger av ufravikelig lov, med unntak av tilgang for Kundens revisor og rådgivere.
 
-**12.3** Agaas skal legge til rette for at Kunden kan oppfylle oppbevaringsplikten etter bokføringsloven. Kunden er selv ansvarlig for at oppbevaringspliktig materiale sikres i hele oppbevaringsperioden, også etter Avtalens opphør.
+**12.4** Agaas kan bruke aggregerte og anonymiserte data om bruk av Plattformen til drift, feilsøking, statistikk og produktutvikling, herunder forbedring av Regnskapsagenten. Slike data skal ikke kunne knyttes til Kunden eller til enkeltpersoner.
 
-**12.4** Ved Avtalens opphør har Kunden rett til uttrekk av alle Kundedata i minst 90 dager etter opphørsdato. Agaas kan kreve dekning for bistand ut over standardisert eksport etter medgått tid.
+## 13. Taushetsplikt
 
-**12.5** Kundedata slettes eller anonymiseres senest seks – 6 – måneder etter opphør, med mindre lovpålagt oppbevaringsplikt tilsier annet. Agaas skal varsle skriftlig før sletting.
+**13.1** Agaas og Agaas' medarbeidere har taushetsplikt om Kundens forhold etter regnskapsførerloven og etter Avtalen. Taushetsplikten gjelder uten tidsbegrensning etter opphør.
 
-**12.6** Agaas skal ikke holde tilbake Kundedata som pressmiddel ved tvist om betaling.
+**13.2** Taushetsplikten er ikke til hinder for utlevering som følger av lov eller myndighetspålegg, herunder rapportering etter hvitvaskingsloven, eller for utlevering til Kundens revisor etter Kundens instruks.
 
-## 13. Personvern
+**13.3** Kunden skal bevare taushet om Agaas' forretningshemmeligheter i fem år etter opphør.
 
-**13.1** Kunden er behandlingsansvarlig og Agaas er databehandler for personopplysninger som behandles i Plattformen. Vilkårene følger av Vedlegg B, som oppfyller kravene i personvernforordningen artikkel 28.
+## 14. Personvern og informasjonssikkerhet
 
-**13.2** Underdatabehandlere fremgår av Vedlegg C. Agaas skal varsle om endringer, og Kunden kan protestere på saklig grunnlag i samsvar med Vedlegg B.
+**14.1** Agaas er databehandler for personopplysninger som behandles i Plattformen på Kundens vegne, jf. Vedlegg B.
 
-**13.3** Der Kunden kobler seg til Konsernselskap eller tredjepart som opptrer som selvstendig behandlingsansvarlig, herunder inkassoforetak, bank og offentlig myndighet, opphører Agaas' databehandleransvar ved overføringspunktet.
+**14.2** For behandling Agaas foretar for å oppfylle egne lovpålagte plikter, herunder kundetiltak og oppbevaring etter hvitvaskingsloven og dokumentasjon av oppdragsutførelsen etter regnskapsførerloven, er Agaas **selvstendig behandlingsansvarlig**.
 
-## 14. Informasjonssikkerhet
+**14.3** Agaas skal gjennomføre egnede tekniske og organisatoriske sikkerhetstiltak, herunder tilgangsstyring, kryptering, logging, sikkerhetskopiering og rutiner for hendelseshåndtering, og varsle Kunden uten ugrunnet opphold ved sikkerhetsbrudd som berører Kundedata.
 
-**14.1** Agaas skal gjennomføre egnede tekniske og organisatoriske tiltak for å sikre Kundedata, herunder tilgangsstyring, kryptering under overføring og lagring, logging, sikkerhetskopiering og rutiner for hendelseshåndtering.
+## 15. Regnskapsmateriale, oppbevaring og utlevering
 
-**14.2** Agaas skal varsle Kunden uten ugrunnet opphold ved sikkerhetsbrudd som berører Kundedata, med de opplysninger Kunden trenger for å oppfylle egne varslingsplikter.
+**15.1** Regnskapsmateriale tilhører Kunden. Agaas oppbevarer materialet i Plattformen i avtaleperioden på en måte som understøtter Kundens oppbevaringsplikt etter bokføringsloven.
 
-**14.3** Kunden kan én gang per år, og ellers ved påvist sikkerhetsbrudd, kreve dokumentasjon på Agaas' sikkerhetsarbeid, herunder foreliggende revisjonsuttalelser eller sertifiseringer.
+**15.2** Kunden kan når som helst ta ut Regnskapsmateriale i maskinlesbart format, herunder standardisert regnskapsuttrekk (SAF-T) og bilagsdokumentasjon.
 
-## 15. Taushetsplikt
+**15.3** Agaas skal dokumentere utførelsen av Regnskapsoppdraget slik regnskapsførerloven krever, og oppbevare oppdragsdokumentasjonen i lovpålagt periode.
 
-**15.1** Partene skal bevare taushet om forretningshemmeligheter og annen fortrolig informasjon de får kjennskap til gjennom Avtalen. Taushetsplikten gjelder også etter Avtalens opphør, uten tidsbegrensning for personopplysninger og i fem – 5 – år for øvrig informasjon.
+**15.4** Ved opphør skal Agaas uten ugrunnet opphold utlevere alt Regnskapsmateriale til Kunden eller til den Kunden utpeker, i format som gjør det anvendbart hos ny regnskapsfører. Kunden har uttrekksrett i minst 90 dager etter opphør.
 
-**15.2** Taushetsplikten er ikke til hinder for utlevering som følger av lov eller myndighetspålegg, eller til rådgivere underlagt tilsvarende taushetsplikt.
+**15.5** **Agaas har ikke tilbakeholdsrett i Kundens Regnskapsmateriale.** Materialet utleveres uavhengig av tvist om vederlag.
 
-## 16. Servicenivå og support
+**15.6** Kundedata slettes eller anonymiseres senest seks måneder etter opphør, med mindre lovpålagt oppbevaringsplikt tilsier annet. Agaas varsler skriftlig før sletting.
 
-**16.1** Servicenivå, tilgjengelighet, responstider og planlagt vedlikehold fremgår av Vedlegg E.
+## 16. Servicenivå
 
-**16.2** Agaas leverer brukerstøtte innenfor avtalt åpningstid. Support omfatter bruk av Plattformen og feilretting, ikke regnskapsfaglig vurdering av Kundens konkrete disposisjoner.
+**16.1** Tilgjengelighet, responstider og vedlikehold for Plattformen fremgår av Vedlegg E. Frister og leveranser i Regnskapsoppdraget følger av Vedlegg H.
 
-**16.3** Ved feil skal Agaas rette innen rimelig tid ut fra feilens alvorlighet. Oppfylles ikke avtalt tilgjengelighet, ytes prisavslag etter Vedlegg E. Prisavslag er Kundens eneste misligholdsbeføyelse for tilgjengelighetsavvik, med mindre Agaas har opptrådt grovt uaktsomt eller forsettlig.
+## 17. Endringer i Plattformen
 
-## 17. Ansvar og ansvarsbegrensning
+**17.1** Agaas kan videreutvikle og endre Plattformen. Endringer som vesentlig reduserer avtalt funksjonalitet varsles minst tre måneder før iverksettelse og gir Kunden oppsigelsesrett for berørt modul.
 
-**17.1** Partene er ansvarlige for direkte tap som skyldes mislighold av Avtalen etter alminnelige erstatningsregler.
-
-**17.2** Agaas' samlede erstatningsansvar er begrenset til det Kunden har betalt til Agaas etter Avtalen de siste tolv – 12 – månedene før kravet oppsto, likevel ikke mer enn 500 000 kroner per kalenderår.
-
-**17.3** Agaas er ikke ansvarlig for indirekte tap, herunder tapt fortjeneste, tapt omsetning, tap av data ut over gjenoppretting fra siste sikkerhetskopi, tap av goodwill eller krav fra tredjepart.
-
-**17.4** Agaas er ikke ansvarlig for tap som følge av:
-- a) feil i Kundedata, kontering eller vurderinger foretatt av Kunden eller Kundens rådgivere,
-- b) Kundens manglende, forsinkede eller uriktige Offentlig innrapportering,
-- c) forhold hos Konsernselskap eller tredjepart, jf. punktene 8 og 9,
-- d) endringer i offentlige grensesnitt, formatkrav eller regelverk, ut over Agaas' plikt til å tilpasse Plattformen innen rimelig tid.
-
-**17.5** Begrensningene i punkt 17.2 og 17.3 gjelder ikke ved forsett eller grov uaktsomhet, ved brudd på taushetsplikten, eller for ansvar som ikke kan begrenses etter ufravikelig rett.
-
-**17.6** Krav må fremsettes skriftlig uten ugrunnet opphold etter at Kunden ble eller burde blitt kjent med forholdet, og senest tolv – 12 – måneder etter.
+**17.2** Endringer som følger av lov, forskrift eller myndighetspålegg kan gjennomføres med kortere varsel.
 
 ## 18. Force majeure
 
-**18.1** Ingen part er ansvarlig for manglende oppfyllelse som skyldes forhold utenfor partens kontroll som parten ikke med rimelighet kunne forutse eller overvinne, herunder krig, naturhendelser, omfattende strømbrudd, myndighetspålegg og alvorlige cyberangrep mot infrastruktur parten ikke kontrollerer.
+**18.1** Ingen part er ansvarlig for manglende oppfyllelse som skyldes forhold utenfor partens kontroll som parten ikke med rimelighet kunne forutse eller overvinne.
 
-**18.2** Rammet part skal varsle uten ugrunnet opphold. Varer hindringen mer enn 60 dager, kan hver part si opp Avtalen skriftlig med umiddelbar virkning uten erstatningsansvar.
+**18.2** Rammet part varsler uten ugrunnet opphold. Varer hindringen mer enn 60 dager, kan hver part si opp Avtalen skriftlig uten erstatningsansvar.
 
-## 19. Varighet og opphør
+## 19. Ansvar
 
-**19.1** Avtalen løper fra ikrafttredelse og til den sies opp. Avtalen har en innledende bindingstid på [12] måneder og fornyes deretter løpende.
+**19.1** Agaas er ansvarlig for tap som skyldes at Regnskapsoppdraget ikke er utført i samsvar med Avtalen og god regnskapsføringsskikk, etter alminnelige erstatningsregler.
 
-**19.2** Etter bindingstiden kan hver part si opp Avtalen skriftlig med tre – 3 – måneders varsel til utløpet av en kalendermåned.
+**19.2** Agaas har sikkerhetsstillelse og ansvarsforsikring som følger av regnskapsførerloven med forskrift. Dokumentasjon fremlegges på forespørsel.
 
-**19.3** Hver part kan heve Avtalen ved den andre partens vesentlige mislighold som ikke er rettet innen 30 dager etter skriftlig varsel, eller ved den andre partens insolvens eller åpning av konkurs så langt lovgivningen tillater.
+**19.3** Agaas' samlede erstatningsansvar er begrenset til det Kunden har betalt til Agaas de siste tolv månedene før kravet oppsto, likevel ikke mer enn [1 000 000] kroner per kalenderår.
 
-**19.4** Ved opphør bortfaller Kundens bruksrett. Punktene 11, 12, 15, 17 og 21 gjelder også etter opphør.
+**19.4** Agaas er ikke ansvarlig for indirekte tap, herunder tapt fortjeneste, tapt omsetning eller tap av goodwill.
 
-**19.5** Agaas skal ved opphør yte rimelig avviklingsbistand mot vederlag etter medgått tid, herunder uttrekk og overføring av Kundedata til ny leverandør.
+**19.5** Agaas er ikke ansvarlig for tap som skyldes:
+- a) uriktige eller ufullstendige opplysninger fra Kunden,
+- b) at Kunden ikke har levert Regnskapsmateriale i tide,
+- c) at Kunden ikke har signert innen fristen etter at materialet var klargjort i rimelig tid,
+- d) forhold hos tredjepart eller konsernselskap, jf. punkt 10.
 
-## 20. Endringer i Avtalen
+**19.6** Begrensningene i punkt 19.3 og 19.4 gjelder ikke ved forsett eller grov uaktsomhet, ved brudd på taushetsplikten, eller for ansvar som ikke kan begrenses etter ufravikelig rett.
 
-**20.1** Agaas kan endre Avtalen med minst 60 dagers skriftlig varsel. Endringer som er til Kundens vesentlige ugunst gir Kunden rett til å si opp Avtalen med virkning fra endringens ikrafttredelse.
+**19.7** Krav fremsettes skriftlig uten ugrunnet opphold etter at Kunden ble eller burde blitt kjent med forholdet, og senest tolv måneder etter.
 
-**20.2** Endringer som følger av lov, forskrift eller myndighetspålegg kan gjennomføres med kortere varsel dersom det er nødvendig.
+## 20. Reklamasjon og retting
 
-## 21. Overdragelse, lovvalg og tvister
+**20.1** Oppdager Kunden feil i utført arbeid, skal Kunden varsle Agaas uten ugrunnet opphold.
 
-**21.1** Kunden kan ikke overdra Avtalen uten Agaas' skriftlige samtykke, som ikke kan nektes uten saklig grunn. Agaas kan overdra Avtalen til Konsernselskap eller ved virksomhetsoverdragelse, med skriftlig varsel til Kunden.
+**20.2** Agaas skal rette feil i eget arbeid uten kostnad for Kunden, herunder utarbeide korrigerte oppgaver. Kunden signerer og sender inn korrigeringen, jf. punkt 7.
 
-**21.2** Agaas kan benytte underleverandører, men svarer for deres ytelse som for sin egen innenfor rammen av Avtalen.
+## 21. Varighet og opphør
 
-**21.3** Avtalen reguleres av norsk rett.
+**21.1** Avtalen løper fra ikrafttredelse med innledende bindingstid på [12] måneder, og fornyes deretter løpende.
 
-**21.4** Tvister søkes løst i minnelighet. Fører forhandlinger ikke frem innen 30 dager, avgjøres tvisten av de ordinære domstoler med [Oslo] tingrett som avtalt verneting.
+**21.2** Etter bindingstiden kan hver part si opp Avtalen skriftlig med tre måneders varsel til utløpet av en kalendermåned. Partene skal samarbeide om en forsvarlig overgang, herunder ferdigstillelse av påbegynte perioder.
+
+**21.3** Hver part kan heve ved den andres vesentlige mislighold som ikke er rettet innen 30 dager etter skriftlig varsel, eller ved den andres insolvens.
+
+**21.4** Agaas kan frasi seg Regnskapsoppdraget med umiddelbar virkning dersom:
+- kundetiltak etter hvitvaskingsloven ikke lar seg gjennomføre,
+- Kunden krever utførelse i strid med lov eller god regnskapsføringsskikk, jf. punkt 4.5,
+- Kunden vedvarende unnlater å levere nødvendig Regnskapsmateriale slik at forsvarlig utførelse ikke er mulig.
+
+Agaas skal begrunne skriftlig og bistå med overføring til ny regnskapsfører, jf. punkt 15.4.
+
+**21.5** Ved opphør bortfaller bruksretten til Plattformen. Punktene 12, 13, 15, 19 og 23 gjelder også etter opphør.
+
+**21.6** Agaas skal på forespørsel gi ny regnskapsfører de opplysninger som er nødvendige for å overta oppdraget forsvarlig.
+
+## 22. Endringer i Avtalen
+
+**22.1** Agaas kan endre Avtalen med minst 60 dagers skriftlig varsel. Endringer til Kundens vesentlige ugunst gir Kunden oppsigelsesrett med virkning fra ikrafttredelsen. Endringer i Vedlegg H krever skriftlig enighet.
+
+## 23. Overdragelse, lovvalg og tvister
+
+**23.1** Kunden kan ikke overdra Avtalen uten Agaas' skriftlige samtykke, som ikke nektes uten saklig grunn. Agaas kan overdra Avtalen til foretak som har nødvendig autorisasjon, med skriftlig varsel til Kunden.
+
+**23.2** Agaas kan benytte underleverandører for tekniske tjenester, men Regnskapsoppdraget utføres av Agaas under Agaas' autorisasjon og ansvar.
+
+**23.3** Avtalen reguleres av norsk rett.
+
+**23.4** Tvister søkes løst i minnelighet. Fører forhandlinger ikke frem innen 30 dager, avgjøres tvisten av de ordinære domstoler med [Oslo] tingrett som avtalt verneting.
 
 ---
 
@@ -264,6 +291,8 @@
 | Stilling: ______________ | Stilling: ______________ |
 | Signatur: ______________ | Signatur: ______________ |
 
+**Oppdragsansvarlig regnskapsfører:** ______________________
+
 ---
 
-> **Utkast.** Dette dokumentet er et forslag til avtalestruktur og må kvalitetssikres av advokat før bruk. Se `notat-regulatorisk-vurdering.md` for forutsetninger som må verifiseres.
+> **Utkast.** Forslag til avtalestruktur som må kvalitetssikres av advokat før bruk, og samordnes med Agaas' kvalitetsstyringssystem. Se `notat-regulatorisk-vurdering.md`.

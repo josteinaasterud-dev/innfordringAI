@@ -26,7 +26,7 @@ Plattformen skal ikke innrettes slik at Agaas signerer eller sender inn på Kund
 - Teknisk systemautorisasjon, herunder Maskinporten-integrasjon, benyttes kun til **oppslag, henting og innlevering av grunnlagsdata**, ikke til å avgi Kundens signatur.
 - Der en etat tilbyr innsending under systemautorisasjon, kan dette bare tas i bruk dersom autorisasjonen er etablert av Kunden i Kundens eget navn, er avgrenset til angitte formål, kan trekkes tilbake av Kunden når som helst, og den enkelte innsending utløses av Kundens godkjenning. Bruk av slik funksjonalitet krever egen skriftlig avtale mellom partene.
 
-Bakgrunnen er at det er Kunden som er rapporteringspliktig, og at ansvaret for innholdet skal ligge og synes å ligge hos Kunden.
+Bakgrunnen er at det er Kunden som er rapporteringspliktig overfor myndighetene. At Agaas utarbeider rapporteringen som Kundens regnskapsfører, endrer ikke hvem som avgir den. Dette begrenser ikke Agaas' ansvar overfor Kunden for utførelsen, jf. hovedavtalen punkt 19.
 
 ## F.4 Rollematrise – Altinn
 
@@ -35,7 +35,7 @@ Bakgrunnen er at det er Kunden som er rapporteringspliktig, og at ansvaret for i
 | Begrenset signeringsrettighet | Signere utvalgte skjema | **Nei** | Ville gitt Agaas signeringsadgang |
 | Kontaktperson / Daglig leder | Bred myndighet | **Nei** | Utenfor leveransen |
 | Regnskapsfører med signeringsrettighet | Signere og sende inn | **Nei** | Forbeholdt Kunden selv |
-| Regnskapsfører uten signeringsrettighet | Utfylling og innsyn | Kun til autorisert regnskapsforetak ved oppdrag, jf. Vedlegg G.1 | Nødvendig for oppdragsutførelse |
+| Regnskapsfører uten signeringsrettighet | Utfylling og innsyn | Ja, som Kundens regnskapsforetak | Nødvendig for oppdragsutførelse |
 | Revisorattesterer | Attestasjon | **Nei** | Forbeholdt Kundens revisor |
 | Tilgangsstyring | Delegere roller videre | **Nei** | Skal ligge hos Kunden |
 | Maskinporten-tilgang til datauttrekk | Oppslag i angitte datasett | Ja, avgrenset per formål | Nødvendig for integrasjon, jf. F.3 |
@@ -47,8 +47,8 @@ Bakgrunnen er at det er Kunden som er rapporteringspliktig, og at ansvaret for i
 | Steg | Handling | Utført av | Sporing |
 |---|---|---|---|
 | 1 | Grunnlag genereres og valideres | Plattformen | Systemlogg |
-| 2 | Intern kontroll og godkjenning | Kunden, eller regnskapsforetak ved oppdrag | Godkjenningslogg med bruker og tidspunkt |
-| 3 | Status settes til «Klar til signering» | Plattformen | Statuslogg |
+| 2 | Faglig kontroll og klargjøring | Agaas | Oppdragsdokumentasjon |
+| 3 | Kundens gjennomgang, status «Klar til signering» | Kunden | Godkjenningslogg med bruker og tidspunkt |
 | 4 | **Kunden autentiserer seg med egen elektroniske ID og signerer** | **Kunden** | Signaturbevis med person, tidspunkt og autentiseringsnivå |
 | 5 | Innsending og henting av kvittering | Plattformen, under Kundens identitet | Kvittering fra etaten, arkivert |
 
@@ -81,7 +81,7 @@ Kunden bekrefter ved signering av hovedavtalen at Kunden:
 - utpeker minst én person med gyldig signeringsrett som skal utføre innsending,
 - sørger for at denne har gyldig elektronisk ID og nødvendig Altinn-rolle,
 - har eget ansvar for frister, og
-- ikke tildeler Agaas roller ut over Vedlegg F.4.
+- ikke tildeler Agaas roller med signeringsrett, jf. F.4.
 
 **Utpekt signeringsansvarlig hos Kunden:** ______________________  
 **Stedfortreder:** ______________________

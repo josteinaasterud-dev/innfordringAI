@@ -1,6 +1,8 @@
 # Notat – modellvalg for automatisert regnskapsføring («Oskar»)
 
-**Status:** Beslutningsnotat. Dette er det punktet som avgjør om Agaas AS havner under Finanstilsynets tilsyn eller ikke. Bør behandles av ledelsen og kvalitetssikres av advokat.
+**Status:** ✅ **Besluttet.** Agaas AS selger system og regnskap som én pakke, og søker autorisasjon som regnskapsforetak. Avtaleverket er skrevet ut fra dette.
+
+Notatet beholdes som dokumentasjon av vurderingen og alternativene som ble vurdert. Modell A og B forutsatte begge noe Agaas ikke har — at kunden fører selv, eller at det finnes et separat autorisert byrå — og var derfor ikke anvendbare. **Modell C er valgt.**
 
 ---
 

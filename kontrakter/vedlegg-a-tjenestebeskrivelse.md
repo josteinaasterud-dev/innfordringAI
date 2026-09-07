@@ -1,68 +1,62 @@
 # Vedlegg A – Tjeneste- og modulbeskrivelse
 
-Vedlegget beskriver hva som leveres, av hvem, og hvor grensesnittet mot Kunden går. Kolonnen **Leverandør** er avgjørende for ansvarsplassering etter hovedavtalens punkt 3.
+## A.1 Leveransemodell
 
-## A.1 Oversikt over leveransemodell
+Agaas leverer regnskapssystem og regnskapsføring som **én samlet tjeneste**. Kolonnen **Leverandør** viser hvor ansvaret ligger.
 
 | Lag | Innhold | Leverandør | Avtalegrunnlag |
 |---|---|---|---|
-| 1. Plattform | Regnskapssystem, moduler, integrasjonsrammeverk | Agaas AS | Denne Avtalen |
-| 2. Rådgivning | Bedriftsrådgivning, prosess, systembruk, opplæring | Agaas AS | Denne Avtalen |
-| 3. Regnskapsføring | Ekstern regnskapsføring, pliktig rapportering | Autorisert regnskapsforetak i gruppen | Egen oppdragsavtale, Vedlegg G.1 |
-| 4. Inkasso | Inndrivelse av forfalte krav | Inkassoforetak med bevilling i gruppen | Egen oppdragsavtale, Vedlegg G.2 |
-| 5. Revisjon | Revisjon og attestasjon | Kundens egen, uavhengige revisor | Kundens egen avtale, Vedlegg G.3 |
-| 6. Tredjeparter | Bank, aksesspunkt, oppslag, nye tjenester | Ekstern leverandør | Vedlegg C og leverandørens vilkår |
+| 1. Plattform | Regnskapssystem, moduler, integrasjoner | Agaas AS | Denne Avtalen |
+| 2. Regnskapsføring | Løpende bokføring, avstemming, rapportering, årsoppgjør | Agaas AS, som autorisert regnskapsforetak | Denne Avtalen, jf. Vedlegg H |
+| 3. Rådgivning | Bedriftsrådgivning, prosess, rapportering, opplæring | Agaas AS | Denne Avtalen |
+| 4. Inkasso | Inndrivelse av forfalte krav | Inkassoforetak med bevilling | Egen oppdragsavtale, Vedlegg G |
+| 5. Revisjon | Revisjon og attestasjon | Kundens uavhengige revisor | Kundens egen avtale |
+| 6. Tredjeparter | Bank, aksesspunkt, oppslag, nye tjenester | Ekstern leverandør | Vedlegg C og G |
 
-## A.2 Plattformens kjernemoduler
+## A.2 Regnskapsagenten
 
-### A.2.1 Regnskap og bokføring
-Hovedbok, reskontro for kunder og leverandører, bilagsregistrering med maskinell bilagstolkning, konteringsforslag, periodisering, avstemming, prosjekt- og avdelingsdimensjoner, samt uttrekk i SAF-T-format.
+Regnskapsagenten er den automatiserte delen av produksjonen. Den utfører løpende bokføringsoppgaver innenfor Regnskapsoppdraget: bilagstolkning, kontering, avstemming, periodisering og klargjøring av rapportering.
 
-*Forslag generert maskinelt er beslutningsstøtte. Kunden godkjenner all bokføring, jf. hovedavtalen punkt 5.6.*
+| Egenskap | Beskrivelse |
+|---|---|
+| **Faglig ansvar** | Agaas, uavhengig av om arbeidet er utført maskinelt eller av medarbeider |
+| **Eskalering** | Saker agenten ikke kan avgjøre forsvarlig, går til Agaas' medarbeidere og eventuelt Oppdragsansvarlig |
+| **Kvalitetskontroll** | Stikkprøver og terskelbaserte kontroller, jf. Vedlegg H.5 |
+| **Sporbarhet** | Grunnlag, anvendt regel, tidspunkt og godkjenner logges per postering |
+| **Kundens innsyn** | Kunden kan se hvordan enhver postering er fremkommet |
+| **Overstyring** | Kunden kan kreve manuell behandling av angitte områder |
 
-### A.2.2 Fakturering og innfordring
-Salgsordre, fakturautstedelse, distribusjon på EHF, e-post eller print, purrerutine og betalingsoppfølging, samt klargjøring av saker for overføring til inkasso, jf. Vedlegg G.2.
+Automatiseringen er en produksjonsmetode, ikke en ansvarsfraskrivelse. Kunden forholder seg til Agaas som regnskapsfører, ikke til agenten.
 
-### A.2.3 Bank og betaling
-Innhenting av kontoinformasjon og transaksjoner via konsesjonspliktig tilbyder, automatisk bankavstemming, samt klargjøring av betalingsforslag. **Betaling frigis og godkjennes av Kunden i bankens eller tilbyderens egen løsning.**
+## A.3 Plattformens moduler
 
-### A.2.4 Lønn og personal *(dersom aktivert)*
-Lønnskjøring, feriepenger, reiseregning, samt a-melding klargjort for Kundens signering og innsending, jf. Vedlegg F.
+### A.3.1 Regnskap og bokføring
+Hovedbok, reskontro, bilagsmottak med maskinell tolkning, kontering, periodisering, avstemming, anleggsregister, prosjekt- og avdelingsdimensjoner, SAF-T-uttrekk.
 
-### A.2.5 Rapportering og innsending
-Klargjøring, signering og innsending av mva-melding, skattemelding, aksjonærregisteroppgave, næringsspesifikasjon og årsregnskap. Signeringen utføres i Plattformen under Kundens egen elektroniske identitet, jf. hovedavtalen punkt 7 og Vedlegg F.
+### A.3.2 Fakturering og betalingsoppfølging
+Salgsordre, fakturautstedelse, distribusjon på EHF, e-post eller print, purrerutine, samt klargjøring av saker for overføring til inkasso.
 
-### A.2.6 Rapportering og innsikt
-Resultat- og balanserapporter, likviditetsoversikt, nøkkeltall, budsjett og avviksrapportering, samt tilgangsstyrt deling med Kundens rådgivere og revisor.
+### A.3.3 Bank og betaling
+Kontoinformasjon og transaksjoner via konsesjonspliktig tilbyder, automatisk bankavstemming, betalingsforslag. Betaling godkjennes og frigis av Kunden i banken.
 
-### A.2.7 Integrasjonsrammeverk
-API og forhåndsbygde koblinger mot Tredjepartstjenester, jf. Vedlegg C. Nye koblinger gjøres tilgjengelige løpende og aktiveres av Kunden.
+### A.3.4 Lønn og personal *(dersom valgt)*
+Lønnskjøring, feriepenger, reiseregning, fraværsoppfølging og klargjøring av a-melding.
 
-## A.3 Rådgivningstjenester fra Agaas AS
+### A.3.5 Rapportering og innsending
+Klargjøring, signering og innsending av mva-melding, a-melding, skattemelding, næringsspesifikasjon, aksjonærregisteroppgave og årsregnskap. Signeringen utføres under Kundens egen elektroniske identitet, jf. Vedlegg F.
 
-Agaas leverer bedriftsrådgivning innenfor følgende, alle uten å overta Kundens rapporterings- eller bokføringsansvar:
+### A.3.6 Innsikt
+Resultat- og balanserapporter, likviditetsoversikt, nøkkeltall, budsjett og avviksrapportering, samt tilgangsstyrt deling med revisor og rådgivere.
 
-- systemoppsett, kontoplan- og dimensjonsdesign, arbeidsflyt og attestasjonsrutiner
-- prosess- og automatiseringsrådgivning, herunder valg av moduler og integrasjoner
-- opplæring av Kundens ansatte og superbrukere
-- struktur- og styringsrådgivning, herunder rapporteringsmodeller og nøkkeltall
-- prosjektbistand ved migrering fra tidligere system
+### A.3.7 Integrasjonsrammeverk
+API og forhåndsbygde koblinger mot tredjepartstjenester, jf. Vedlegg C. Nye koblinger aktiveres av Kunden.
 
-Agaas har regnskapsfaglig kompetanse knyttet til **Plattformens faglige kvalitet**, herunder kontoplan, avgiftskoder, valideringsregler og oppdatering ved regelverksendringer. Denne kompetansen benyttes til produkt, opplæring og generell rådgivning, og innebærer ikke at Agaas påtar seg oppdragsansvar for Kundens regnskapsføring.
+## A.4 Rådgivning
 
-**Ikke omfattet:** utarbeidelse eller innsending av Kundens pliktige regnskapsrapportering, regnskapsfaglige konklusjoner Kunden kan legge til grunn uten egen kontroll, skatterettslig eller juridisk rådgivning, og enhver form for attestasjon.
+Ut over Regnskapsoppdraget leverer Agaas alminnelig bedriftsrådgivning: rapporteringsmodeller og nøkkeltall, budsjett- og likviditetsstyring, prosess- og rutineforbedring, systemoppsett og opplæring, samt prosjektbistand ved migrering.
 
-## A.4 Grensesnittet mellom Plattform og regnskapsføringstjeneste
+**Ikke omfattet:** juridisk rådgivning, skatterettslige utredninger og revisjonstjenester. Slikt henvises til Kundens advokat, skatterådgiver eller revisor.
 
-| Aktivitet | Agaas AS | Regnskapsforetaket | Kunden |
-|---|---|---|---|
-| Stille funksjonalitet til rådighet | Utfører | – | – |
-| Registrere og kontere bilag | – | Utfører (ved oppdrag) | Utfører (ved egenregi) |
-| Avstemme bank og reskontro | – | Utfører (ved oppdrag) | Utfører (ved egenregi) |
-| Utarbeide pliktig rapportering | **Nei** | Utfører (ved oppdrag) | Ansvarlig |
-| Avgi signatur ved innsending | **Nei** (formidler teknisk) | **Nei**, jf. Vedlegg F | **Utfører** |
-| Oppbevare regnskapsmateriale | Tilrettelegger | Bistår | Ansvarlig |
+## A.5 Systemkrav
 
-## A.5 Systemkrav og forutsetninger
-
-Plattformen leveres som skytjeneste og krever oppdatert nettleser og stabil internettforbindelse. Data lagres innenfor EØS, jf. Vedlegg C. Kunden er ansvarlig for eget utstyr, nettverk og lokal sikkerhet.
+Plattformen leveres som skytjeneste og krever oppdatert nettleser og internettforbindelse. Data lagres innenfor EØS, jf. Vedlegg C. Kunden er ansvarlig for eget utstyr og lokal sikkerhet.

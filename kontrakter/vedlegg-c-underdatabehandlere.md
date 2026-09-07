@@ -15,13 +15,14 @@ Oppdatert: [dato]. Gjeldende versjon publiseres på [nettadresse]. Endringer var
 
 ## C.2 Selvstendige behandlingsansvarlige
 
-Følgende mottakere opptrer som **selvstendig behandlingsansvarlig** for egen behandling. Agaas' databehandleransvar opphører ved overføringspunktet, jf. hovedavtalen punkt 13.3.
+Følgende mottakere opptrer som **selvstendig behandlingsansvarlig** for egen behandling. Agaas' databehandleransvar opphører ved overføringspunktet, jf. hovedavtalen punkt 14.
+
+Agaas er i tillegg selvstendig behandlingsansvarlig for egne lovpålagte plikter, herunder kundetiltak etter hvitvaskingsloven og oppdragsdokumentasjon etter regnskapsførerloven, jf. hovedavtalen punkt 14.2.
 
 | Mottaker | Grunnlag for overføring | Utløses av |
 |---|---|---|
 | Skatteetaten, Altinn, Brønnøysundregistrene, SSB, NAV | Rettslig forpliktelse | Kundens egen innsending |
-| Inkassoforetak i gruppen | Kundens oppdragsavtale, Vedlegg G.2 | Kundens overføring av sak |
-| Autorisert regnskapsforetak i gruppen | Kundens oppdragsavtale, Vedlegg G.1 | Kundens tilgangstildeling |
+| Inkassoforetak | Kundens oppdragsavtale, Vedlegg G.1 | Kundens overføring av sak |
 | Kundens bank | Kundens kundeforhold og samtykke | Kundens samtykke |
 | Kundens revisor | Revisorloven | Kundens tilgangstildeling |
 

@@ -2,7 +2,17 @@
 
 Alle priser er i norske kroner og eksklusive merverdiavgift. *(Utfylles per kundeforhold – tallene under er plassholdere.)*
 
-## D.1 Plattform – abonnement
+## D.1 Pakker – system og regnskap
+
+| Pakke | Innhold | Pris per måned |
+|---|---|---|
+| Løpende regnskap | Plattform, løpende bokføring, avstemming, mva-melding. Inntil [X] bilag | [___] |
+| Løpende + årsoppgjør | Som over, samt årsregnskap, skattemelding og næringsspesifikasjon | [___] |
+| Full pakke | Som over, samt lønn for inntil [Y] ansatte | [___] |
+
+Pakkeprisen dekker Regnskapsoppdraget slik det er spesifisert i Vedlegg H, inkludert avvikshåndtering utført av Agaas' medarbeidere.
+
+## D.2 Plattform – abonnement uten regnskapsføring
 
 | Pakke | Innhold | Pris per måned |
 |---|---|---|
@@ -11,7 +21,7 @@ Alle priser er i norske kroner og eksklusive merverdiavgift. *(Utfylles per kund
 | Konsern | Vekst, samt flere selskaper, konsolidering, API-tilgang | [___] |
 | Ekstra bruker | Per bruker ut over pakken | [___] |
 
-## D.2 Forbruksbaserte elementer
+## D.3 Forbruksbaserte elementer
 
 | Element | Enhet | Pris |
 |---|---|---|
@@ -21,20 +31,22 @@ Alle priser er i norske kroner og eksklusive merverdiavgift. *(Utfylles per kund
 | Banktilkobling | Per bankforbindelse per måned | [___] |
 | Lagring ut over inkludert volum | Per GB per måned | [___] |
 
-## D.3 Rådgivning og prosjekt
+## D.4 Arbeid utenfor oppdraget og rådgivning
 
 | Tjeneste | Enhet | Pris |
 |---|---|---|
+| Arbeid utenfor Regnskapsoppdraget, jf. Vedlegg H.6 | Per time | [___] |
 | Bedriftsrådgivning og systemrådgivning | Per time | [___] |
+| Bistand ved bokettersyn og myndighetskontroll | Per time | [___] |
 | Opplæring | Per time eller per kurs | [___] |
 | Migrering og oppstart | Fast pris etter tilbud | [___] |
 | Uttrekk og avviklingsbistand ut over standard eksport | Per time | [___] |
 
-## D.4 Tjenester fra andre leverandører
+## D.5 Tjenester fra andre leverandører
 
-Regnskapsføring, inkasso, bankintegrasjon og øvrige tredjepartstjenester prises av vedkommende leverandør i egen avtale, jf. Vedlegg G. Agaas skal opplyse om eventuell provisjon eller inntektsdeling Agaas mottar fra slike leverandører.
+Inkasso, bankintegrasjon og øvrige tredjepartstjenester prises av vedkommende leverandør i egen avtale, jf. Vedlegg G. Agaas skal opplyse om eventuell provisjon eller inntektsdeling Agaas mottar fra slike leverandører.
 
-## D.5 Betalingsbetingelser
+## D.6 Betalingsbetingelser
 
 | Forhold | Vilkår |
 |---|---|
@@ -43,4 +55,4 @@ Regnskapsføring, inkasso, bankintegrasjon og øvrige tredjepartstjenester prise
 | Betalingsfrist | 14 dager |
 | Fakturaformat | EHF, alternativt e-post |
 | Forsinkelsesrente | Etter forsinkelsesrenteloven |
-| Prisregulering | Årlig per 1. januar, varslet minst 60 dager i forveien, jf. hovedavtalen punkt 10.4 |
+| Prisregulering | Årlig per 1. januar, varslet minst 60 dager i forveien, jf. hovedavtalen punkt 11.5 |
