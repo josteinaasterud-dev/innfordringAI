@@ -54,7 +54,7 @@
 
 **3.1** Agaas er **autorisert regnskapsforetak** og står under tilsyn av Finanstilsynet. Regnskapsoppdraget utføres i samsvar med regnskapsførerloven med forskrift og god regnskapsføringsskikk.
 
-**3.2** Agaas har utpekt Oppdragsansvarlig for Regnskapsoppdraget. Oppdragsansvarlig kan skiftes ut; Kunden varsles skriftlig.
+**3.2** Agaas har utpekt Oppdragsansvarlig for Regnskapsoppdraget. Oppdragsansvarlig kan skiftes ut; Kunden varsles skriftlig. Agaas skal ha ordning som sikrer at Regnskapsoppdraget har oppdragsansvarlig også ved fravær eller bortfall.
 
 **3.3** Agaas utfører Regnskapsoppdraget dels ved Regnskapsagenten og dels ved medarbeidere. **Agaas er ansvarlig for arbeidet uavhengig av om det er utført maskinelt eller av en medarbeider.** Bruk av automatisering endrer ikke Agaas' faglige ansvar etter Avtalen eller etter regnskapsførerloven.
 

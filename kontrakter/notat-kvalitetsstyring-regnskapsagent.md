@@ -146,18 +146,56 @@ Brukes regnskapsførerens godkjenninger til å trene Oskar, oppstår en tilbakek
 | En feil godkjenning læres og gjentas i skala | Ikke tren på godkjenninger som ikke er reelt vurdert |
 | Godkjenningstretthet ved høyt volum | Logg behandlingstid; svært raske godkjenninger merkes og holdes utenfor treningsgrunnlaget |
 | Flaggraten synker, og mennesket ser stadig færre saker | Fast minstevolum til gjennomgang, uavhengig av flaggrate |
-| Skjevhet fra én regnskapsfører forplanter seg | Periodisk validering av et utvalg godkjenninger ved en annen autorisert regnskapsfører |
+| Skjevhet fra én regnskapsfører forplanter seg | Periodisk validering av et utvalg godkjenninger ved en annen autorisert regnskapsfører, jf. punkt 6.3 |
 | Oskar er trygg på gammel fordeling, men møter ny | Flaggraten heves ved ny kunde, ny bransje, ny bilagstype og ved regelverksendringer |
 
 Skillet mellom «godkjent» og «godkjent etter reell vurdering» bør være eksplisitt i datamodellen. Det er den distinksjonen som avgjør om treningsgrunnlaget er godt.
 
-### 6.3 Oppdragsansvar er per oppdrag
+### 6.3 Én oppdragsansvarlig for alle oppdrag
 
-En generell godkjenning gitt under trening er ikke det samme som oppdragsansvar. Ansvaret etter regnskapsførerloven ligger hos Oppdragsansvarlig for det enkelte oppdraget.
+Agaas har i dag én autorisert regnskapsfører, som er oppdragsansvarlig for samtlige oppdrag.
 
-Godkjenner regnskapsfører A en sakstype under trening, og atferden anvendes senere på kunde B der regnskapsfører C er oppdragsansvarlig, er ikke C sitt ansvar oppfylt ved A sin godkjenning. Oppdragsansvarlig må ha innsyn i hva Oskar gjør på **sine** oppdrag, og mulighet til å sette strengere rammer for dem.
+**Det forenkler én ting:** spørsmålet om hvorvidt en godkjenning gitt under trening dekker et annet oppdrag med en annen oppdragsansvarlig, faller bort. Samme person står ansvarlig overalt, og kjenner både mandatet og oppdragene.
 
-**Anbefaling:** skill i loggen mellom generell godkjenning under trening og godkjenning i et konkret oppdrag, og gi Oppdragsansvarlig en oversikt per oppdrag over hva som er behandlet automatisk, hva som er flagget, og hva som er avgjort av hvem.
+**Det skaper tre forhold som må håndteres.**
+
+#### Kontinuitet
+
+Faller vedkommende bort — sykdom, oppsigelse, tap av autorisasjon — står **samtlige** oppdrag uten oppdragsansvarlig samtidig. Det er ikke bare en driftsrisiko; et regnskapsoppdrag skal ha en oppdragsansvarlig, og uten en slik kan oppdragene vanskelig videreføres.
+
+Finanstilsynet vurderer om foretaket har tilstrekkelige ressurser. Ett menneske som eneste regulerte kapasitet er tynt, og blir tynnere med hver kunde.
+
+| Tiltak | Merknad |
+|---|---|
+| Avtale med ekstern autorisert regnskapsfører som stedfortreder | Raskeste tiltak. Bør være skriftlig og på plass før søknaden sendes |
+| Ansette eller knytte til seg autorisert regnskapsfører nummer to | Den varige løsningen |
+| Dokumentert kontinuitetsplan | Hva skjer med oppdragene, og innen hvilken frist |
+
+#### Kapasitet
+
+Dette er den kommersielt viktigste. Skal én person både godkjenne alle flaggede saker og være oppdragsansvarlig for alle oppdrag, er den personen **hele virksomhetens kapasitetsgrense**.
+
+Poenget med Oskar er å skjære båndet mellom volum og bemanning. Men kontrollpunktet er menneskelig, og det skalerer ikke. Når kundetallet vokser, gir det seg tre utslag, og bare ett av dem er akseptabelt:
+
+| Utfall | Vurdering |
+|---|---|
+| Flaggraten senkes for å holde volumet nede | **Uakseptabelt.** Kontrollen svekkes nøyaktig når den trengs mest, jf. punkt 6.1 |
+| Godkjenningene går raskere | **Uakseptabelt.** Degraderer både kontrollen og treningsgrunnlaget, jf. punkt 6.2 |
+| Kapasiteten økes | Den eneste holdbare veien |
+
+**Regn på det før vekstplanen legges.** Antall kunder × bilagsvolum × flaggrate × behandlingstid gir det årsverket som faktisk kreves. Tallet avgjør når regnskapsfører nummer to må være på plass — og det bør være før kapasitetstaket nås, ikke etter.
+
+#### Uavhengig kontroll
+
+Trener samme person Oskar, godkjenner alle flaggede saker og er oppdragsansvarlig for alt, finnes det ingen uavhengig kontroll av vedkommendes eget faglige skjønn. Anbefalingen i punkt 6.2 om at en annen autorisert regnskapsfører validerer et utvalg godkjenninger, har da ingen til å utføre seg.
+
+| Tiltak | Merknad |
+|---|---|
+| Avtale om ekstern kvalitetskontroll | Vanlig ordning for små regnskapsforetak, og kan kombineres med stedfortrederavtalen |
+| Periodisk gjennomgang ved bransjeorganisasjonens kvalitetskontrollordning | Dokumenterer uavhengig vurdering |
+| Logging av behandlingstid per godkjenning | Både internt styringsverktøy og dokumentasjon overfor tilsyn |
+
+Det siste punktet er verdt å merke seg: med én godkjenner blir behandlingstid et sentralt bevis. Fire hundre godkjenninger på én dag vil bli lagt merke til. Loggen kan da tale i Agaas' favør — eller mot.
 
 ### 6.4 Kontrollparametere
 
@@ -214,6 +252,10 @@ Logges alt samlet, blir sletting vanskelig — tre regelverk med ulike eiere, fo
 | 13 | Behandlingstid per godkjenning logges; rask godkjenning holdes utenfor treningsgrunnlaget | ☐ |
 | 14 | Flaggraten heves ved ny kunde, ny bransje og regelverksendringer | ☐ |
 | 15 | Oppdragsansvarlig har oversikt per oppdrag over automatisk behandlede og flaggede saker | ☐ |
+| 16 | Skriftlig stedfortrederavtale med ekstern autorisert regnskapsfører | ☐ |
+| 17 | Kontinuitetsplan dersom oppdragsansvarlig faller bort | ☐ |
+| 18 | Kapasitetsberegning gjort, og terskel for ansettelse nummer to fastsatt | ☐ |
+| 19 | Ordning for ekstern kvalitetskontroll etablert | ☐ |
 
 ---
 

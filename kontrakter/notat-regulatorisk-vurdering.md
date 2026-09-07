@@ -32,7 +32,8 @@ Kravene må verifiseres mot Finanstilsynets gjeldende rundskriv og søknadsskjem
 
 | Krav | Status hos Agaas |
 |---|---|
-| Oppdragsansvarlig regnskapsfører med personlig autorisasjon | **På plass** – fagansvarlig i selskapet |
+| Oppdragsansvarlig regnskapsfører med personlig autorisasjon | **På plass** – én person, ansvarlig for alle oppdrag |
+| Tilstrekkelige ressurser og kontinuitet | Bør styrkes med stedfortreder, jf. eget notat punkt 6.3 |
 | Egnethetskrav til ledelse og eiere | Må dokumenteres |
 | Kvalitetsstyringssystem og rutiner for oppdragsutførelse | Under etablering, jf. eget notat |
 | Skriftlig oppdragsavtale med hver kunde | Dekket av avtaleverket, jf. Vedlegg H |
@@ -86,6 +87,8 @@ Plattformen må understøtte sporbarhet, ingen sletting av bokførte data, oppbe
 | 1 | Advokatgjennomgang av avtaleverk og struktur | Ledelsen | ☐ |
 | 2 | Søke autorisasjon som regnskapsforetak | Ledelsen | ☐ |
 | 3 | Utpeke oppdragsansvarlig og dokumentere egnethet | Ledelsen | ☐ |
+| 3b | Etablere stedfortrederavtale og kontinuitetsplan for oppdragsansvarlig | Ledelsen | ☐ |
+| 3c | Etablere ordning for ekstern kvalitetskontroll | Fagansvarlig | ☐ |
 | 4 | Etablere kvalitetsstyringssystem, inkludert kontroll av Regnskapsagenten | Fagansvarlig | ☐ |
 | 5 | Etablere sikkerhetsstillelse og ansvarsforsikring | Økonomi | ☐ |
 | 6 | Etablere hvitvaskingsrutiner og kundetiltak i onboarding | Fagansvarlig | ☐ |
