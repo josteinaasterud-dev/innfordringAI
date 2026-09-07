@@ -121,6 +121,14 @@ Konklusjonen er altså ikke at Agaas må ha autorisasjon. Den er at **autorisasj
 
 Signeringsmodellen er dermed ikke bortkastet. Den løser sitt eget problem: den plasserer ansvaret for innholdet hos kunden, og holder Agaas unna å opptre overfor myndighetene på kundens vegne. Den løser bare ikke autorisasjonsspørsmålet, fordi det spørsmålet handler om noe annet.
 
+### 2.5 Automatisert regnskapsføring
+
+Utfører en programvareagent kundens bokføring, er det **selskapet bak agenten** som utfører den. Automatisering endrer hvordan arbeidet gjøres, ikke hvilket rettssubjekt som svarer for det.
+
+Skillet går ikke ved hvor avansert verktøyet er, men ved hvem som utøver den faglige vurderingen: eier kunden reglene, godkjenner kunden resultatet, og løser kunden avvikene — eller gjør Agaas det? Særlig avviksbehandling og menneskelig fagarbeid på kundens konkrete tall trekker mot autorisasjonspliktig tjeneste.
+
+Dette er behandlet i eget beslutningsnotat: [`notat-modellvalg-automatisert-regnskap.md`](notat-modellvalg-automatisert-regnskap.md).
+
 **Anbefaling:**
 1. All regnskapsføring legges i det autoriserte regnskapsforetaket, med egen oppdragsavtale direkte med kunden (Vedlegg G.1).
 2. Ansatte som utfører regnskapsføringsoppgaver må være ansatt eller formelt innleid av regnskapsforetaket, under dets kvalitetsstyring og en navngitt oppdragsansvarlig regnskapsfører, jf. punkt 2.1. **Dette er punktet strukturen oftest ryker på i praksis:** samme person som «hjelper til litt med bokføringen» fra Agaas AS river ned skillet.
@@ -173,7 +181,8 @@ Systemet må understøtte kundens plikter: sporbarhet, ingen sletting av bokfør
 | 2 | Bekrefte at regnskapsforetaket har gyldig **foretaksautorisasjon** i Finanstilsynets register, ikke bare autorisert person ansatt | Ledelsen | ☐ |
 | 2b | Fastsette hvilket selskap den autoriserte regnskapsføreren er ansatt i, og navngi oppdragsansvarlig per oppdrag | HR/regnskapsforetaket | ☐ |
 | 2c | Signere rolleavklaring for fagansvarlig, jf. punkt 2.2 og malen | Ledelsen | ☐ |
-| 2d | Kontrollere at ingen kundeoppdrag faktureres fra Agaas AS | Økonomi | ☐ |
+| 2d | Kontrollere at ingen kundeoppdrag eller regnskapstimer faktureres fra Agaas AS | Økonomi | ☐ |
+| 2e | Velge modell for automatisert regnskapsføring, jf. eget beslutningsnotat | Ledelsen | ☐ |
 | 3 | Bekrefte inkassobevilling og faglig leder | Inkassoforetaket | ☐ |
 | 4 | Rydde i ansettelsesforhold og eventuelle inn-/utleieavtaler: hvem utfører hva, i hvilket selskap, jf. punkt 2.1 | HR/ledelsen | ☐ |
 | 5 | Gjennomgå markedsføring så Agaas AS ikke fremstår som regnskapsfører | Marked | ☐ |

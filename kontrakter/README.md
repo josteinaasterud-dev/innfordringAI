@@ -15,6 +15,7 @@ Forslag til kontraktstruktur for Agaas AS: programvareleverandør og bedriftsrå
 | [`vedlegg-f-fullmakter-og-signering.md`](vedlegg-f-fullmakter-og-signering.md) | Altinn-roller og signeringsmodeller – signatur under kundens identitet |
 | [`vedlegg-g-tilleggsavtaler.md`](vedlegg-g-tilleggsavtaler.md) | Regnskapsføring, inkasso, revisor, bank, aksesspunkt, nye tredjeparter |
 | [`notat-regulatorisk-vurdering.md`](notat-regulatorisk-vurdering.md) | Regulatoriske forutsetninger og sjekkliste |
+| [`notat-modellvalg-automatisert-regnskap.md`](notat-modellvalg-automatisert-regnskap.md) | **Beslutningsnotat:** hvor automatisert regnskapsføring plasseres i strukturen |
 | [`mal-rolleavklaring-fagansvarlig.md`](mal-rolleavklaring-fagansvarlig.md) | Intern mal: arbeidsdeling for autorisert regnskapsfører ansatt i Agaas AS |
 
 ## Bærende grep
@@ -28,6 +29,10 @@ Forslag til kontraktstruktur for Agaas AS: programvareleverandør og bedriftsrå
 **Roller er dokumentert.** Autorisert regnskapsfører ansatt i Agaas AS har produktfaglig ansvar, ikke oppdragsansvar for kunder. Skillet dokumenteres i rolleavklaringen.
 
 **Ansvar følger leveransen.** Agaas svarer for plattform, drift og egen rådgivning. Konsernselskaper og tredjeparter svarer for sitt, på egne avtaler.
+
+## Åpent beslutningspunkt
+
+Plasseringen av den automatiserte regnskapsføringen er ikke avklart, og den avgjør om Agaas AS holdes utenfor Finanstilsynets tilsyn. Se beslutningsnotatet før avtaleverket ferdigstilles.
 
 ## Før bruk
 
