@@ -12,6 +12,7 @@ Oppdatert: [dato]. Gjeldende versjon publiseres på [nettadresse]. Endringer var
 | [E-post/varsling] | Utsending av varsler og fakturaer | Navn, e-post, dokumentinnhold | EØS |
 | [Support-/saksverktøy] | Brukerstøtte | Kontaktopplysninger, saksinnhold | EØS |
 | [Bilagstolkning] | Maskinell tolkning av bilag | Bilagsinnhold | EØS |
+| Signicat | Kvalifisert tidsstempling (QTSA) og elektronisk signering | Hashverdier av dokument og postering, signatarens identitetsopplysninger | EØS |
 
 ## C.2 Selvstendige behandlingsansvarlige
 
@@ -25,6 +26,18 @@ Agaas er i tillegg selvstendig behandlingsansvarlig for egne lovpålagte plikter
 | Inkassoforetak | Kundens oppdragsavtale, Vedlegg G.1 | Kundens overføring av sak |
 | Kundens bank | Kundens kundeforhold og samtykke | Kundens samtykke |
 | Kundens revisor | Revisorloven | Kundens tilgangstildeling |
+
+## C.2b Tillitstjenester
+
+Agaas benytter kvalifisert tidsstemplingstjeneste fra Signicat for å sikre integriteten og tidfestingen av regnskapsmateriale og oppdragsdokumentasjon. Tjenesten leveres som kvalifisert tillitstjeneste etter eIDAS.
+
+| Forhold | Beskrivelse |
+|---|---|
+| Tjeneste | Kvalifisert tidsstempling, samt elektronisk signering, jf. Vedlegg F |
+| Hva som sendes | Som hovedregel kun hashverdier, ikke innholdet i bilag eller posteringer |
+| Rettsvirkning | Presumsjon for tidspunktets riktighet og dataenes integritet |
+| Verifikasjon | Stempler kan verifiseres uavhengig av Agaas |
+| Arkivfornyelse | Periodisk ny stempling for å bevare bevisverdi i oppbevaringsperioden |
 
 ## C.3 Overføring ut av EØS
 

@@ -24,7 +24,7 @@ Avtaleverk for Agaas AS: regnskapssystem og regnskapsføring solgt som én pakke
 
 **Én avtale, én leverandør.** Agaas leverer system og regnskapsføring samlet. Avtalen er både bruksrettsavtale og oppdragsavtale etter regnskapsførerloven.
 
-**Agaas svarer for agenten.** Regnskapsagenten er en produksjonsmetode, ikke en ansvarsfraskrivelse. Agaas er faglig ansvarlig uavhengig av om arbeidet er maskinelt eller manuelt, med versjonert mandat, eskalering, stikkprøvekontroll og sporbarhet som kan rekonstrueres i ettertid.
+**Agaas svarer for agenten.** Regnskapsagenten er en produksjonsmetode, ikke en ansvarsfraskrivelse. Agaas er faglig ansvarlig uavhengig av om arbeidet er maskinelt eller manuelt, med versjonert mandat, eskalering, stikkprøvekontroll og sporbarhet sikret ved kvalifisert tidsstempling.
 
 **Kunden signerer selv.** Agaas utarbeider rapporteringen, kunden godkjenner og signerer under egen elektronisk identitet — gjerne i plattformen. Ansvaret for innholdet overfor myndighetene ligger hos kunden; ansvaret for utførelsen ligger hos Agaas.
 

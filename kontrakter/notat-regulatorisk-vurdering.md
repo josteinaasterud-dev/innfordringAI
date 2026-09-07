@@ -53,7 +53,7 @@ Agaas er faglig ansvarlig for alt arbeid, uavhengig av om det er utført maskine
 |---|---|
 | Kontroll med agentens arbeid | Stikkprøver og terskelbaserte kontroller, jf. Vedlegg H.5 |
 | Håndtering av det agenten ikke kan avgjøre | Eskalering til medarbeider og Oppdragsansvarlig |
-| Sporbarhet per postering | Grunnlag, anvendt regel, tidspunkt, godkjenner |
+| Sporbarhet per postering | Grunnlag, anvendt regel, mandatversjon, tidspunkt, godkjenner — sikret med kvalifisert tidsstempel |
 | Dokumentasjon av oppdragsutførelsen | Loggene utgjør oppdragsdokumentasjonen |
 | Kundens innsyn | Kunden kan se hvordan enhver postering er fremkommet |
 
@@ -61,7 +61,7 @@ Signeringsmodellen består fordi den plasserer ansvaret for innholdet overfor my
 
 **Merk:** sporbarhet og dokumentasjon er ikke bare et tilsynskrav. Det er også Agaas' eget bevis for forsvarlig utførelse dersom en kunde reklamerer.
 
-Sporbarhet, mandatdokumenter og løpende tilsyn er på plass i Plattformen. Gjenstående arbeid — versjonering av mandatet, binding mellom postering og versjon, endringskontroll ved trening, og fremleggbar oppdragsdokumentasjon — er behandlet i [`notat-kvalitetsstyring-regnskapsagent.md`](notat-kvalitetsstyring-regnskapsagent.md).
+Sporbarhet med kvalifisert tidsstempling, mandatdokumenter og løpende tilsyn er på plass i Plattformen. Den kvalifiserte tidsstemplingen gir presumsjon for tidspunkt og integritet, og er et sterkere utgangspunkt enn de fleste regnskapsforetak har. Gjenstående arbeid — versjonering av mandatet, binding mellom postering og versjon, endringskontroll ved trening, og fremleggbar oppdragsdokumentasjon — er behandlet i [`notat-kvalitetsstyring-regnskapsagent.md`](notat-kvalitetsstyring-regnskapsagent.md).
 
 ## 5. Øvrige regelverk
 

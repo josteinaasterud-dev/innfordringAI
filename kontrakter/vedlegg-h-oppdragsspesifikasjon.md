@@ -105,6 +105,7 @@ Regnskapsagenten utfører oppgaver markert **A** for Agaas i punkt H.2. Følgend
 | Eskalering | Saker Regnskapsagenten ikke kan avgjøre forsvarlig, går til Agaas' medarbeider |
 | Stikkprøvekontroll | Agaas kontrollerer minst [X] % av maskinelt behandlede bilag, alle poster over [beløp], og alltid [nye leverandører / avvikende mva-behandling / transaksjoner med nærstående] |
 | Sporbarhet | Grunnlag, anvendt regel, gjeldende mandatversjon, tidspunkt og eventuell godkjenner logges per postering |
+| Tidsstempling | Posteringer, mandatversjoner, kontrollresultater og periodeavslutninger sikres med kvalifisert tidsstempel etter eIDAS |
 | Mandat | Regnskapsagentens beslutningsområde er fastsatt i versjonerte mandatdokumenter. Utvidelse krever faglig godkjenning av Oppdragsansvarlig |
 | Endringer | Ny versjon settes i produksjon først etter godkjenning og regresjonstest. Vesentlige endringer i behandlingen av Kundens regnskap varsles Kunden |
 | Rekonstruksjon | Agaas kan dokumentere hvilket mandat og hvilken versjon som gjaldt på et gitt tidspunkt |

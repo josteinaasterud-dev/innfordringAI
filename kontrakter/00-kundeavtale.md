@@ -99,9 +99,11 @@ Slike tjenester leveres av tredjepart eller konsernselskap med nødvendig bevill
 
 **5.5** Alt arbeid utført av Regnskapsagenten skal være sporbart: hvilket grunnlag som er benyttet, hvilken regel eller vurdering som er anvendt, hvilken mandatversjon som var i kraft, tidspunkt, og hvem som eventuelt har godkjent. Kunden, Kundens revisor og myndigheter skal kunne følge sporet, også i ettertid for tidligere perioder.
 
-**5.6** Agaas skal ha rutine for godkjenning og testing før endringer i Regnskapsagenten settes i produksjon. Vesentlige endringer i hvordan Kundens regnskap behandles, varsles Kunden.
+**5.6** Sporet sikres med **kvalifisert tidsstempling** etter eIDAS, levert av kvalifisert tillitstjenesteyter, jf. Vedlegg C. Tidsstemplingen omfatter posteringer, mandatversjoner, kontrollresultater og periodeavslutninger, og gir presumsjon for tidspunktets riktighet og materialets integritet. Kunden og Kundens revisor kan verifisere stemplene uavhengig av Agaas.
 
-**5.7** Kunden kan når som helst be om at nærmere angitte områder behandles manuelt i stedet for av Regnskapsagenten.
+**5.7** Agaas skal ha rutine for godkjenning og testing før endringer i Regnskapsagenten settes i produksjon. Vesentlige endringer i hvordan Kundens regnskap behandles, varsles Kunden.
+
+**5.8** Kunden kan når som helst be om at nærmere angitte områder behandles manuelt i stedet for av Regnskapsagenten.
 
 ## 6. Kundens plikter
 
@@ -201,7 +203,7 @@ Slike tjenester leveres av tredjepart eller konsernselskap med nødvendig bevill
 
 **15.2** Kunden kan når som helst ta ut Regnskapsmateriale i maskinlesbart format, herunder standardisert regnskapsuttrekk (SAF-T) og bilagsdokumentasjon.
 
-**15.3** Agaas skal dokumentere utførelsen av Regnskapsoppdraget slik regnskapsførerloven krever, og oppbevare oppdragsdokumentasjonen i lovpålagt periode.
+**15.3** Agaas skal dokumentere utførelsen av Regnskapsoppdraget slik regnskapsførerloven krever, og oppbevare oppdragsdokumentasjonen i lovpålagt periode. Agaas skal opprettholde tidsstemplingens bevisverdi gjennom hele oppbevaringsperioden ved periodisk arkivfornyelse, jf. punkt 5.6.
 
 **15.4** Ved opphør skal Agaas uten ugrunnet opphold utlevere alt Regnskapsmateriale til Kunden eller til den Kunden utpeker, i format som gjør det anvendbart hos ny regnskapsfører. Kunden har uttrekksrett i minst 90 dager etter opphør.
 
