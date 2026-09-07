@@ -11,7 +11,8 @@ Avtaleverk for Agaas AS: regnskapssystem og regnskapsføring solgt som én pakke
 | [`vedlegg-b-databehandleravtale.md`](vedlegg-b-databehandleravtale.md) | Databehandleravtale etter GDPR artikkel 28 |
 | [`vedlegg-c-underdatabehandlere.md`](vedlegg-c-underdatabehandlere.md) | Underdatabehandlere og selvstendige mottakere |
 | [`vedlegg-d-pakker-og-betaling.md`](vedlegg-d-pakker-og-betaling.md) | Pakkemekanikk, bestilling og betalingsbetingelser |
-| [`pakker.md`](pakker.md) | Pakkekatalog: Holding, Liten, Medium |
+| [`pakker.md`](pakker.md) | Pakkekatalog: Holding, Standard, Premium |
+| [`prisliste.md`](prisliste.md) | Prisliste med uavklarte punkter |
 | [`vedlegg-e-sla.md`](vedlegg-e-sla.md) | Servicenivå for plattformen |
 | [`vedlegg-f-fullmakter-og-signering.md`](vedlegg-f-fullmakter-og-signering.md) | Signeringsmodeller og Altinn-roller |
 | [`vedlegg-g-tilleggsavtaler.md`](vedlegg-g-tilleggsavtaler.md) | Inkasso, revisor, bank, aksesspunkt, nye tredjeparter |

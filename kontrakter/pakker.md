@@ -10,11 +10,11 @@ Pakken kunden velger ved onboarding, dokumenteres i **Pakkebekreftelsen** og er 
 
 ## Oversikt
 
-| | **Holding** | **Liten** | **Medium** |
+| | **Holding** | **Standard** | **Premium** |
 |---|---|---|---|
 | Målgruppe | Holdingselskap uten drift | Selskap i tidlig drift | Etablert selskap |
-| Bilag per år | Inntil [50] | Inntil [600] | Inntil [3 000] |
-| Ansatte i lønn | Ingen | Inntil [3] | Inntil [15] |
+| Bilag per år | **15** inkludert | [ikke fastsatt] | [ikke fastsatt] |
+| Ansatte i lønn | Ingen | Tillegg per ansatt | Tillegg per ansatt |
 | Løpende bokføring | Årlig | Månedlig | Månedlig |
 | Bankavstemming | Årlig | Månedlig | Månedlig |
 | Mva-melding | Ikke omfattet | ✓ | ✓ |
@@ -25,7 +25,9 @@ Pakken kunden velger ved onboarding, dokumenteres i **Pakkebekreftelsen** og er 
 | Periodisk rapport til kunden | Årlig | Månedlig | Månedlig |
 | Prosjekt og avdeling | – | – | ✓ |
 | Statusmøte | – | Årlig | Kvartalsvis |
-| Pris per måned | [___] | [___] | [___] |
+| Pris | **3 950 kr/år** | [ikke fastsatt] | [ikke fastsatt] |
+| Brukere inkludert | **1** | [ikke fastsatt] | [ikke fastsatt] |
+| Bankkontoer inkludert | **1** | [ikke fastsatt] | [ikke fastsatt] |
 | Bindingstid | [12] mnd | [12] mnd | [12] mnd |
 
 ---
@@ -60,6 +62,20 @@ Leverer bilag og kontoutskrifter, fatter nødvendige styre- og generalforsamling
 | Agaas klargjør årsregnskap til styrebehandling | Senest [30] dager før lovbestemt frist |
 | Agaas klargjør skattemelding | Senest [15] virkedager før lovbestemt frist |
 
+### Pris
+
+**3 950 kroner per år** eksklusive merverdiavgift. Inkluderer 15 bilag, 1 bruker, 1 bankkonto, standard onboarding og standard support.
+
+| Ut over pakken | Pris |
+|---|---|
+| Bilag 16–500 | 25 kr/stk |
+| Bilag 501+ | 75 kr/stk |
+| Ekstra bruker | 49 kr/mnd |
+| Ekstra bankkonto | 49 kr/mnd |
+| Ekstraordinært arbeid | 1 290 kr/time |
+
+Full oversikt i [`prisliste.md`](prisliste.md).
+
 ### Ikke omfattet
 
 Merverdiavgift, lønn, løpende rapportering gjennom året, konsolidering, transaksjonsbistand.
@@ -68,16 +84,18 @@ Merverdiavgift, lønn, løpende rapportering gjennom året, konsolidering, trans
 
 | Hendelse | Konsekvens |
 |---|---|
-| Selskapet blir mva-registrert | Må over på Liten eller Medium |
-| Selskapet får ansatte med lønn | Må over på Liten med lønnstillegg, eller Medium |
+| Selskapet blir mva-registrert | Må over på Standard eller Premium |
+| Selskapet får ansatte med lønn | Må over på Standard med lønnstillegg, eller Premium |
 | Selskapet får løpende driftsinntekter | Vurderes; pakken forutsetter ingen drift |
-| Bilagsvolum overstiger grensen | Tillegg per bilag, jf. Vedlegg D |
+| Bilagsvolum overstiger 15 | Tillegg per bilag; over 500 bilag tilsier at pakken er feil valgt |
 
 ---
 
-## Liten
+## Standard
 
 **For selskap i tidlig drift:** merverdiavgiftspliktig omsetning, begrenset bilagsvolum, få eller ingen ansatte.
+
+> **Ikke ferdigstilt.** Pris, bilagsgrense og volumgrenser er ikke fastsatt.
 
 ### Dette utfører Agaas
 
@@ -116,7 +134,9 @@ Utsteder salgsfakturaer, godkjenner leverandørfakturaer, følger opp forfalte k
 
 | Tillegg | Innhold |
 |---|---|
-| Lønn | Lønnskjøring, feriepenger, reiseregning og a-melding for inntil [3] ansatte |
+| Lønnsmodul | 99 kr per selskap per måned |
+| Lønnskjøring | 49 kr per ansatt per måned |
+| Reiseregning og utlegg | 49 kr per bruker per måned |
 
 ### Ikke omfattet
 
@@ -126,20 +146,22 @@ Prosjekt- og avdelingsregnskap, konsolidering, budsjett og likviditetsprognose, 
 
 | Hendelse | Konsekvens |
 |---|---|
-| Bilagsvolum overstiger grensen | Tillegg per bilag; ved vedvarende overskridelse tilbys Medium |
-| Flere enn [3] ansatte i lønn | Må over på Medium |
-| Behov for prosjekt- eller avdelingsdimensjoner | Må over på Medium |
+| Bilagsvolum overstiger grensen | Tillegg per bilag; ved vedvarende overskridelse tilbys Premium |
+| Flere ansatte enn pakken er dimensjonert for | Må over på Premium |
+| Behov for prosjekt- eller avdelingsdimensjoner | Må over på Premium |
 | Flere selskaper med konsolidering | Egen avtale |
 
 ---
 
-## Medium
+## Premium
 
 **For etablert selskap med jevn drift:** høyere volum, ansatte, behov for løpende styringsinformasjon.
 
+> **Ikke ferdigstilt.** Pris og volumgrenser er ikke fastsatt.
+
 ### Dette utfører Agaas
 
-Alt som inngår i Liten, og i tillegg:
+Alt som inngår i Standard, og i tillegg:
 
 | Oppgave | Frekvens |
 |---|---|
@@ -153,7 +175,7 @@ Alt som inngår i Liten, og i tillegg:
 
 ### Dette gjør kunden selv
 
-Som i Liten, og i tillegg: registrerer ansatte og lønnsbetingelser, godkjenner timer, fravær og reiseregninger, og utbetaler lønn i bank.
+Som i Standard, og i tillegg: registrerer ansatte og lønnsbetingelser, godkjenner timer, fravær og reiseregninger, og utbetaler lønn i bank.
 
 ### Frister
 
@@ -177,7 +199,7 @@ Konsolidering og konsernregnskap, budsjettprosess, bistand ved bokettersyn, tran
 | Hendelse | Konsekvens |
 |---|---|
 | Flere selskaper med konsolidering | Konsernavtale |
-| Flere enn [15] ansatte | Egen prising av lønn |
+| Volum ut over det pakken er dimensjonert for | Egen prising |
 | Vedvarende volum over grensen | Egen prising |
 
 ---
@@ -191,4 +213,5 @@ Konsolidering og konsernregnskap, budsjettprosess, bistand ved bokettersyn, tran
 | Arbeid utenfor pakken | Faktureres etter medgått tid; timepris opplyses og varsles før arbeid påbegynnes, jf. Vedlegg D.6 |
 | Volumoverskridelse | Kunden varsles, og tillegg per enhet påløper. Ved vedvarende overskridelse tilbys større pakke |
 | Nedgradering | Får virkning fra utløpet av inneværende [måned/termin], og kunden opplyses om hvilke oppgaver som da tilfaller kunden selv |
+| Priser | Full oversikt i [`prisliste.md`](prisliste.md). Priser er eksklusive merverdiavgift |
 | Oppstart midt i året | Opprydding i inngående balanse og tidligere perioder inngår ikke; prises særskilt etter gjennomgang |

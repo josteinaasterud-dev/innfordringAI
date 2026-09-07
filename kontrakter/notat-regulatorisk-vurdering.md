@@ -69,13 +69,39 @@ Sporbarhet med kvalifisert tidsstempling, mandatdokumenter og løpende tilsyn er
 ### 5.1 Inkasso
 Inndrivelse av forfalte krav for andre krever bevilling. Agaas driver ikke inndrivelse, men overfører saksdata teknisk til inkassoforetak på kundens initiativ.
 
-Grenser Agaas må holde: ingen kommunikasjon med skyldner i eget navn, ingen vurdering av kravets berettigelse, ingen mottak av innbetaling på kravene, og regelstyrt overføring må være kundens egen konfigurasjon som kunden kan se og slå av. Vederlag fra inkassoforetaket bør være systemvederlag, ikke andel av inkassosalær. **Bør avklares særskilt.**
+Grenser Agaas må holde: ingen kommunikasjon med skyldner i eget navn, ingen vurdering av kravets berettigelse, ingen mottak av innbetaling på kravene, og regelstyrt overføring må være kundens egen konfigurasjon som kunden kan se og slå av. Vederlag fra inkassoforetaket bør være systemvederlag, ikke andel av inkassosalær.
+
+**Konflikt med prislisten.** Prislisten angir at renter og gebyrer fra skyldner tilfaller Agaas, for inkassovarsel, betalingsoppfølging og inkasso. Dette må avklares før modellen tas i bruk:
+
+| Forhold | Vurdering |
+|---|---|
+| Hvem eier renter og gebyrer? | Forsinkelsesrenter og purregebyrer tilhører som utgangspunkt **kreditor**, altså kunden. Overføring til Agaas krever uttrykkelig avtale, og har regnskaps- og skattemessige konsekvenser for kunden |
+| Purregebyrenes størrelse | Inkassoloven med forskrift setter grenser for hva som kan kreves av skyldner før inkasso, og for antall purringer |
+| Bevillingsspørsmålet | At Agaas mottar vederlag **fra skyldner** for oppfølging av andres forfalte krav, er den økonomiske kjernen i det inkassoloven regulerer. Dette er den sentrale risikoen |
+| Motstrid i avtaleverket | Kundeavtalen punkt 3.5 bokstav a og Vedlegg G forutsetter at Agaas ikke driver inndrivelse og ikke har andel i inkassoinntekter |
+
+**Enten justeres inntektsmodellen, eller så må avtaleverket og den regulatoriske posisjonen skrives om.** De to kan ikke stå ved siden av hverandre. Dette bør høyt på listen til advokaten.
 
 ### 5.2 Bank og betaling
 Kontoinformasjons- og betalingsinitieringstjenester er konsesjonspliktige, og det å opptre som agent for et betalingsforetak krever registrering. Bruk konsesjonspliktig tilbyder der kunden er samtykkegiver og betaling frigis hos banken. **Avklar med tilbyderen om deres modell gjør Agaas til agent.**
 
 ### 5.3 Revisors uavhengighet
-Agaas fører kundens regnskap. Revisor kan derfor ikke være tilknyttet Agaas eller Agaas-gruppen. Skulle gruppen vurdere å eie revisjonsvirksomhet, må dette avklares grundig først.
+
+Agaas fører kundens regnskap. Revisor kan derfor ikke være tilknyttet Agaas eller Agaas-gruppen.
+
+**Konflikt med prislisten.** Prislisten inneholder posten «Agaas Revisjon». Tilbys revisjon fra gruppen, kan den ikke selges til kunder som samtidig har regnskapsføring hos Agaas — det er selvrevisjon, og rammes av uavhengighetskravene i revisorloven.
+
+| Mulig håndtering | Merknad |
+|---|---|
+| Revisjon tilbys kun til kunder uten regnskapsføring hos Agaas | Krever sperre i salgs- og onboardingflyten, ikke bare en instruks |
+| Revisjon legges utenfor gruppen | Ryddigst, men da er det ikke Agaas' tjeneste |
+| Revisjon utgår | Enklest |
+
+Sperren må være teknisk. En kunde som kjøper begge deler i onboardingen, skaper et uavhengighetsbrudd i det øyeblikket bestillingen registreres.
+
+### 5.3b Agaas Invest
+
+Prislisten nevner «Agaas Invest» som egen tjeneste. Avhengig av innholdet kan investeringsrådgivning og formidling av finansielle instrumenter være konsesjonspliktig. Innholdet må beskrives før det vurderes.
 
 ### 5.4 Bokføringsloven
 
@@ -113,6 +139,10 @@ Dette er et konkret og etterprøvbart punkt som en kontroll vil se på, og det b
 | 13 | Avklare oppbevaringssted i utlandet mot bokføringsloven, jf. punkt 5.4 | Ledelsen/advokat | ☐ |
 | 14 | Signere databehandleravtale med Hetzner og låse datasenterregion til Tyskland | Teknologi | ☐ |
 | 15 | Sikre at onboardingflyten genererer Pakkebekreftelse som fastsetter leveranseomfanget | Produkt | ☐ |
+| 16 | **Avklare inntektsmodellen for renter og gebyrer fra skyldner, jf. punkt 5.1** | Advokat | ☐ |
+| 17 | Avklare Agaas Revisjon mot uavhengighetskravene, med teknisk sperre, jf. punkt 5.3 | Ledelsen | ☐ |
+| 18 | Beskrive innholdet i Agaas Invest og vurdere konsesjonsplikt | Ledelsen | ☐ |
+| 19 | Definere «fair use» for Oskar som en målbar grense | Produkt | ☐ |
 
 **Merk rekkefølgen:** punkt 2 tar tid. Søknadsprosessen bør startes tidlig, og punktene 3 til 6 er i praksis forutsetninger for at søknaden skal kunne innvilges.
 
