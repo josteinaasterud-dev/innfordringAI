@@ -9,6 +9,8 @@ Priser og leveranseomfang fastsettes ikke i Avtalen, men i den **pakken Kunden v
 
 Ved valg av pakke genereres en **Pakkebekreftelse**, jf. D.3. Pakkebekreftelsen er en del av Avtalen og utgjør sammen med Vedlegg H oppdragsspesifikasjonen etter regnskapsførerloven.
 
+Gjeldende pakker er beskrevet i [`pakker.md`](pakker.md).
+
 ## D.2 Hva en pakke skal angi
 
 Enhver pakke skal, for å kunne utgjøre en gyldig oppdragsspesifikasjon, angi:
