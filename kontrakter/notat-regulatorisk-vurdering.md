@@ -81,6 +81,46 @@ Rollen kan ha to helt ulike innhold:
 
 **Merk:** Er intensjonen at kundeoppdragene faktisk skal ligge i Agaas AS med denne personen som fagansvarlig, må Agaas AS selv søke foretaksautorisasjon — og da er selskapet under Finanstilsynets tilsyn. Målsettingen om å holde Agaas AS utenfor forutsetter at oppdragene ligger i byrået.
 
+### 2.3 Hvorfor hjelper det ikke at kunden signerer selv?
+
+Spørsmålet er nærliggende, men bygger på at signeringen er det som utløser autorisasjonsplikten. Det er den ikke. Det er **to forskjellige spørsmål**, og de har to forskjellige svar:
+
+| Spørsmål | Hva det avgjør | Svar i vår modell |
+|---|---|---|
+| **Hvem utfører arbeidet?** | Om det foreligger et regnskapsoppdrag, og dermed autorisasjonsplikt | Kunden selv, eller byrået |
+| **Hvem signerer og sender inn?** | Hvem som er ansvarlig for innholdet overfor myndighetene | Alltid kunden |
+
+Autorisasjonsplikten knytter seg til **å utføre en annens pliktige regnskapsrapportering** — å føre bilagene, avstemme, periodisere og utarbeide meldingene. Selve signeringen er sluttpunktet, ikke selve arbeidet. Signerer kunden noe andre har utarbeidet, er arbeidet like fullt utført av andre.
+
+**Parallellene gjør det tydelig:**
+
+- Styret signerer alltid årsregnskapet selv. Revisor trenger likevel godkjenning for revisjonen.
+- Kjøper og selger signerer kjøpekontrakten selv. Eiendomsmegleren trenger likevel bevilling for meglingen.
+- Kreditor eier kravet selv. Inkassoforetaket trenger likevel bevilling for inndrivelsen.
+
+I alle tre tilfellene er det **arbeidet**, ikke signaturen, som er regulert.
+
+Det er også en enkel kontrollsjekk: hvis autorisasjonsplikten kunne omgås ved å la kunden trykke «signer», ville ingen regnskapsbyråer trengt autorisasjon. Alle ville lagt inn det trykket. En tolkning som gjør regelverket virkningsløst, vil ikke stå seg.
+
+**Hva autorisasjonen faktisk skal beskytte:** brukerne av regnskapsinformasjonen — kreditorer, myndigheter, ansatte, kjøpere — som ikke selv kan vurdere om regnskapet er faglig forsvarlig ført. Derfor stilles krav til utdanning, praksis, etterutdanning, kvalitetsstyring og ansvarsforsikring hos den som utfører arbeidet. Kundens signatur sier ingenting om den faglige kvaliteten.
+
+### 2.4 Når trengs det da *ikke* autorisasjon?
+
+Dette er den viktige nyansen, og den favoriserer Agaas: **selvbetjeningsmodellen er ikke autorisasjonspliktig i det hele tatt.**
+
+| Scenario | Hvem utfører arbeidet | Autorisasjon |
+|---|---|---|
+| Kunden fører selv i Plattformen, Agaas leverer verktøy og brukerstøtte | Kunden | **Nei** |
+| Kunden fører selv, Agaas gir opplæring og rådgivning om oppsett og rutiner | Kunden | **Nei** |
+| Kunden fører selv, Plattformen foreslår kontering maskinelt, kunden kontrollerer og godkjenner | Kunden, med verktøystøtte | **Nei** |
+| Kunden fører selv, men får løpende faglig bistand på egne bilag fra Agaas | Gråsone – avhenger av omfang og selvstendighet | Vurderes konkret |
+| Byrået fører for kunden, kunden signerer | Byrået | **Ja – byrået har den** |
+| Agaas fører for kunden, kunden signerer | Agaas | **Ja – Agaas ville trengt den** |
+
+Konklusjonen er altså ikke at Agaas må ha autorisasjon. Den er at **autorisasjonen må følge arbeidet**. Så lenge kundene enten fører selv eller kjøper føringen fra byrået, er Agaas AS utenfor — uavhengig av hvem som signerer.
+
+Signeringsmodellen er dermed ikke bortkastet. Den løser sitt eget problem: den plasserer ansvaret for innholdet hos kunden, og holder Agaas unna å opptre overfor myndighetene på kundens vegne. Den løser bare ikke autorisasjonsspørsmålet, fordi det spørsmålet handler om noe annet.
+
 **Anbefaling:**
 1. All regnskapsføring legges i det autoriserte regnskapsforetaket, med egen oppdragsavtale direkte med kunden (Vedlegg G.1).
 2. Ansatte som utfører regnskapsføringsoppgaver må være ansatt eller formelt innleid av regnskapsforetaket, under dets kvalitetsstyring og en navngitt oppdragsansvarlig regnskapsfører, jf. punkt 2.1. **Dette er punktet strukturen oftest ryker på i praksis:** samme person som «hjelper til litt med bokføringen» fra Agaas AS river ned skillet.
