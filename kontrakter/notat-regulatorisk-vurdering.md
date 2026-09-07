@@ -88,37 +88,9 @@ Merk også at inkassoloven med forskrift setter grenser for hva som kan kreves a
 ### 5.2 Bank og betaling
 Kontoinformasjons- og betalingsinitieringstjenester er konsesjonspliktige, og det å opptre som agent for et betalingsforetak krever registrering. Bruk konsesjonspliktig tilbyder der kunden er samtykkegiver og betaling frigis hos banken. **Avklar med tilbyderen om deres modell gjør Agaas til agent.**
 
-### 5.3 Revisors uavhengighet
+### 5.3 Revisor
 
-Agaas fører kundens regnskap. Revisor kan derfor ikke være tilknyttet Agaas.
-
-**Planlagt struktur:** Agaas kjøper 49 % i et revisjonsselskap, foreslått kalt Agaas Revisjon AS, og revisjonen tas ut av kundeavtalen slik at kunden inngår egen avtale med revisor.
-
-**Å ta det ut av avtalen løser ikke problemet.** Uavhengighetskravene i revisorloven knytter seg ikke til hvem som er avtaleparter, men til den faktiske tilknytningen mellom revisor og den som har ført regnskapet. Kravene omfatter også revisors **nettverk**, som er videre enn eierskap og fanger opp felles eierinteresser, felles kontroll og felles profilering.
-
-| Forhold | Vurdering |
-|---|---|
-| 49 % eierandel | Betydelig innflytelse. Etablerer med stor sannsynlighet nettverkstilknytning, selv uten kontroll |
-| Felles navn «Agaas Revisjon AS» | Forsterker det vesentlig. Signaliserer utad at selskapene er én gruppe |
-| Egen avtale mellom kunde og revisor | Endrer avtalestrukturen, ikke tilknytningen |
-| Samme kunde har regnskap hos Agaas | Selvrevisjon. Rammes uavhengig av hvem som har signert hva |
-
-En revisor som er i nettverk med den som fører regnskapet, kan ikke revidere det regnskapet. At kunden har to avtaler i stedet for én, endrer ikke dette.
-
-**Alternativer:**
-
-| Alternativ | Vurdering |
-|---|---|
-| Revisjonsselskapet reviderer kun kunder som ikke har regnskapsføring hos Agaas | Mulig, men krever teknisk sperre i salg og onboarding, og begrenser markedet betydelig |
-| Revisjonsselskapet får et navn uten tilknytning til Agaas | **Bør gjøres uansett.** «Agaas Revisjon» som revisor for en «Agaas»-regnskapskunde er vanskelig å forsvare utad, uavhengig av den rettslige vurderingen |
-| Eierandelen reduseres eller struktureres slik at nettverkstilknytning ikke oppstår | Krever konkret vurdering. 49 % er høyt |
-| Ren henvisningsordning til uavhengig revisor uten eierskap | Ryddigst, men uten eieroppside |
-
-Navnevalget er det enkleste å endre og det mest skadelige å beholde. Det bør avklares før selskapet stiftes, ikke etter.
-
-### 5.3b Agaas Invest
-
-Investeringstjenester holdes utenfor avtaleverket og prislisten. Blir de aktuelle senere, må innholdet beskrives og konsesjonsplikt vurderes før de tilbys kunder.
+Agaas fører kundens regnskap. Kunder med revisjonsplikt velger revisor selv, og revisor må være uavhengig av Agaas. Agaas leverer tilgang, uttrekk og oppklarende opplysninger til revisor, jf. Vedlegg G.
 
 ### 5.4 Bokføringsloven
 
@@ -157,7 +129,6 @@ Dette er et konkret og etterprøvbart punkt som en kontroll vil se på, og det b
 | 14 | Signere databehandleravtale med Hetzner og låse datasenterregion til Tyskland | Teknologi | ☐ |
 | 15 | Sikre at onboardingflyten genererer Pakkebekreftelse som fastsetter leveranseomfanget | Produkt | ☐ |
 | 16 | Ta ut forutsetningen om at renter og gebyrer fra skyldner tilfaller Agaas i fasen før inkasso | Økonomi | ☐ |
-| 17 | **Avklare navn og eierandel i revisjonsselskapet mot nettverksreglene før stiftelse, jf. punkt 5.3** | Ledelsen/advokat | ☐ |
 | 18 | Etablere Agaas Inkasso AS med bevilling før inkassofasen tilbys | Ledelsen | ☐ |
 | 19 | Definere «fair use» for Oskar som en målbar grense | Produkt | ☐ |
 

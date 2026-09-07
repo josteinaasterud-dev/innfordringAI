@@ -87,7 +87,66 @@ Holding inkluderer regnskapsføring, økonomisystem med alle standardfunksjoner,
 | API-tilgang | selskap/mnd | 149 |
 | Ekstra integrasjon | integrasjon/mnd | 99 |
 | BankID-signering | signering | 29 |
-| Ekstra dokumentlagring | GB/mnd | [ikke fastsatt] |
+
+## 8b. Lagring
+
+Regnskapsmateriale har oppbevaringsplikt etter bokføringsloven. Lagringen faktureres i trinn, ikke per gigabyte, slik at kunden får en forutsigbar pris og Agaas slipper å fakturere brøkdeler.
+
+### Inkludert i pakkene
+
+| Pakke | Inkludert lagring |
+|---|---|
+| Holding | 5 GB |
+| Standard | 25 GB |
+| Premium | 100 GB |
+
+De fleste kunder holder seg godt innenfor. Et selskap med 600 bilag i året bruker typisk under 200 MB årlig, og under 1 GB over hele oppbevaringsperioden.
+
+### Trappetrinn ved overskridelse
+
+| Trinn | Samlet lagring | Pris per måned | Pris per år |
+|---|---|---|---|
+| 1 | Til og med 25 GB | 99 | 1 090 |
+| 2 | 25–100 GB | 249 | 2 740 |
+| 3 | 100–500 GB | 749 | 8 240 |
+| 4 | 500 GB – 2 TB | 2 490 | 27 390 |
+| 5 | Over 2 TB | Etter avtale | |
+
+Årspris tilsvarer elleve måneder — én måned rabatt ved årlig betaling.
+
+### Arkivtilgang etter avtaleslutt
+
+Kunden har oppbevaringsplikt også etter at kundeforholdet er avsluttet. Agaas tilbyr fortsatt tilgang som en **valgfri** tjeneste:
+
+| Tjeneste | Pris |
+|---|---|
+| Arkivtilgang etter opphør, per selskap | 249 kr/mnd eller 2 490 kr/år |
+
+Tjenesten er frivillig. Kunden har uansett rett til fullt uttrekk av alt materiale kostnadsfritt, jf. kundeavtalen punkt 15.2 og 15.4. Agaas har ikke tilbakeholdsrett i regnskapsmateriale.
+
+### Kalkyle
+
+Antatt kostnad på objektlagring med sikkerhetskopi og redundans er i størrelsesorden **0,20 kroner per GB per måned**. Tallet er et estimat og **må verifiseres mot faktisk Hetzner-forbruk** før prisene publiseres.
+
+| Trinn | Volum ved trinnets tak | Antatt kostnad/mnd | Pris/mnd | Margin |
+|---|---|---|---|---|
+| 1 | 25 GB | 5 | 99 | 95 % |
+| 2 | 100 GB | 20 | 249 | 92 % |
+| 3 | 500 GB | 100 | 749 | 87 % |
+| 4 | 2 TB | 410 | 2 490 | 84 % |
+
+Marginen er beregnet ved **taket** i hvert trinn, altså i verste fall. En kunde midt i trinnet gir høyere margin.
+
+### Regler for lagringstrinn
+
+| Forhold | Regulering |
+|---|---|
+| Hva teller | Bilag, fakturaer, vedlegg og dokumenter kunden har lastet opp |
+| Hva teller ikke | Agaas' sikkerhetskopier, systemlogger, tidligere versjoner av samme dokument |
+| Måling | Månedlig, på siste dag i måneden |
+| Overskridelse | Kunden varsles og flyttes til neste trinn fra påfølgende måned |
+| **Ingen blokkering** | Opplasting stanses aldri på grunn av lagringsgrense. Kunden har bokføringsplikt, og et system som nekter opplasting hindrer kunden i å oppfylle den |
+| Nedtrinn | Skjer automatisk når faktisk forbruk har ligget under grensen i tre sammenhengende måneder |
 
 ## 9. Timepriser
 

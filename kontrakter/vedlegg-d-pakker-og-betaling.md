@@ -61,6 +61,18 @@ Agaas kan justere prisene én gang per kalenderår med minst 60 dagers skriftlig
 
 Endring i **innholdet** i en pakke som reduserer det Agaas leverer, varsles på samme måte og gir tilsvarende oppsigelsesrett.
 
+## D.5b Lagring
+
+Lagring av regnskapsmateriale inngår i pakken opp til angitt grense. Ved overskridelse faktureres lagring etter trappetrinn i prislisten.
+
+| Forhold | Regulering |
+|---|---|
+| Varsel | Kunden varsles før flytting til høyere trinn |
+| Virkning | Nytt trinn får virkning fra påfølgende måned |
+| Nedtrinn | Automatisk etter tre måneder under grensen |
+| Blokkering | Opplasting av bilag stanses ikke ved overskridelse. Kunden skal alltid kunne oppfylle sin bokføringsplikt |
+| Arkiv etter opphør | Kan kjøpes som egen tjeneste. Rett til kostnadsfritt uttrekk etter hovedavtalen punkt 15.2 og 15.4 består uavhengig av dette |
+
 ## D.6 Arbeid utenfor pakken
 
 Arbeid som ikke inngår i valgt pakke, jf. Vedlegg H.6, faktureres etter medgått tid til gjeldende timepris. Agaas skal opplyse om timeprisen og varsle Kunden **før** slikt arbeid påbegynnes.

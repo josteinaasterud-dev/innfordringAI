@@ -28,6 +28,7 @@ Pakken kunden velger ved onboarding, dokumenteres i **Pakkebekreftelsen** og er 
 | Pris | **3 950 kr/år** | [ikke fastsatt] | [ikke fastsatt] |
 | Brukere inkludert | **1** | [ikke fastsatt] | [ikke fastsatt] |
 | Bankkontoer inkludert | **1** | [ikke fastsatt] | [ikke fastsatt] |
+| Lagring inkludert | **5 GB** | 25 GB | 100 GB |
 | Bindingstid | [12] mnd | [12] mnd | [12] mnd |
 
 ---
@@ -72,6 +73,7 @@ Leverer bilag og kontoutskrifter, fatter nødvendige styre- og generalforsamling
 | Bilag 501+ | 75 kr/stk |
 | Ekstra bruker | 49 kr/mnd |
 | Ekstra bankkonto | 49 kr/mnd |
+| Lagring ut over 5 GB | Fra 99 kr/mnd, trappetrinn |
 | Ekstraordinært arbeid | 1 290 kr/time |
 
 Full oversikt i [`prisliste.md`](prisliste.md).
@@ -214,4 +216,6 @@ Konsolidering og konsernregnskap, budsjettprosess, bistand ved bokettersyn, tran
 | Volumoverskridelse | Kunden varsles, og tillegg per enhet påløper. Ved vedvarende overskridelse tilbys større pakke |
 | Nedgradering | Får virkning fra utløpet av inneværende [måned/termin], og kunden opplyses om hvilke oppgaver som da tilfaller kunden selv |
 | Priser | Full oversikt i [`prisliste.md`](prisliste.md). Priser er eksklusive merverdiavgift |
+| Lagring | Faktureres i trinn ved overskridelse. Opplasting blokkeres aldri av lagringsgrense |
+| Arkiv etter opphør | Valgfri tjeneste. Kostnadsfritt uttrekk av alt materiale er uansett en rettighet |
 | Oppstart midt i året | Opprydding i inngående balanse og tidligere perioder inngår ikke; prises særskilt etter gjennomgang |
