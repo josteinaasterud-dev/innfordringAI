@@ -62,11 +62,11 @@ Holding inkluderer regnskapsføring, økonomisystem med alle standardfunksjoner,
 | Betalingspåminnelse e-post | stk | 9 | 0,05 |
 | Betalingspåminnelse SMS | stk | 9 | 0,40 |
 | Inkassovarsel | stk | 0 | |
+| Overføring til inkasso | sak | Reguleres i inkassoavtalen | |
 | Kredittsjekk | stk | 35 | 3 |
 | Betalingsoppfølging | sak | Inkludert | |
-| Inkasso | sak | Egen modell | |
 
-> **Merk:** modellen der renter og gebyrer fra skyldner tilfaller Agaas er ikke innarbeidet i avtaleverket og må avklares først, jf. punkt 12.1.
+**Renter og gebyrer fra skyldner tilhører kunden som kreditor.** Agaas' vederlag for betalingsoppfølging er prisen kunden betaler per påminnelse, ikke gebyrer fra skyldner. Inkassofasen reguleres i egen avtale mellom kunden og inkassoforetaket, jf. punkt 12.1.
 
 ## 7. Lønn
 
@@ -128,23 +128,27 @@ Holding inkluderer regnskapsføring, økonomisystem med alle standardfunksjoner,
 
 ## 12. Uavklarte punkter
 
+Revisjon og investeringstjenester inngår ikke i prislisten. Revisjon avtales direkte mellom kunden og kundens revisor, jf. Vedlegg G.
+
 ### 12.1 Renter og gebyrer fra skyldner
 
-Prislisten angir at renter og gebyrer tilfaller Agaas for inkassovarsel, betalingsoppfølging og inkasso.
+Inkassofasen legges til Agaas Inkasso AS når selskapet er etablert, og reguleres i egen inkassoavtale mellom kunden og inkassoforetaket. Salær og gebyrer i inkassofasen hører hjemme der.
 
-Dette står i motstrid til kundeavtalen punkt 3.5 bokstav a og Vedlegg G, som forutsetter at Agaas ikke driver inndrivelse og ikke har andel i inkassoinntekter ut over åpent opplyst systemvederlag.
+**Fasen før inkasso må likevel avklares nå.** Purring, betalingspåminnelse og inkassovarsel utføres i dag av Agaas AS, i kundens navn, uavhengig av om inkassoselskapet finnes. Modellen som holder:
 
-Forsinkelsesrenter og purregebyrer tilhører som utgangspunkt **kreditor**, altså kunden. At Agaas mottar vederlag fra skyldner for oppfølging av andres forfalte krav, er den økonomiske kjernen i det inkassoloven regulerer. **Må avklares av advokat før modellen tas i bruk.** Se notatets punkt 5.1.
+| Fase | Utføres av | Agaas' vederlag | Gebyr fra skyldner |
+|---|---|---|---|
+| Purring og betalingspåminnelse | Agaas AS i kundens navn | 9 kr fra **kunden** | Tilfaller **kunden** |
+| Inkassovarsel | Agaas AS i kundens navn | Etter avtale med kunden | Tilfaller **kunden** |
+| Inkasso | Agaas Inkasso AS med bevilling | Etter inkassoavtalen | Etter inkassoloven |
 
-### 12.2 Agaas Revisjon
+Prismodellen på 9 kroner per påminnelse implementerer allerede dette: Agaas betales av **kunden** for en tjeneste, ikke av **skyldner** for inndrivelse. Det som må ut, er forutsetningen om at renter og gebyrer tilfaller Agaas i fasen før inkasso.
 
-Revisor kan ikke revidere regnskap ført av eget konsern. Tilbys revisjon fra Agaas-gruppen, kan tjenesten ikke selges til kunder som har regnskapsføring hos Agaas. Se notatets punkt 5.3.
-
-### 12.3 Poster som mangler kostnadsgrunnlag
+### 12.2 Poster som mangler kostnadsgrunnlag
 
 Bankbetaling, KID-innbetaling, brev og BankID-signering er priset uten kjent innkjøpspris. Bør avklares før publisering.
 
-### 12.4 Regnestykker i kalkylen
+### 12.3 Regnestykker i kalkylen
 
 Kolonnen for fortjeneste avviker fra pris minus innkjøp for flere poster, blant annet EHF, eFaktura, AvtaleGiro, SMS og kredittsjekk. For SMS er oppgitt fortjeneste høyere enn salgsprisen. Marginprosentene ser riktige ut; differansebeløpene bør kontrolleres.
 

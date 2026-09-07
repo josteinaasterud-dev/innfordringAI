@@ -8,7 +8,7 @@ Hver tjeneste nedenfor krever egen avtale med vedkommende leverandør. Agaas er 
 
 | | |
 |---|---|
-| **Leverandør** | [Inkasso AS], org.nr. [_____], inkassobevilling |
+| **Leverandør** | Agaas Inkasso AS, org.nr. [_____], inkassobevilling *(under etablering)* |
 | **Avtaleform** | Oppdragsavtale om fremmedinkasso |
 | **Regelverk** | Inkassoloven med forskrift, god inkassoskikk, hvitvaskingsloven |
 
@@ -18,7 +18,9 @@ Hver tjeneste nedenfor krever egen avtale med vedkommende leverandør. Agaas er 
 - underliggende dokumentasjon er tilgjengelig,
 - Kunden varsler umiddelbart ved innsigelse fra skyldner eller ved betaling direkte til Kunden.
 
-**Agaas' rolle:** teknisk overføring av saksdata initiert av Kunden. Agaas driver ikke inndrivelse, jf. hovedavtalen punkt 3.5, vurderer ikke kravet, kommuniserer ikke med skyldner, mottar ikke betaling for kravet og har ingen andel i inkassosalær ut over eventuell avtalt, åpent opplyst systemgodtgjørelse fra inkassoforetaket.
+**Før inkasso:** purring, betalingspåminnelse og inkassovarsel utføres i Plattformen i Kundens navn. Agaas' vederlag for dette betales av Kunden etter prislisten. **Purregebyrer og forsinkelsesrenter fra skyldner tilfaller Kunden som kreditor.**
+
+**Agaas' rolle i inkassofasen:** teknisk overføring av saksdata initiert av Kunden. Agaas driver ikke inndrivelse, jf. hovedavtalen punkt 3.5, vurderer ikke kravet, kommuniserer ikke med skyldner, mottar ikke betaling for kravet og har ingen andel i inkassosalær ut over eventuell avtalt, åpent opplyst systemgodtgjørelse fra inkassoforetaket.
 
 **Automatisk overføring:** dersom Kunden konfigurerer regelstyrt overføring, er regelen Kundens egen beslutning. Kunden kan når som helst endre eller slå av regelen, og skal ha oversikt over saker som står i kø før overføring.
 
@@ -26,7 +28,9 @@ Hver tjeneste nedenfor krever egen avtale med vedkommende leverandør. Agaas er 
 
 Revisjon utføres av Kundens egen valgte revisor. Kunden gir revisor tilgang i Plattformen, jf. hovedavtalen punkt 9.
 
-**Uavhengighet:** Agaas fører Kundens regnskap. Revisor kan derfor ikke være tilknyttet Agaas eller Agaas-gruppen. Kunden er ansvarlig for at revisors uavhengighet etter revisorloven er ivaretatt, og Agaas skal på forespørsel opplyse fullstendig om eierforhold og tilknytning i gruppen.
+**Uavhengighet:** Agaas fører Kundens regnskap. Revisor kan derfor ikke være tilknyttet Agaas, verken gjennom eierskap, felles kontroll eller felles profilering. Kunden er ansvarlig for at revisors uavhengighet etter revisorloven er ivaretatt.
+
+Agaas skal på forespørsel opplyse fullstendig om eierforhold og tilknytning i gruppen, slik at Kunden og Kundens revisor kan vurdere uavhengigheten. Agaas skal ikke formidle revisor som er i nettverk med Agaas til kunder som har regnskapsføring hos Agaas.
 
 **Revisorpakke i Plattformen:** lesetilgang til hovedbok og bilag, standardiserte uttrekk, sporingslogg for endringer og godkjenninger, samt kvitteringer for innsendinger. Agaas avgir ingen uttalelse til revisor på Kundens vegne.
 
