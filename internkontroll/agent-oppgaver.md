@@ -113,7 +113,7 @@ Alt logges med tidsstempel, jf. revisjonsloggen i MCP-serveren.
 
 ## Hva som mangler
 
-Av 31 oppgaver kan **10 kjøres med dagens verktøy**. Resten trenger endepunkter vi ikke har bekreftet. De viktigste å be Banqsoft om:
+Av 36 oppgaver kan **11 kjøres med dagens verktøy**. Resten trenger endepunkter vi ikke har bekreftet. De viktigste å be Banqsoft om:
 
 | Behov | Dekker |
 |---|---|
