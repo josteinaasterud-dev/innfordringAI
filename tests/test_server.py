@@ -150,3 +150,75 @@ async def test_payments_are_listed_with_whitelisted_fields_only(context):
         "currency": "SEK",
     }
     await context.aclose()
+
+
+LEDGER_BASE = "https://ecm-se-sandbox.ledger.lighthouse-cm.com"
+
+
+@pytest.mark.asyncio
+@respx.mock
+async def test_chart_of_accounts_can_be_filtered_to_one_account(context):
+    mock_token()
+    respx.get(f"{LEDGER_BASE}/api/v1/chartOfAccounts").mock(
+        return_value=httpx.Response(
+            200,
+            json=[
+                {"accountNumber": "2420", "accountName": "Klientmedel", "internalFlag": True},
+                {"accountNumber": "2429", "accountName": "Avräkning klientmedel"},
+                {"accountNumber": "3000", "accountName": "Försäljning"},
+            ],
+        )
+    )
+    server = build_server(context)
+    result = await call(server, "hent_kontoplan", {"kontonummer": "2420"})
+
+    assert result["antall"] == 1
+    assert result["kontoer"][0] == {
+        "accountNumber": "2420",
+        "accountName": "Klientmedel",
+    }
+    await context.aclose()
+
+
+@pytest.mark.asyncio
+@respx.mock
+async def test_ledger_transactions_pass_filters_and_sum_amounts(context):
+    mock_token()
+    route = respx.get(f"{LEDGER_BASE}/api/v1/ledgerTransaction").mock(
+        return_value=httpx.Response(
+            200,
+            json={
+                "transactions": [
+                    {"transactionDate": "2026-07-03", "amount": 26278.86, "currency": "SEK"},
+                    {"transactionDate": "2026-07-09", "amount": 46752.10, "currency": "SEK"},
+                ]
+            },
+        )
+    )
+    server = build_server(context)
+    result = await call(
+        server,
+        "hent_hovedbokstransaksjoner",
+        {"kontonummer": "2420", "fra_dato": "2026-07-01", "til_dato": "2026-07-31"},
+    )
+
+    assert result["antall"] == 2
+    assert result["sum"] == pytest.approx(73030.96)
+    query = route.calls[0].request.url.params
+    assert query["accountNumber"] == "2420"
+    assert query["fromDate"] == "2026-07-01"
+    assert query["toDate"] == "2026-07-31"
+    await context.aclose()
+
+
+@pytest.mark.asyncio
+@respx.mock
+async def test_ledger_tools_use_the_ledger_host_not_the_cases_host(context):
+    mock_token()
+    route = respx.get(f"{LEDGER_BASE}/api/v1/chartOfAccounts").mock(
+        return_value=httpx.Response(200, json=[])
+    )
+    server = build_server(context)
+    await call(server, "hent_kontoplan", {})
+    assert route.calls[0].request.url.host == "ecm-se-sandbox.ledger.lighthouse-cm.com"
+    await context.aclose()

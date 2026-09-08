@@ -56,6 +56,27 @@ SEARCH_FIELDS = (
     "createdDate",
 )
 
+# Ledger. Regnskapsdata, ingen skyldneropplysninger.
+ACCOUNT_FIELDS = (
+    "accountNumber",
+    "accountName",
+    "accountType",
+    "vatCode",
+    "isActive",
+)
+
+LEDGER_TRANSACTION_FIELDS = (
+    "transactionDate",
+    "bookedDate",
+    "accountNumber",
+    "accountName",
+    "amount",
+    "currency",
+    "voucherNumber",
+    "voucherType",
+    "text",
+)
+
 
 class BanqsoftContext:
     """Holder levetiden til HTTP-klient, token og logg."""
@@ -185,6 +206,89 @@ def build_server(context: BanqsoftContext) -> MCPServer:
             tool="sok_saker", arguments=args, outcome="ok", row_count=len(saker)
         )
         return {"antall": len(saker), "saker": saker}
+
+    @server.tool(
+        name="hent_kontoplan",
+        title="Hent kontoplanen fra Ledger",
+        description=(
+            "Lister kontoplanen med kontonummer og kontonavn. "
+            "Bruk dette når noen spør hva en konto heter, eller trenger "
+            "kontonavn for avstemming mot hovedbok."
+        ),
+    )
+    async def hent_kontoplan(kontonummer: str | None = None) -> dict[str, Any]:
+        args = {"kontonummer": kontonummer}
+        try:
+            rows = await context.client.get_chart_of_accounts()
+        except (LighthouseError, AuthenticationError) as exc:
+            context.audit.record(
+                tool="hent_kontoplan", arguments=args, outcome="error", error=str(exc)
+            )
+            raise
+
+        kontoer = [pick(row, ACCOUNT_FIELDS) for row in rows]
+        if kontonummer:
+            wanted = kontonummer.strip()
+            kontoer = [k for k in kontoer if str(k.get("accountNumber", "")) == wanted]
+
+        context.audit.record(
+            tool="hent_kontoplan", arguments=args, outcome="ok", row_count=len(kontoer)
+        )
+        return {"antall": len(kontoer), "kontoer": kontoer}
+
+    @server.tool(
+        name="hent_hovedbokstransaksjoner",
+        title="Hent posteringer fra hovedboken",
+        description=(
+            "Lister posteringer fra Ledger, valgfritt filtrert på konto og "
+            "datoperiode. Bruk dette til avstemming, eller når noen spør hva "
+            "som ligger bak en saldo. Datoer oppgis som ÅÅÅÅ-MM-DD."
+        ),
+    )
+    async def hent_hovedbokstransaksjoner(
+        kontonummer: str | None = None,
+        fra_dato: str | None = None,
+        til_dato: str | None = None,
+        maks_antall: int = 50,
+    ) -> dict[str, Any]:
+        limit = max(1, min(maks_antall, context.settings.max_result_rows))
+        args = {
+            "kontonummer": kontonummer,
+            "fra_dato": fra_dato,
+            "til_dato": til_dato,
+            "maks_antall": limit,
+        }
+        try:
+            rows = await context.client.get_ledger_transactions(
+                account_number=kontonummer,
+                from_date=fra_dato,
+                to_date=til_dato,
+                limit=limit,
+            )
+        except (LighthouseError, AuthenticationError) as exc:
+            context.audit.record(
+                tool="hent_hovedbokstransaksjoner",
+                arguments=args,
+                outcome="error",
+                error=str(exc),
+            )
+            raise
+
+        posteringer = [pick(row, LEDGER_TRANSACTION_FIELDS) for row in rows]
+        sum_belop = sum(
+            p["amount"] for p in posteringer if isinstance(p.get("amount"), (int, float))
+        )
+        context.audit.record(
+            tool="hent_hovedbokstransaksjoner",
+            arguments=args,
+            outcome="ok",
+            row_count=len(posteringer),
+        )
+        return {
+            "antall": len(posteringer),
+            "sum": sum_belop,
+            "posteringer": posteringer,
+        }
 
     return server
 

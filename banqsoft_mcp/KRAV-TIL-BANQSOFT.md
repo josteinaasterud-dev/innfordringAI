@@ -2,7 +2,7 @@
 
 Underlag for dialogen om integrasjon mot Lighthouse.
 
-**Kilde:** Collect HTTP API 3.0.0-20250116.1, Cases Service — API-dokumentasjonen på Credit Management Suite Docs.
+**Kilder:** Collect HTTP API 3.0.0-20250116.1 (Cases Service) og Ledger HTTP API 1.0.0 — API-dokumentasjonen på Credit Management Suite Docs.
 
 ## Bekreftet så langt
 
@@ -13,9 +13,32 @@ Underlag for dialogen om integrasjon mot Lighthouse.
 | Enkeltsak | `/api/v1/cases/{caseId}` |
 | Bokføringshistorikk per sak | `GET /api/v1/cases/{caseId}/accountingJournal` |
 | Autentisering | OAuth2 på samtlige endepunkter |
-| OpenAPI-spesifikasjon | Finnes, med nedlastingslenke i dokumentasjonen |
+| Ledger-vertsnavn | `<namespace>.ledger.lighthouse-cm.com`, bekreftet i app-manifestet |
+| Ledger-ressurser | `chartOfAccounts`, `ledgerTransaction`, `booking`, `reports`, `vatRegistry`, `settlement` |
+| OpenAPI-spesifikasjon | Finnes for begge tjenester, med nedlastingslenke |
 
 ---
+
+## 0. Rettighetsmodellen — nytt, og viktig
+
+Ledger-dokumentasjonen viser rettighetene som kan tildeles en systemrolle:
+
+```
+CanManageUsers, CanManageCreditors, CanManageCDRs, CanAccessCreditorAccount,
+CanManageBusinessConfiguration, CanManageBookings, CanManageDigitalJobs,
+CanManageSettlements, CanConfirmSettlements, CanAccessCDRs,
+CanAccessBusinessConfiguration, CanCreditInvoices, CanManageAllocations,
+CanDeleteOrders, CanManagePayments, CanConfirmRefunds, CanManageRefunds,
+CanForcePrintReset, CanManageOrders
+```
+
+Nitten rettigheter, hvorav bare tre er lesetilgang: `CanAccessCreditorAccount`, `CanAccessCDRs` og `CanAccessBusinessConfiguration`. Resten er `CanManage*` eller `CanConfirm*`, altså skrivetilgang.
+
+> **Hvilke rettigheter kreves for å LESE kontoplan, hovedbokstransaksjoner og saker — og finnes det lesevarianter, eller må vi ta `CanManage*` for å komme til dataene?**
+
+Dette har direkte betydning for sikkerheten. Vår MCP-server har ingen skriveverktøy, men hvis tokenet likevel må bære `CanManageBookings` for å lese posteringer, hviler skrivesperren utelukkende på vår kode — ikke på rettighetene. Det er en vesentlig svakere garanti, og noe vi må kunne redegjøre for.
+
+Finnes det ikke rene leserettigheter i dag: **er det noe dere kan legge til?** En `CanAccess`-variant for booking, ledger og cases ville løst det.
 
 ## 1. Autentiseringsflyt — fortsatt avgjørende
 
@@ -40,9 +63,9 @@ Internt refererer vi til saker med nummer som **1473** og **1150**. APIet tar `{
 
 Er de forskjellige, trenger vi et oppslag fra saksnummer til `caseId` — og da: hvilket endepunkt gjør det? `Search`, eller et filter på `/api/v1/cases`?
 
-## 3. OpenAPI-spesifikasjonen
+## 3. OpenAPI-spesifikasjonene
 
-Dokumentasjonen har en nedlastingslenke. **Kan vi få filen?** Den løser stier, feltnavn, paginering og feiltyper på én gang, og fjerner det meste av gjettingen i punkt 4 og 5.
+Begge dokumentasjonssidene har en nedlastingslenke. **Kan vi få begge filene?** De løser stier, feltnavn, paginering, feiltyper og tillatte OAuth2-flyter på én gang, og fjerner det meste av gjettingen i punkt 0, 1, 4 og 5.
 
 ## 4. Endepunkter vi trenger bekreftet
 
@@ -52,7 +75,10 @@ Dokumentasjonen har en nedlastingslenke. **Kan vi få filen?** Den løser stier,
 | Innbetalinger på sak | `GET /api/v1/cases/{caseId}/payments` | **Antatt.** Ressursgruppen heter `CasePayments` |
 | Søk saker per kreditor | `GET /api/v1/cases?creditorOrgNo=…` | **Antatt.** Filternavnet er ikke bekreftet |
 | Bokføringshistorikk | `GET /api/v1/cases/{caseId}/accountingJournal` | Bekreftet |
-| Kontoplan | `ChartOfAccounts` | Sti ikke lest |
+| Kontoplan (Collect) | `ChartOfAccounts` | Sti ikke lest |
+| Kontoplan (Ledger) | `GET /api/v1/chartOfAccounts` | **Antatt.** Ressursnavn bekreftet |
+| Hovedbokstransaksjoner | `GET /api/v1/ledgerTransaction` | **Antatt.** Ressursnavn bekreftet |
+| Månedsrapport | `reports` | Sti ikke lest |
 
 ## 5. Feltnavn i svarene
 
@@ -79,9 +105,17 @@ Ett eksempelsvar fra et saksoppslag dekker hele dette punktet.
 
 ---
 
-## Bonus: to endepunkter som løser en annen flaskehals
+## Bonus: Ledger løser en flaskehals vi allerede har
 
-`ChartOfAccounts` og `AccountingJournal` svarer direkte på det Offshore IT har purret på siden juli — kontonavn og avstemming mot hovedbok. Verdt å be om tilgang til begge i samme runde.
+`chartOfAccounts`, `ledgerTransaction` og `reports` svarer direkte på det Offshore IT har purret på siden juli:
+
+| Deres spørsmål | Endepunkt |
+|---|---|
+| Kontonavn for angitte kontonumre (ubesvart siden 17. juli) | `chartOfAccounts` |
+| Posteringer bak avvikene 3. og 9. juli | `ledgerTransaction` |
+| Månedsrapport med saldo på 2420 og 2429 | `reports` |
+
+Verdt å be om tilgang til alle tre i samme runde.
 
 ---
 
