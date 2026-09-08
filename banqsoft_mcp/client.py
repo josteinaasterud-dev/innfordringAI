@@ -1,9 +1,12 @@
-"""Klient mot Banqsoft Lighthouse.
+"""Klient mot Banqsoft Lighthouse (Collect HTTP API 3.0.0).
 
-ADAPTERLAG. Endepunktene under er utledet av tjenestenavnene i Banqsofts
-oppsettsguide og manifestene, men er IKKE bekreftet mot dokumentasjon.
-Sti-malene ligger derfor som konstanter og kan overstyres via miljøet, slik at
-de kan rettes uten kodeendring når Banqsoft har svart. Se KRAV-TIL-BANQSOFT.md.
+Bekreftet mot API-dokumentasjonen: prefikset er /api/v1, ressursen heter
+cases, og stier for enkeltsaker tar {caseId}.
+
+IKKE bekreftet: om {caseId} er samme verdi som saksnummeret brukerne ser
+(f.eks. 1473), eller en intern nøkkel. Stiene for betalinger og søk er heller
+ikke lest i detalj. Alle sti-maler kan overstyres via miljøet, slik at de kan
+rettes uten kodeendring. Se KRAV-TIL-BANQSOFT.md.
 """
 
 from __future__ import annotations
@@ -16,13 +19,21 @@ import httpx
 from .auth import TokenProvider
 from .config import Settings
 
-# ADAPTER: bekreft stier og tjenestenavn med Banqsoft.
 CASES_SERVICE = os.getenv("BANQSOFT_CASES_SERVICE", "casesapi")
-PATH_CASE = os.getenv("BANQSOFT_PATH_CASE", "/api/v1/cases/{case_number}")
+
+# Bekreftet mønster i Collect HTTP API 3.0.0.
+PATH_CASE = os.getenv("BANQSOFT_PATH_CASE", "/api/v1/cases/{case_id}")
+# ADAPTER: ressursgruppen heter CasePayments i dokumentasjonen, men den
+# eksakte stien er ikke lest. Bekreft mot OpenAPI-spesifikasjonen.
 PATH_CASE_PAYMENTS = os.getenv(
-    "BANQSOFT_PATH_CASE_PAYMENTS", "/api/v1/cases/{case_number}/payments"
+    "BANQSOFT_PATH_CASE_PAYMENTS", "/api/v1/cases/{case_id}/payments"
 )
 PATH_CASE_SEARCH = os.getenv("BANQSOFT_PATH_CASE_SEARCH", "/api/v1/cases")
+# Bekreftet i dokumentasjonen. Gir bokføringshistorikk per sak, og er
+# grunnlaget for avstemming mot hovedbok.
+PATH_CASE_ACCOUNTING = os.getenv(
+    "BANQSOFT_PATH_CASE_ACCOUNTING", "/api/v1/cases/{case_id}/accountingJournal"
+)
 
 
 class LighthouseError(RuntimeError):
@@ -44,11 +55,15 @@ class LighthouseClient:
         self._http = http
         self._tokens = tokens
 
-    async def get_case(self, case_number: str) -> dict[str, Any]:
-        return await self._get(PATH_CASE.format(case_number=case_number))
+    async def get_case(self, case_id: str) -> dict[str, Any]:
+        return await self._get(PATH_CASE.format(case_id=case_id))
 
-    async def get_case_payments(self, case_number: str) -> list[dict[str, Any]]:
-        payload = await self._get(PATH_CASE_PAYMENTS.format(case_number=case_number))
+    async def get_case_payments(self, case_id: str) -> list[dict[str, Any]]:
+        payload = await self._get(PATH_CASE_PAYMENTS.format(case_id=case_id))
+        return _as_rows(payload)
+
+    async def get_case_accounting_journal(self, case_id: str) -> list[dict[str, Any]]:
+        payload = await self._get(PATH_CASE_ACCOUNTING.format(case_id=case_id))
         return _as_rows(payload)
 
     async def search_cases(

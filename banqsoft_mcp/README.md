@@ -66,7 +66,11 @@ En egen registrering gir smalest mulige rettigheter, egen linje i loggen, og kan
 
 Autentisering, dataminimering, logging og feilhåndtering er ferdig og testet.
 
-**Endepunktene mot Lighthouse er ikke bekreftet.** Stiene i `client.py` er utledet av tjenestenavnene i Banqsofts manifester, ikke av dokumentasjon. De kan overstyres med miljøvariabler uten kodeendring. Se [KRAV-TIL-BANQSOFT.md](KRAV-TIL-BANQSOFT.md).
+**Delvis bekreftet mot Collect HTTP API 3.0.0.** Sti-prefikset `/api/v1`, ressursen `cases` og `accountingJournal`-endepunktet stemmer med dokumentasjonen. Stiene for betalinger og søk er fortsatt antatt.
+
+**Åpent spørsmål med konsekvens for designet:** APIet tar `{caseId}`, mens saksbehandlerne refererer til saker med nummer som 1473. Er de ikke samme verdi, trengs et oppslag fra saksnummer til `caseId` først.
+
+Alle sti-maler kan overstyres med miljøvariabler uten kodeendring. Se [KRAV-TIL-BANQSOFT.md](KRAV-TIL-BANQSOFT.md).
 
 ## Tester
 
