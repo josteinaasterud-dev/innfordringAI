@@ -31,31 +31,67 @@ Serveren har egen tjenesteidentitet i Entra ID. Den opptrer aldri som en innlogg
 
 ## Oppsett
 
+### 1. Installer
+
 ```bash
 python -m venv venv
 ./venv/bin/pip install -r requirements-mcp.txt
-cp .env.example .env      # fyll inn verdiene
 ```
 
-Kjør serveren:
+### 2. Legg inn legitimasjonen
+
+Kopier malen og fyll inn:
 
 ```bash
-./venv/bin/python -m banqsoft_mcp.server
+cp .env.example .env
 ```
 
-Den snakker MCP over stdio. For Claude Code legges den inn slik:
+`.env` er i `.gitignore` og skal aldri committes. Legitimasjonen skal ikke ligge
+noe annet sted — ikke i `.mcp.json`, ikke i kode, ikke i en chat.
+
+| Variabel | Hvor du finner den |
+|---|---|
+| `BANQSOFT_TENANT_ID` | Entra ID → Oversikt → Directory (tenant) ID |
+| `BANQSOFT_CLIENT_ID` | Appregistreringen → Application (client) ID |
+| `BANQSOFT_CLIENT_SECRET` | Appregistreringen → Certificates & secrets → New client secret |
+| `BANQSOFT_API_SCOPE` | Normalt `api://<application-id-uri>/.default` |
+| `BANQSOFT_NAMESPACE` | Tenantens namespace, f.eks. `ecm-se` |
+| `BANQSOFT_ENVIRONMENT` | `sandbox` mens dere tester |
+
+Secreten vises **kun én gang** i Azure-portalen. Noter utløpsdatoen — når den går
+ut, slutter serveren å virke, og feilmeldingen sier «Token avvist».
+
+### 3. Sjekk at det virker
+
+```bash
+./venv/bin/python -m banqsoft_mcp.verify
+```
+
+Sjekker konfigurasjon, henter token fra Entra ID og kaller Lighthouse. Sier
+konkret hva som er galt hvis noe feiler. Hemmeligheter skrives aldri ut.
+
+### 4. Ta den i bruk
+
+`.mcp.json` i repoet registrerer serveren for Claude Code. Start Claude Code i
+katalogen, så lastes verktøyene automatisk. `.mcp.json` inneholder ingen
+hemmeligheter — serveren leser `.env` selv.
+
+Skal den brukes fra Claude Desktop i stedet, legg dette i konfigurasjonen der:
 
 ```json
 {
   "mcpServers": {
     "banqsoft": {
-      "command": "/full/sti/venv/bin/python",
+      "command": "/full/sti/til/repo/venv/bin/python",
       "args": ["-m", "banqsoft_mcp.server"],
       "cwd": "/full/sti/til/repo"
     }
   }
 }
 ```
+
+Claude Desktop starter prosessen fra et annet arbeidskatalog, så `cwd` må være
+absolutt for at `.env` skal bli funnet.
 
 ## Appregistrering
 

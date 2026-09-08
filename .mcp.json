@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "banqsoft": {
+      "command": "./venv/bin/python",
+      "args": ["-m", "banqsoft_mcp.server"]
+    }
+  }
+}
