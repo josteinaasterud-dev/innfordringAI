@@ -1,140 +1,165 @@
-# Internkontroll — oppgaver for agenten
+# Internkontroll — uppgifter för agenten
 
-Kontrolloppgaver agenten kjører mot inkassosystemet. Listen er et utgangspunkt; fyll på nederst.
+Kontrolluppgifter som agenten kör mot inkassosystemet. Listan är ett utgångspunkt; fyll på längst ned.
 
-## Prinsipp
+**Bolag:** Equity Credit Management AB (Sverige)
+**System:** Banqsoft Lighthouse — Collect och Ledger
 
-Agenten er **lesende**. Den finner avvik og rapporterer dem — den retter ingenting. Det er riktig konstruksjon for internkontroll: maskinen leter, mennesket bestemmer. Hvert funn skal kunne følges til en navngitt ansvarlig.
+> Dokumentet är på svenska eftersom det gäller ett svenskt bolag och kan komma att visas för svensk tillsynsmyndighet och revisor. Säg till om ni hellre vill ha det på norska för internt bruk.
 
-Statuskolonnen sier om oppgaven kan kjøres med dagens verktøy:
+## Princip
 
-- **Klar** — mulig med endepunktene vi har
-- **Trenger endepunkt** — krever tilgang vi ikke har bekreftet ennå
-- **Trenger avklaring** — terskelen eller regelen må fastsettes først
+Agenten är **läsande**. Den hittar avvikelser och rapporterar dem — den rättar ingenting. Det är rätt konstruktion för internkontroll: maskinen letar, människan beslutar. Varje fynd ska kunna följas till en namngiven ansvarig.
 
-Terskler i klammer må fylles inn. Flere av dem er **forskjellige per land** — Norge, Sverige og Danmark har ulike frister og satser.
+Statuskolumnen anger om uppgiften kan köras med dagens verktyg:
+
+- **Klar** — möjlig med de endpoints vi har
+- **Endpoint** — kräver åtkomst vi inte bekräftat ännu
+- **Utred** — tröskeln eller regeln måste fastställas först
+
+## Rättslig ram — måste verifieras
+
+Trösklar och belopp nedan bygger på svensk rätt, men **flera punkter måste bekräftas av jurist innan registret läggs till grund för internkontrollen**:
+
+| Fråga | Varför den är öppen |
+|---|---|
+| **Vilken myndighet utövar tillsyn över inkassoverksamhet?** | Tillsynen har flyttats mellan myndigheter. Bekräfta vad som gäller nu, och vad tillståndet är utfärdat under |
+| **Omfattas bolaget av penningtvättslagen?** | Ren inkassoverksamhet är inte självklart anmälningspliktig. Förvärv av förfallna fordringar kan däremot vara finansiell verksamhet |
+| **Aktuella kravavgifter** | Påminnelseavgift, inkassokravsavgift och avgift för amorteringsplan är reglerade och har ändrats över tid |
+| **Arkiveringstid** | Bokföringslagen anger sju år. Kontrollera vad som gäller för ärendehandlingar specifikt |
 
 ---
 
-## 1. Klientmidler
+## 1. Klientmedel
 
-Det viktigste området. Pengene tilhører kreditorene, ikke dere, og Finanstilsynet ser hit først.
+Det viktigaste området. Pengarna tillhör uppdragsgivarna, inte er.
 
-| ID | Kontroll | Utløser varsel | Frekvens | Status |
+| ID | Kontroll | Utlöser larm | Frekvens | Status |
 |---|---|---|---|---|
-| KM-01 | Saldo på klientmedelskonto mot sum kreditorgjeld i hovedbok (2420/2429) | Differanse over [beløp] eller [%] | Daglig | Klar |
-| KM-02 | Negativ saldo på en kreditor | Enhver negativ saldo | Daglig | Klar |
-| KM-03 | Innbetalinger mottatt, men ikke allokert til sak | Eldre enn [X] dager | Daglig | Trenger endepunkt |
-| KM-04 | Midler som skulle vært utbetalt til kreditor | Holdt lenger enn [X] dager | Ukentlig | Trenger endepunkt |
-| KM-05 | Klientmidler blandet med driftsmidler | Enhver postering mellom kontoene | Daglig | Klar |
-| KM-06 | Avstemming klientkonto mot bankutdrag | Differanse ved månedsslutt | Månedlig | Trenger endepunkt |
+| KM-01 | Klientmedelskonto mot summa borgenärsskuld i huvudbok (2420/2429) | Differens över [belopp] eller [%] | Daglig | Klar |
+| KM-02 | Negativt saldo på en borgenär | Varje negativt saldo | Daglig | Klar |
+| KM-03 | Inbetalningar mottagna men ej allokerade till ärende | Äldre än [X] dagar | Daglig | Endpoint |
+| KM-04 | Medel ej redovisade till uppdragsgivare inom avtalad tid | Hållna längre än [X] dagar | Veckovis | Endpoint |
+| KM-05 | Klientmedel sammanblandade med egna medel | Varje bokning mellan kontona | Daglig | Klar |
+| KM-06 | Avstämning klientmedelskonto mot kontoutdrag | Differens vid månadsslut | Månadsvis | Endpoint |
 
-**KM-01 er den dere allerede har hatt problemer med.** Juliavviket kom av en betalingsfil som ikke ble importert, og ble oppdaget av regnskapsfører i ettertid. Kjørt daglig ville det vært fanget samme uke.
+**KM-01 är den ni redan haft problem med.** Juliavvikelsen berodde på en betalningsfil som inte importerades, och upptäcktes av redovisningskonsulten i efterhand. Körd dagligen hade den fångats samma vecka.
 
-## 2. Inkassoprosess og god inkassoskikk
+## 2. Inkassoprocess och god inkassosed
 
-| ID | Kontroll | Utløser varsel | Frekvens | Status |
+| ID | Kontroll | Utlöser larm | Frekvens | Status |
 |---|---|---|---|---|
-| IP-01 | Inkassovarsel sendt med lovbestemt frist før neste steg | Frist ikke overholdt | Daglig | Trenger endepunkt |
-| IP-02 | Videre skritt tatt på omtvistet krav | Enhver forekomst | Daglig | Trenger endepunkt |
-| IP-03 | Salær beregnet ut over gjeldende sats | Avvik fra satstabell | Ukentlig | Trenger avklaring |
-| IP-04 | Saker uten fremdrift | Ingen hendelse på [X] dager | Ukentlig | Klar |
-| IP-05 | Krav nær foreldelse | Under [X] måneder igjen | Månedlig | Trenger endepunkt |
-| IP-06 | Saker eldre enn [X] uten avslutning eller rettslig skritt | Overskredet | Månedlig | Klar |
-| IP-07 | Rettslige skritt startet uten dokumentert grunnlag | Manglende `ClaimBases` | Ukentlig | Trenger endepunkt |
+| IP-01 | Inkassokrav med lagstadgad betalningsfrist innan nästa steg | Frist ej iakttagen | Daglig | Endpoint |
+| IP-02 | Åtgärd vidtagen på bestridd fordran | Varje förekomst | Daglig | Endpoint |
+| IP-03 | Kravavgifter över lagstadgat tak | Avvikelse mot avgiftstabell | Veckovis | Utred |
+| IP-04 | Ärenden utan framdrift | Ingen händelse på [X] dagar | Veckovis | Klar |
+| IP-05 | Fordringar nära preskription | Under [X] månader kvar | Månadsvis | Endpoint |
+| IP-06 | Dröjsmålsränta beräknad enligt räntelagen | Avvikelse mot referensränta plus åtta | Veckovis | Utred |
+| IP-07 | Ärenden utan dokumenterat kravunderlag | Saknat underlag | Veckovis | Endpoint |
+| IP-08 | Konsumentärenden hanterade enligt konsumentregler | Felaktig ärendetyp | Veckovis | Utred |
 
-**IP-02 er den farligste.** Å fortsette inndrivelse på et bestridt krav er brudd på god inkassoskikk, og det er den typen sak som havner hos Finanstilsynet.
+**IP-02 är den farligaste.** Att fortsätta indrivning på en bestridd fordran strider mot god inkassosed, och är den typ av ärende som når tillsynsmyndigheten.
 
-## 3. Betalingsflyt
+**IP-08 spelar roll för mycket annat.** Konsument och näringsidkare har olika preskriptionstider och olika skydd. Är ärendetypen fel, blir IP-03, IP-05 och IP-06 också fel.
 
-| ID | Kontroll | Utløser varsel | Frekvens | Status |
+## 3. Kronofogden
+
+Svenskt särdrag. Ansökan om betalningsföreläggande är ett rättsligt steg med egna krav.
+
+| ID | Kontroll | Utlöser larm | Frekvens | Status |
 |---|---|---|---|---|
-| BF-01 | Betalingsfiler som ikke er importert | Enhver feilet import | Daglig | Trenger endepunkt |
-| BF-02 | Innbetalinger direkte til kreditor, ikke meldt til oss | Avvik mot forventet saldo | Ukentlig | Trenger avklaring |
-| BF-03 | Dobbeltregistrerte innbetalinger | Samme beløp, dato og sak | Daglig | Klar |
-| BF-04 | Innbetalinger uten KID eller referanse | Uidentifisert etter [X] dager | Daglig | Trenger endepunkt |
-| BF-05 | Refusjoner uten godkjenning | Manglende `CanConfirmRefunds`-spor | Ukentlig | Trenger endepunkt |
+| KF-01 | Ansökan om betalningsföreläggande utan tillräckligt underlag | Saknat kravunderlag | Daglig | Endpoint |
+| KF-02 | Ansökan inskickad trots att fordran betalats | Betalning före ansökningsdatum | Daglig | Endpoint |
+| KF-03 | Återkallelse ej gjord efter full betalning | Öppen ansökan mot nollsaldo | Daglig | Endpoint |
+| KF-04 | Utslag ej verkställda inom rimlig tid | Äldre än [X] dagar | Månadsvis | Endpoint |
+| KF-05 | Ansökningsavgifter vidarefakturerade korrekt | Avvikelse mot faktisk avgift | Veckovis | Utred |
 
-## 4. Datakvalitet
+**KF-02 och KF-03 är de dyra.** Att driva en betald fordran vidare hos Kronofogden ger en betalningsanmärkning för någon som inte är skyldig något — det är både ett skadeståndsansvar och en tillsynsfråga.
 
-| ID | Kontroll | Utløser varsel | Frekvens | Status |
+## 4. Betalningsflöde
+
+| ID | Kontroll | Utlöser larm | Frekvens | Status |
 |---|---|---|---|---|
-| DK-01 | Saker uten skyldneradresse | Enhver forekomst | Ukentlig | Klar |
-| DK-02 | Mulige dobbeltregistrerte saker | Samme skyldner, kreditor og beløp | Ukentlig | Klar |
-| DK-03 | Saker uten kravgrunnlag | Manglende `ClaimBases` | Ukentlig | Trenger endepunkt |
-| DK-04 | Feil kreditorkobling | Kreditor uten aktiv avtale | Månedlig | Klar |
-| DK-05 | Beløp som avviker fra opprinnelig faktura | Differanse uten forklaring | Ukentlig | Trenger endepunkt |
+| BF-01 | Betalningsfiler som ej importerats | Varje misslyckad import | Daglig | Endpoint |
+| BF-02 | Inbetalningar direkt till borgenär, ej anmälda | Avvikelse mot förväntat saldo | Veckovis | Utred |
+| BF-03 | Dubbelregistrerade inbetalningar | Samma belopp, datum och ärende | Daglig | Klar |
+| BF-04 | Inbetalningar utan OCR eller referens | Oidentifierad efter [X] dagar | Daglig | Endpoint |
+| BF-05 | Återbetalningar utan godkännande | Saknat godkännandespår | Veckovis | Endpoint |
 
-## 5. Hvitvasking
+## 5. Datakvalitet
 
-| ID | Kontroll | Utløser varsel | Frekvens | Status |
+| ID | Kontroll | Utlöser larm | Frekvens | Status |
 |---|---|---|---|---|
-| HV-01 | Nye kreditorer uten gjennomførte kundetiltak | Sak opprettet før tiltak | Daglig | Trenger endepunkt |
-| HV-02 | Kundetiltak som ikke er oppdatert | Eldre enn [X] år | Månedlig | Trenger endepunkt |
-| HV-03 | Uvanlige innbetalingsmønstre | Kontant, tredjepart, utland | Ukentlig | Trenger avklaring |
-| HV-04 | Innbetaling som overstiger kravet vesentlig | Over [%] av saldo | Daglig | Klar |
-| HV-05 | Kreditorer i høyrisikobransjer uten forsterkede tiltak | Mangler dokumentasjon | Månedlig | Trenger avklaring |
+| DK-01 | Ärenden utan gäldenärsadress | Varje förekomst | Veckovis | Klar |
+| DK-02 | Möjliga dubbelregistrerade ärenden | Samma gäldenär, borgenär och belopp | Veckovis | Klar |
+| DK-03 | Ärenden utan kravunderlag | Saknad dokumentation | Veckovis | Endpoint |
+| DK-04 | Fel borgenärskoppling | Borgenär utan aktivt avtal | Månadsvis | Klar |
+| DK-05 | Belopp som avviker från ursprungsfaktura | Differens utan förklaring | Veckovis | Endpoint |
 
-## 6. Personvern
+## 6. Penningtvätt
 
-| ID | Kontroll | Utløser varsel | Frekvens | Status |
+**Villkorat.** Kör dessa först när det är bekräftat att bolaget är verksamhetsutövare enligt penningtvättslagen. Ren inkassoverksamhet är inte självklart anmälningspliktig; förvärv av förfallna fordringar kan vara det.
+
+| ID | Kontroll | Utlöser larm | Frekvens | Status |
 |---|---|---|---|---|
-| PV-01 | Saker forbi oppbevaringsfrist, ikke slettet | Over [X] år etter avslutning | Månedlig | Trenger endepunkt |
-| PV-02 | Personopplysninger i felter de ikke hører hjemme i | Treff på fødselsnummer i fritekst | Ukentlig | Klar |
-| PV-03 | Innsynsbegjæringer uten svar innen frist | Over [X] dager | Ukentlig | Trenger endepunkt |
+| PT-01 | Nya uppdragsgivare utan genomförda kundkännedomsåtgärder | Ärende skapat före åtgärd | Daglig | Endpoint |
+| PT-02 | Kundkännedom ej uppdaterad | Äldre än [X] år | Månadsvis | Endpoint |
+| PT-03 | Inbetalning som väsentligt överstiger fordran | Över [%] av saldo | Daglig | Klar |
+| PT-04 | Betalning från tredje part eller utlandet | Avvikande betalarinformation | Veckovis | Utred |
 
-**PV-02 kan agenten gjøre allerede** — maskeringen i MCP-serveren finner fødsels- og personnummer i fritekst. Den logikken kan brukes til å *finne* dem, ikke bare skjule dem.
+## 7. Dataskydd
 
-## 7. Tilgang og systemkontroll
-
-| ID | Kontroll | Utløser varsel | Frekvens | Status |
+| ID | Kontroll | Utlöser larm | Frekvens | Status |
 |---|---|---|---|---|
-| TS-01 | Brukere med rettigheter ut over rollen sin | Avvik mot rollemal | Månedlig | Trenger endepunkt |
-| TS-02 | Inaktive brukere med aktiv tilgang | Ingen pålogging på [X] dager | Månedlig | Trenger endepunkt |
-| TS-03 | Feilede bakgrunnsjobber | Enhver feil | Daglig | Trenger endepunkt |
-| TS-04 | Endringer i systemkonfigurasjon | Enhver endring | Daglig | Trenger endepunkt |
-| TS-05 | Oppslag utenfor arbeidstid eller i uvanlig volum | Over [X] oppslag per bruker per dag | Ukentlig | Trenger endepunkt |
+| DS-01 | Ärenden förbi gallringsfrist, ej raderade | Över [X] år efter avslut | Månadsvis | Endpoint |
+| DS-02 | Personnummer i fält där de inte hör hemma | Träff på personnummer i fritext | Veckovis | Klar |
+| DS-03 | Registerutdrag utan svar inom frist | Över en månad | Veckovis | Endpoint |
+
+**DS-02 kan agenten göra redan.** Maskeringen i MCP-servern hittar personnummer i fritext. Samma logik kan användas för att *hitta* dem, inte bara dölja dem.
+
+## 8. Behörighet och systemkontroll
+
+| ID | Kontroll | Utlöser larm | Frekvens | Status |
+|---|---|---|---|---|
+| BS-01 | Användare med behörighet utöver sin roll | Avvikelse mot rollmall | Månadsvis | Endpoint |
+| BS-02 | Inaktiva användare med aktiv behörighet | Ingen inloggning på [X] dagar | Månadsvis | Endpoint |
+| BS-03 | Misslyckade bakgrundsjobb | Varje fel | Daglig | Endpoint |
+| BS-04 | Ändringar i systemkonfiguration | Varje ändring | Daglig | Endpoint |
+| BS-05 | Uppslag utanför arbetstid eller i ovanlig volym | Över [X] uppslag per användare per dag | Veckovis | Endpoint |
 
 ---
 
-## Frekvensoversikt
+## Vad agenten levererar
 
-| Frekvens | Oppgaver |
+För varje körning: en lista över avvikelser med ärendenummer, vad som utlöste larmet, och när det upptäcktes. Inga avvikelser ger en kvittens på att kontrollen körts — det är den kvittensen som dokumenterar att internkontrollen fungerar, och den är lika viktig som fynden.
+
+Allt loggas med tidsstämpel, jämför revisionsloggen i MCP-servern.
+
+## Vad som saknas
+
+Ressursgrupperna finns i Collect- och Ledger-dokumentationen. Detta är underlaget för vad ni ska be Banqsoft öppna:
+
+| Behov | Täcker |
 |---|---|
-| **Daglig** | KM-01, KM-02, KM-03, KM-05, IP-01, IP-02, BF-01, BF-03, BF-04, HV-01, HV-04, TS-03, TS-04 |
-| **Ukentlig** | KM-04, IP-03, IP-04, IP-07, BF-02, BF-05, DK-01, DK-02, DK-03, DK-05, HV-03, PV-02, PV-03, TS-05 |
-| **Månedlig** | KM-06, IP-05, IP-06, DK-04, HV-02, HV-05, PV-01, TS-01, TS-02 |
-
-## Hva agenten leverer
-
-For hver kjøring: en liste over avvik med saksnummer, hva som utløste varselet, og når det ble oppdaget. Ingen avvik gir en kvittering på at kontrollen er kjørt — det er den kvitteringen som dokumenterer at internkontrollen fungerer, og den er like viktig som funnene.
-
-Alt logges med tidsstempel, jf. revisjonsloggen i MCP-serveren.
-
-## Hva som mangler
-
-Av 36 oppgaver kan **11 kjøres med dagens verktøy**. Resten trenger endepunkter vi ikke har bekreftet. De viktigste å be Banqsoft om:
-
-| Behov | Dekker |
-|---|---|
-| `CasePayments` og `Payments` | KM-03, KM-04, BF-03, BF-04 |
+| `CasePayments` och `Payments` | KM-03, KM-04, BF-03, BF-04 |
 | `Dispute` | IP-02 |
-| `ClaimBases` | IP-07, DK-03 |
-| `importPayment` med feilstatus | BF-01 |
-| `ChangeLog` | TS-04 |
-| `Jobs` / `BackgroundProcess` | TS-03 |
-| `Gdpr` | PV-01, PV-03 |
-| `accessDefinitions` og `users` | TS-01, TS-02 |
-| `Log` | TS-05 |
-
-Alle finnes som ressursgrupper i Collect- og Ledger-dokumentasjonen.
+| `ClaimBases` | IP-07, DK-03, KF-01 |
+| `CourtInvoices` och `LegalBasis` | KF-01 till KF-05 |
+| `importPayment` med felstatus | BF-01 |
+| `ChangeLog` | BS-04 |
+| `Jobs` och `BackgroundProcess` | BS-03 |
+| `Gdpr` | DS-01, DS-03 |
+| `accessDefinitions` och `users` | BS-01, BS-02 |
+| `Log` | BS-05 |
+| `InterestTables` | IP-06 |
+| `Pricelists` | IP-03, KF-05 |
 
 ---
 
-## Egne oppgaver
+## Egna uppgifter
 
-Fyll på her.
+Fyll på här.
 
-| ID | Kontroll | Utløser varsel | Frekvens | Status |
+| ID | Kontroll | Utlöser larm | Frekvens | Status |
 |---|---|---|---|---|
 | | | | | |
